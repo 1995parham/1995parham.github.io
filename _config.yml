@@ -10,7 +10,7 @@ permalink:        /blog/:year/:month/:day/:title
 title:            'Parham Alvani'
 tagline:          'Parham Alvani Homepage'
 description:      'Parham Alvani Personal Homepage'
-url:              '1995parham.github.io'
+url:              'http://1995parham.github.io'
 baseurl:          ''
 
 # Navigation
@@ -28,10 +28,10 @@ navigation:
 
 # Author Details
 author:         'Parham Alvani'
-linkedin:       'A'
-twitter:        'B'
-facebook:       'C'
-gplus:          'D'
+linkedin:       ''
+twitter:        ''
+facebook:       ''
+gplus:          ''
 
 # Google Analytics
 gahandler: 'UA-52149651-1'
