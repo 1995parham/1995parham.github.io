@@ -7,10 +7,10 @@ highlighter: pygments
 permalink:        /blog/:year/:month/:day/:title
 
 # Setup
-title:            'Jekyll Metro'
-tagline:          'A Metro theme for Jekyll'
-description:      'A Sample blog using Jekyll Metro'
-url:              'http://localhost:4000'
+title:            'Parham Alvani'
+tagline:          'Parham Alvani Homepage'
+description:      'Parham Alvani Personal Homepage'
+url:              '1995parham.github.io'
 baseurl:          ''
 
 # Navigation
@@ -27,11 +27,11 @@ navigation:
   url : /archive/
 
 # Author Details
-author:         'Abdel Raoof Olakara'
-linkedin:       'https://ae.linkedin.com/in/olakara/'
-twitter:        'https://twitter.com/olakara'
-facebook:       'https://www.facebook.com/olakara'
-gplus:          'https://plus.google.com/100425464897246255887/'
+author:         'Parham Alvani'
+linkedin:       ''
+twitter:        ''
+facebook:       ''
+gplus:          ''
 
 # Google Analytics
 gahandler: 'UA-52149651-1'
