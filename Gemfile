@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 gem 'json'
 gem 'jekyll'
-gem 'therubyracer',  platforms: :ruby
+gem 'therubyracer', platforms: :ruby
