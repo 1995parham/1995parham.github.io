@@ -1,39 +1,49 @@
 ---
 layout: page
 title: Resume
-description: Resume of Abdel Raoof
-theme: red
+description: Resume of Parham Alvani
+theme: orange
 ---
-Six years of experience in software development on Microsoft and Java technologies. Experienced in design and development of enterprise web applications, content management systems and enterprise application integration.
 
-**Experience in Web Technology:**
-Building and Supporting web applications using Microsoft Technologies (ASP.Net & ASP.Net MVC). Developing UI using Ext JS and jQuery.
+**Experience in C Programming:**
+Building server application and system level application using open source technologies.
 
-**Experience in Enterprise Content Management:**
-Implemented custom applications for content and knowledge management. Have also worked with leading industry ECM applications like SharePoint 2013, MOSS 2007, SharePoint 2010 and Documentum.
+**Experience in Linux Kernel Programming:**
+Building simple kernel modules.
+
+**Experience in Assembly Programming:**
+Building simple kernel with my friends named TOs(Tiny Operating System).
 
 <!-- Skills -->
 <section class="row">
 	<header class="col-md-3">
-		<h3 style="text-transform:uppercase;color:gray">Skills</h3>
+		<h3 style="text-transform:uppercase;color:gray">Computer Skills</h3>
 	</header>
 	<div class="col-md-9">
 		<div class="row">
 			<div class="col-md-6">
 				<ul class="list-group">
 					<li class="list-group-item active"><h4><strong>Programming</strong></h4></li>
-					<li class="list-group-item">C#</li>
-					<li class="list-group-item">ASP.Net / ASP.Net MVC</li>
-					<li class="list-group-item">Javascript</li>
-					<li class="list-group-item">HTML & CSS</li>
+					<li class="list-group-item">C/C++</li>
+					<li class="list-group-item">AMD64 Assembly(NASM Syntax)</li>
+					<li class="list-group-item">x86 Assembly(TASM Syntax)</li>
+					<li class="list-group-item">Java SE/EE</li>
+					<li class="list-group-item">PHP</li>
 				</ul>
 			</div>
 			<div class="col-md-6">
 				<ul class="list-group">
-					<li class="list-group-item active"><h4><strong>Specialties</strong></h4></li>
-					<li class="list-group-item">.Net Web Technologies</li>
-					<li class="list-group-item">SharePoint 2013</li>
-					<li class="list-group-item">Sencha Ext Js</li>
+					<li class="list-group-item active"><h4><strong>Softwares & Databases</strong></h4></li>
+					<li class="list-group-item">Nmap</li>
+					<li class="list-group-item">Wireshark</li>
+					<li class="list-group-item">Eclipse IDE</li>
+					<li class="list-group-item">Ollydbg</li>
+					<li class="list-group-item">GDB</li>
+					<li class="list-group-item">Valgrind</li>
+					<li class="list-group-item">Radare2</li>
+					<li class="list-group-item">Git</li>
+					<li class="list-group-item">MySQL</li>
+					<li class="list-group-item">PostgreSQL</li>
 				</ul>
 			</div>
 		</div>
