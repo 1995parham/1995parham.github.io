@@ -2,9 +2,8 @@
 layout: page
 title: Resume
 description: Resume of Parham Alvani
-theme: orange
+theme: red
 ---
-
 **Experience in C Programming:**
 Building server application and system level application using open source technologies.
 
@@ -58,43 +57,52 @@ Building simple kernel with my friends named TOs(Tiny Operating System).
 	<div class="col-md-9">
 		<ul>
 			<li>
-				<h4>Master of Computer Applications (MCA)</h4>
-				<p>2004-2007 - Vellore Institute of Technology</p>
+				<h4>High School</h4>
+				<h5>Energy Atomic High School</h5>
+				<p>GPA:19.45/20</p>
 			</li>
 			<li>
-				<h4>Bachelor of Sscience - Computer Science</h4>
-				<p>2001-2004 - University of Calicut</p>
+				<h4>B.Sc. In Software Engineering</h4>
+				<h5>Amirkabir University of Technology</h5>
+				<p>Current GPA:19.21/20 (34 Unit)</p>
 			</li>
 		</ul>
 	</div>
 </section>
 <hr/>
-<!-- Work -->
+<!-- Certifications -->
 <section class="row">
 	<header class="col-md-3">
-		<h3 style="text-transform:uppercase;color:gray">Work Experience</h3>
+		<h3 style="text-transform:uppercase;color:gray">Certifications</h3>
 	</header>
 	<div class="col-md-9">
 		<ul>
 			<li>
-				<h4>C4 Advanced Solutions</h4>
-				<h5>Present</h5>
-				<p>Working as Application Developer</p>
+				<h4>CompTIA Network+</h4>
 			</li>
 			<li>
-				<h4>Abdul Samad Al Qurashi</h4>
-				<h5>March 2010 - January 2013</h5>
-				<p>Worked as Web Developer</p>
+				<h4>Supporting Windows 8.1(70-688)</h4>
 			</li>
 			<li>
-				<h4>Samsung SDS</h4>
-				<h5>May 2009 - March 2010</h5>
-				<p>Worked as Web Developer with MIS team</p>
+				<h4>Installing and Configuring Windows Server 2012(70-410)</h4>
 			</li>
 			<li>
-				<h4>Honeywell Technology Solutions</h4>
-				<h5>December 2006 - December 2008</h5>
-				<p>Worked as Project Trainee & later Software Engineer</p>
+				<h4>Administering Windows Server 2012(70-411)</h4>
+			</li>
+			<li>
+				<h4>Configuring Advanced Windows Server 2012 Services(70-412)</h4>
+			</li>
+			<li>
+				<h4>Designing and Implementing a Server Infrastructure(70-413)</h4>
+			</li>
+			<li>
+				<h4>Implementing an Advanced Server Infrastructure(70-414)</h4>
+			</li>
+			<li>
+				<h4>LPIC-1(101-102)</h4>
+			</li>
+			<li>
+				<h4>LPIC-2(201-202)</h4>
 			</li>
 		</ul>
 	</div>
