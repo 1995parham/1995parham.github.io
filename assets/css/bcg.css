@@ -61,6 +61,12 @@ body {
 	background-repeat: no-repeat;
 }
 
+.gmail-ico-sm {
+	background-image: url('/assets/images/gmail_ico_sm.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 .gh-ico {
 	background-image: url('/assets/images/gh_ico.png');
 	background-position: center;
