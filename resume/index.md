@@ -113,6 +113,7 @@ and some litte program just for FUN in located in my Learning repository.
 		</ul>
 	</div>
 </section>
+<hr/>
 <!-- Teaching Assistants -->
 <section class="row">
 	<header class="col-md-3">
