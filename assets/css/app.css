@@ -40,6 +40,7 @@
 	padding: 20px;
 	margin-bottom: 30px;
 	height: 160px;
+	border-style: none;
 }
 
 .tile > .title {
@@ -63,11 +64,15 @@
 }
 
 .blue {
-    background: #007fff;
+    background: #007FFF;
 }
 
 .orange {
     background: #DC572E;
+}
+
+.gray {
+    background: #BEBEBE;
 }
 
 .left-nav {

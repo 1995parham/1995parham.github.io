@@ -28,10 +28,10 @@ navigation:
 
 # Author Details
 author:         'Parham Alvani'
-linkedin:       ''
-twitter:        ''
-facebook:       ''
-gplus:          ''
+yahoomail:      'mailto://parham.alvani@yahoo.com'
+workmail:       'mailto://parham.alvani@aut.ac.ir'
+hotmail:        'mailto://parham.alvani@hotmail.com'
+gmail:          'mailto://parham.alvani@gmail.com'
 
 # Google Analytics
 gahandler: 'UA-52149651-1'
