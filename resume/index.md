@@ -58,7 +58,7 @@ and some litte program just for FUN in located in my Learning repository.
 <!-- Education -->
 <section class="row">
 	<header class="col-md-3">
-		<h3 style="text-transform:uppercase;color:gray">Education</h3>
+		<h3 style="text-transform:uppercase;color:red">Education</h3>
 	</header>
 	<div class="col-md-9">
 		<ul>
