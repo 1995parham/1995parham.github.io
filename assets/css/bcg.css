@@ -61,11 +61,25 @@ body {
 	background-repeat: no-repeat;
 }
 
+/*Mail server images ha ha ha*/
 .gmail-ico-sm {
 	background-image: url('/assets/images/gmail_ico_sm.png');
 	background-position: center;
 	background-repeat: no-repeat;
 }
+
+.yahoomail-ico-sm {
+	background-image: url('/assets/images/yahoomail_ico_sm.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.hotmail-ico-sm {
+	background-image: url('/assets/images/hotmail_ico_sm.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/*End of mail server images ha ha ha*/
 
 .gh-ico {
 	background-image: url('/assets/images/gh_ico.png');
