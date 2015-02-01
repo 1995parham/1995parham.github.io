@@ -10,7 +10,7 @@ This is my personal website and blog where I put down my thoughts, solutions to 
 
 ## About Me
 I borned in Tehran, Iran in winter of 1995. I enjoy C codding, kernel developing, math problem solving ... :-)
-
+<img src="/assets/images/Parham_Alvani.jpg" width="208" height="58" alt="Parham Alvani Picture" title="Parham Alvani Picture">
 ## Contact Me
 
 For short messages and quick replies, you can contact me via [Gmail](mailto://parham.alvani@gmail.com)
