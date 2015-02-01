@@ -5,18 +5,20 @@ description: Resume of Parham Alvani
 theme: red
 ---
 **Experience in C Programming:**
-Building server application and system level application using open source technologies.
+Building server application and system level application using open source technologies like
+Chapat for my company (Project Bax Co.) and TFAT for my assembly course.
 
 **Experience in Linux Kernel Programming:**
 Building simple kernel modules.
 
 **Experience in Assembly Programming:**
 Building simple kernel with my friends named TOs(Tiny Operating System).
+and some litte program just for FUN in located in my Learning repository.
 
 <!-- Skills -->
 <section class="row">
 	<header class="col-md-3">
-		<h3 style="text-transform:uppercase;color:gray">Computer Skills</h3>
+		<h3 style="text-transform:uppercase;color:orange">Computer Skills</h3>
 	</header>
 	<div class="col-md-9">
 		<div class="row">
@@ -24,10 +26,12 @@ Building simple kernel with my friends named TOs(Tiny Operating System).
 				<ul class="list-group">
 					<li class="list-group-item active"><h4><strong>Programming</strong></h4></li>
 					<li class="list-group-item">C/C++</li>
-					<li class="list-group-item">AMD64 Assembly(NASM Syntax)</li>
+					<li class="list-group-item">AMD64 Assembly(GNU & NASM Syntax)</li>
 					<li class="list-group-item">x86 Assembly(TASM Syntax)</li>
 					<li class="list-group-item">Java SE/EE</li>
 					<li class="list-group-item">PHP</li>
+					<li class="list-group-item">Verilog HDL</li>
+					<li class="list-group-item">VHDL</li>
 				</ul>
 			</div>
 			<div class="col-md-6">
@@ -36,6 +40,8 @@ Building simple kernel with my friends named TOs(Tiny Operating System).
 					<li class="list-group-item">Nmap</li>
 					<li class="list-group-item">Wireshark</li>
 					<li class="list-group-item">Eclipse IDE</li>
+					<li class="list-group-item">Netbeans</li>
+					<li class="list-group-item">IntelliJ IDEA</li>
 					<li class="list-group-item">Ollydbg</li>
 					<li class="list-group-item">GDB</li>
 					<li class="list-group-item">Valgrind</li>
@@ -64,7 +70,7 @@ Building simple kernel with my friends named TOs(Tiny Operating System).
 			<li>
 				<h4>B.Sc. In Software Engineering</h4>
 				<h5>Amirkabir University of Technology</h5>
-				<p>Current GPA:19.21/20 (34 Unit)</p>
+				<p>Current GPA:19.21/20 (51 Unit)</p>
 			</li>
 		</ul>
 	</div>
@@ -103,6 +109,24 @@ Building simple kernel with my friends named TOs(Tiny Operating System).
 			</li>
 			<li>
 				<h4>LPIC-2(201-202)</h4>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- Teaching Assistants -->
+<section class="row">
+	<header class="col-md-3">
+		<h3 style="text-transform:uppercase;color:yellow">Teaching Assistants</h3>
+	</header>
+	<div class="col-md-9">
+		<ul>
+			<li>
+				<h4>Introduction To Programming (Fall 2014)</h4>
+				<h3>Dr.Bakhshi</h3>
+			</li>
+			<li>
+				<h4>Advance Programming (Spring 2015)</h4>
+				<h3>Dr.Noorhosseini</h3>
 			</li>
 		</ul>
 	</div>
