@@ -1,5 +1,5 @@
 body {
-		background: url('/assets/images/bcg_wall.png') no-repeat center center fixed;
+		background: url('/assets/images/bcg_wall.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -61,26 +61,26 @@ body {
 	background-repeat: no-repeat;
 }
 
-.tw-ico {
-	background-image: url('/assets/images/tw_ico.png');
+.gh-ico {
+	background-image: url('/assets/images/gh_ico.png');
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
-.tw-ico-sm {
-	background-image: url('/assets/images/tw_ico_sm.png');
+.gh-ico-sm {
+	background-image: url('/assets/images/gh_ico_sm.png');
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
-.lk-ico {
-	background-image: url('/assets/images/lk_ico.png');
+.sto-ico {
+	background-image: url('/assets/images/sto_ico.png');
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
-.lk-ico-sm {
-	background-image: url('/assets/images/lk_ico_sm.png');
+.sto-ico-sm {
+	background-image: url('/assets/images/sto_ico_sm.png');
 	background-position: center;
 	background-repeat: no-repeat;
 }
