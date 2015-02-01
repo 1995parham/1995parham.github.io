@@ -79,6 +79,12 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+.workmail-ico-sm {
+	background-image: url('/assets/images/workmail_ico_sm.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 /*End of mail server images ha ha ha*/
 
 .gh-ico {
