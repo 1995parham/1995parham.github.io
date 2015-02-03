@@ -6,7 +6,7 @@ theme: red
 ---
 **Experience in C Programming:**
 Building server application and system level application using open source technologies like
-Chapat for my company (Project Bax Co.) and TFAT for my assembly course.
+Chapat for my company (Chapna Co.) and TFAT for my assembly course.
 
 **Experience in Linux Kernel Programming:**
 Building simple kernel modules.
