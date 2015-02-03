@@ -20,6 +20,13 @@ I borned in Tehran, Iran in winter of 1995. I enjoy C codding, kernel developing
 4. Mathematical Analysis
 
 
+## Work Experiences
+I have established a software company named Chapna
+with contributions of two of my friends
+
+1. Mr. Navid Mashayekhi
+2. Mr. Mohammad Reza Mahboubi Ardakani
+
 ## Contact Me
 
 For short messages and quick replies, you can contact me via [Gmail](mailto://parham.alvani@gmail.com)
