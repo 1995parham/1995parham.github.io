@@ -123,11 +123,16 @@ and some litte program just for FUN in located in my Learning repository.
 		<ul>
 			<li>
 				<h4>Introduction To Programming (Fall 2014)</h4>
-				<h3>Dr.Bakhshi</h3>
+				<h3><a href="http://ceit.aut.ac.ir/~bakhshis">Dr.Bakhshi</a></h3>
 			</li>
 			<li>
 				<h4>Advance Programming (Spring 2015)</h4>
-				<h3>Dr.Noorhosseini</h3>
+				<h3>
+				<a href="http://ceit.aut.ac.ir/autcms/people/verticalPagesAjax/professorHomePage.htm?
+				url=majidnh&depurl=computer-engineering&lang=en&cid=626143">
+				Dr.Noorhosseini
+				</a>
+				</h3>
 			</li>
 		</ul>
 	</div>
