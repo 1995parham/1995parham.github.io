@@ -13,6 +13,13 @@ I borned in Tehran, Iran in winter of 1995. I enjoy C codding, kernel developing
 
 ![Parham Alvani Picture]({{site.url}}/assets/images/Parham_Alvani.jpg)
 
+## Research Interests
+1. Kernel Development
+2. Device Driver Development
+3. Graph Theory
+4. Mathematical Analysis
+
+
 ## Contact Me
 
 For short messages and quick replies, you can contact me via [Gmail](mailto://parham.alvani@gmail.com)
