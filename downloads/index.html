@@ -16,7 +16,7 @@ bloghome: true
               {% for file in _data.downloads %}
               <article class="col-md-12 justified">
                 <h2 class="post-title">
-                  <a href="{{ file.url }}" class="yellow-link">
+		<a href="{{ site.url }}/{{ file.url }}" class="yellow-link">
                     {{ file.name }}
                   </a>
 	  </h2>
