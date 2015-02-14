@@ -2,7 +2,7 @@
 layout: page
 title: Hi, I am Parham Alvani
 description: About Me page of Parham Alvani
-theme: purple
+theme: blue
 ---
 
 I am a C developer mostly working using OpenSource technologies. I am lived in Tehran, Iran and study CE at Amir Kabir University.
