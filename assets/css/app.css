@@ -56,7 +56,7 @@
 }
 
 .red {
-    background: #AC193D;
+    background: #FF3155;
 }
 
 .green {
@@ -73,6 +73,10 @@
 
 .gray {
     background: #BEBEBE;
+}
+
+.yellow {
+    background: #FFFF66;
 }
 
 .left-nav {
