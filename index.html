@@ -45,13 +45,14 @@ description: Parham Alvani Homepage
 		<div class="row">
 
 			<div class="col-md-4 col-sm-6 col-xs-12">
+				{% for file in site.data.downloads limit:1 %}
 				<a href="/downloads">
 					<div class="tile yellow bord">
 						<h3 class="title">Downloads</h3>
-						<h4 class="title"></h4>
-						<p></p>
+						<h4 class="title">{{ file.name }}</h4>
 					</div>
 				</a>
+				{% endfor %}
 			</div>
 
 			<div class="col-md-4 col-sm-6 col-xs-12">
