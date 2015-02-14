@@ -45,15 +45,13 @@ description: Parham Alvani Homepage
 		<div class="row">
 
 			<div class="col-md-4 col-sm-6 col-xs-12">
-				{% for post in site.posts offset:1 limit:1 %}
-				<a href="{{post.url}}">
+				<a href="/downloads">
 					<div class="tile green bord">
-						<h3 class="title">Recent Article</h3>
-						<h4 class="title">{{ post.title }}</h4>
-						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
+						<h3 class="title">Downloads</h3>
+						<h4 class="title"></h4>
+						<p></p>
 					</div>
 				</a>
-				{% endfor %}
 			</div>
 
 			<div class="col-md-4 col-sm-6 col-xs-12">
