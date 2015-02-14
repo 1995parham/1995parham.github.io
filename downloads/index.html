@@ -19,8 +19,13 @@ bloghome: true
                   <a href="{{ file.url }}" class="yellow-link">
                     {{ file.name }}
                   </a>
-                </h2>
-              {% endfor %}
+	  </h2>
+	  <div class=publish-tag>
+	    <span class="fa fa-calender"></span>&nbsp;CREATED ON {{ file.date | date: "%B %d, %Y }}
+          </div>
+	  <hr/>
+  </article>
+	  {% endfor %}
             </div>
             <br/>
             {% include footer.html %}
