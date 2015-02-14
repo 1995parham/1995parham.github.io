@@ -1,3 +1,5 @@
 - name: Test
-  url: {{ site.url }}/downloads/Test.txt
+  url: downloads/Test.txt
   time: 2015-2-15
+
+
