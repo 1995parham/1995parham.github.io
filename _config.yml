@@ -25,6 +25,8 @@ navigation:
   url: /tags/
 - text: Archive
   url : /archive/
+- text: Downloads
+  url: /downloads/
 
 # Author Details
 author:         'Parham Alvani'
