@@ -76,7 +76,7 @@
 }
 
 .yellow {
-    background: #FFFF66;
+    background: #EEEE00;
 }
 
 .left-nav {
@@ -135,7 +135,7 @@ li.orange > a,
 li.orange > a:hover,
 li.orange > a:focus {
     color: #fff;
-    background: #DC572E;
+    background: #FFA500;
     text-decoration: none;
 }
 
@@ -143,7 +143,7 @@ li.green > a,
 li.green > a:hover,
 li.green > a:focus {
     color: #fff;
-    background: #00A600;
+    background: #7CFC00;
     text-decoration: none;
 }
 
@@ -159,17 +159,17 @@ li.green > a:focus {
 
 .btn-red {
     color: #fff;
-    background: #AC193D;
+    background: #FF3155;
 }
 
 .btn-orange {
     color: #fff;
-    background: #DC572E;
+    background: #FFA500;
 }
 
 .btn-green {
     color: #fff;
-    background: #00A600;
+    background: #7CFC00;
 }
 
 a.purple-link,
@@ -181,13 +181,13 @@ a.purple-link:focus{
 a.red-link,
 a.red-link:hover,
 a.red-link:focus {
-    color: #AC193D;
+    color: #FF3155;
 }
 
 a.green-link,
 a.green-link:hover,
 a.green-link:focus {
-    color: #00A600;
+    color: #7CFC00;
 }
 
 a.blue-link,
@@ -199,7 +199,7 @@ a.blue-link:focus {
 a.orange-link,
 a.orange-link:hover,
 a.orange-link:focus {
-    color: #DC572E;
+    color: #FFA500;
 }
 
 .icon {
