@@ -127,7 +127,7 @@ li.red > a,
 li.red > a:hover,
 li.red > a:focus {
     color: #fff;
-    background: #AC193D;
+    background: #FF3155;
     text-decoration: none;
 }
 
@@ -144,6 +144,14 @@ li.green > a:hover,
 li.green > a:focus {
     color: #fff;
     background: #7CFC00;
+    text-decoration: none;
+}
+
+li.yellow > a,
+li.yellow > a:hover,
+li.yellow > a:focus {
+    color: #fff;
+    background: #EEEE00;
     text-decoration: none;
 }
 
@@ -170,6 +178,11 @@ li.green > a:focus {
 .btn-green {
     color: #fff;
     background: #7CFC00;
+}
+
+.btn-yellow {
+    color: #fff;
+    background: #EEEE00;
 }
 
 a.purple-link,
