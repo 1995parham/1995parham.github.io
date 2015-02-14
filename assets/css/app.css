@@ -202,6 +202,12 @@ a.orange-link:focus {
     color: #FFA500;
 }
 
+a.yellow-link,
+a.yellow-link:hover,
+a.yellow-link:focus {
+    color: #EEEE00;
+}
+
 .icon {
     background-image: url("../images/icon.png");
     background-repeat: no-repeat;
