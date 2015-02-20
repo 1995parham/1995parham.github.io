@@ -13,11 +13,11 @@ Then you must extract it with `tar xvfz scipopsuite-3.1.1.tgz` command.
 Do following steps in order to install scip on 32bit windows using cygwin
 (unfortunately you cannot install scip on 64bit windows using cygwin)
 
-1. Install these package bison, flex, pcre, gcc, g++, gcc-fortan, readline (Find them using search bar in cygwin installer)
+1. Install these packages: bison, flex, pcre, gcc, g++, gcc-fortan, readline (Find them using search bar in cygwin installer)
 2. Copy contents of [include folder]({{site.url}}/downloads/include.zip) into cygwin/usr/include
 3. Copy contents of [lib folder]({{site.url}}/downloads/lib.zip) into cygwin/lib
-4. Go to zimpl folder of scpisuite and issue make command
-5. Go to scipsuite root directory and issue make command
+4. Go to zimpl folder of scpisuite and run make command
+5. Go to scipsuite root directory and run make command
 6. Go to scpi/bin folder and run `./scip` everything must work and you must see welcome message as follow:
 
 > parham@SVE14A27CXH ~/scipoptsuite-3.1.0/scip-3.1.0/bin  
