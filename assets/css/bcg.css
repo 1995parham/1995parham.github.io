@@ -61,7 +61,8 @@ body {
 	background-repeat: no-repeat;
 }
 
-/*Mail server images ha ha ha*/
+/* Mail server images ha ha ha */
+
 .gmail-ico-sm {
 	background-image: url('/assets/images/gmail_ico_sm.png');
 	background-position: center;
@@ -85,7 +86,15 @@ body {
 	background-repeat: no-repeat;
 }
 
-/*End of mail server images ha ha ha*/
+/* End of mail server images ha ha ha */
+
+/* Java icon .. ha ha ha */
+.java-ico {
+	background-image: url('/assets/images/java_ico.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/* */
 
 .gh-ico {
 	background-image: url('/assets/images/gh_ico.png');
