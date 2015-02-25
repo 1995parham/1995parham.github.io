@@ -27,8 +27,6 @@ navigation:
   url : /archive/
 - text: Downloads
   url: /downloads/
-- text: Java
-  url: http://ceit.aut.ac.ir/~9231058/java/
 
 # Author Details
 author:         'Parham Alvani'
