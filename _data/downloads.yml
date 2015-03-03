@@ -1,5 +1,12 @@
 - name: Test
-  url: downloads/Test.txt
+  url: http://1995parham.github.io/downloads/Test.txt
   date: 2015-2-15
-
-
+- name: Netbeans-8.0.2-windows
+  url: http://ceit.aut.ac.ir/~9231058/download/netbeans-8.0.2-windows.exe
+  date: 2015-3-3
+- name: Java-Development-Kit-8u31-windows-x64
+  url: http://ceit.aut.ac.ir/~9231058/download/jdk-8u31-windows-x64.exe
+  date: 2015-3-3
+- name: Java-Development-Kit-8u31-windows-i586
+  url: http://ceit.aut.ac.ir/~9231058/download/jdk-8u31-windows-i586.exe
+  date: 2015-3-3
