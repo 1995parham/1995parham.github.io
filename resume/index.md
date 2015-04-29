@@ -28,6 +28,7 @@ and some litte program just for FUN in located in my Learning repository.
 					<li class="list-group-item">C/C++</li>
 					<li class="list-group-item">AMD64 Assembly(GNU & NASM Syntax)</li>
 					<li class="list-group-item">x86 Assembly(TASM Syntax)</li>
+					<li class="list-group-item">Python</li>
 					<li class="list-group-item">Java SE/EE</li>
 					<li class="list-group-item">PHP</li>
 					<li class="list-group-item">Verilog HDL</li>
