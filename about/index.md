@@ -5,7 +5,7 @@ description: About Me page of Parham Alvani
 theme: blue
 ---
 
-I am a C developer mostly working using OpenSource technologies. I am living in Tehran, Iran and study CE at Amir Kabir University.
+I am a C developer mostly working using OpenSource technologies. I lived in Tehran, Iran and studying CE at Amir Kabir University.
 This is my personal website and blog where I put down my thoughts, solutions to problems and learning notes. :-)
 
 ## About Me
@@ -14,10 +14,11 @@ I borned in Tehran, Iran in winter of 1995. I enjoy C codding, kernel developing
 ![Parham Alvani Picture]({{site.url}}/assets/images/Parham_Alvani.jpg)
 
 ## Research Interests
-1. Kernel Development
-2. Device Driver Development
-3. Graph Theory
-4. Mathematical Analysis
+1. SDN (Software Defined Networking)
+2. Kernel Development
+3. Device Driver Development
+4. Graph Theory
+5. Mathematical Analysis
 
 
 ## Work Experiences
