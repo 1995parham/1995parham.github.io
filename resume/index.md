@@ -12,8 +12,7 @@ Chapat for my company (Chapna Co.) and TFAT for my assembly course.
 Building simple kernel modules.
 
 **Experience in Assembly Programming:**
-Building simple kernel with my friends named TOs(Tiny Operating System).
-and some litte program just for FUN in located in my Learning repository.
+Building simple kernel with my friends named TOs(Tiny Operating System), targetting AMD64 CPU.
 
 <!-- Skills -->
 <section class="row">
@@ -71,7 +70,7 @@ and some litte program just for FUN in located in my Learning repository.
 			<li>
 				<h4>B.Sc. In Software Engineering</h4>
 				<h5>Amirkabir University of Technology</h5>
-				<p>Current GPA:19.21/20 (51 Unit)</p>
+				<p>Current GPA:19.31/20 (51 Unit)</p>
 			</li>
 		</ul>
 	</div>
