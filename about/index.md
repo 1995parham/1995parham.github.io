@@ -5,7 +5,7 @@ description: About Me page of Parham Alvani
 theme: blue
 ---
 
-I am a C developer mostly working using OpenSource technologies. I lived in Tehran, Iran and studying CE at Amir Kabir University.
+I am a C developer mostly working using OpenSource technologies. I live in Tehran, Iran and studying CE at Amir Kabir University.
 This is my personal website and blog where I put down my thoughts, solutions to problems and learning notes. :-)
 
 ## About Me
