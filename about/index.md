@@ -9,7 +9,7 @@ I am a C developer mostly working using OpenSource technologies. I live in Tehra
 This is my personal website and blog where I put down my thoughts, solutions to problems and learning notes. :-)
 
 ## About Me
-I borned in Tehran, Iran in winter of 1995. I enjoy C codding, kernel developing, math problem solving ... :-)  
+I was borned in Tehran, Iran in winter of 1995. I enjoy C codding, kernel developing, math problem solving ... :-)  
 
 ![Parham Alvani Picture]({{site.url}}/assets/images/Parham_Alvani.jpg)
 
