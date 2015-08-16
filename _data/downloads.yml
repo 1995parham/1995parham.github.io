@@ -1,6 +1,3 @@
-- name: Test
-  url: http://1995parham.github.io/downloads/Test.txt
-  date: 2015-2-15
 - name: Netbeans-8.0.2-windows
   url: http://ceit.aut.ac.ir/~9231058/download/netbeans-8.0.2-windows.exe
   date: 2015-3-3
