@@ -14,12 +14,12 @@ I borned in Tehran, Iran in winter of 1995. I enjoy C codding, kernel developing
 ![Parham Alvani Picture]({{site.url}}/assets/images/Parham_Alvani.jpg)
 
 ## Research Interests
-1. SDN (Software Defined Networking)
-2. IoT (Internet of Things)
-3. Kernel Development
-4. Device Driver Development
-5. Graph Theory
-6. Mathematical Analysis
+* Internet of Things (IoT)
+* Software Defined Networking (SDN)
+* Network Function Virtualization (NFV)
+* Kernel Hacking
+* Graph Theory
+* Mathematical Analysis
 
 
 ## Work Experiences
