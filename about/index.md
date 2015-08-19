@@ -23,7 +23,7 @@ I borned in Tehran, Iran in winter of 1995. I enjoy C codding, kernel developing
 
 
 ## Work Experiences
-I have established a software company named Chapna
+I have established a software company named Panama
 with contributions of two of my friends
 
 1. Mr. Navid Mashayekhi
