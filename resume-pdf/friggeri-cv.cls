@@ -140,19 +140,23 @@
 %%%%%%%%%%%%%%%%%%%%
 
 \setlength{\tabcolsep}{0pt}
-\newenvironment{entrylist}{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
-}{%
-  \end{tabular*}
-}
+\newenvironment{entrylist}
+	{%
+		\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cl}
+	}
+	{%
+		\end{tabular*}
+	}
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
-\newcommand{\entry}[4]{%
-  #1&\parbox[t]{11.8cm}{%
-    \textbf{#2}%
-    \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
-    #4\vspace{\parsep}%
-  }\\}
+\newcommand{\entry}[4]
+	{%
+		#1&\parbox[t]{11.8cm}{%
+    		\textbf{#2}%
+    		\hfill%
+    		{\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    		#4\vspace{\parsep}%
+		}\\
+	}
 
 
 %%%%%%%%%%%%%%
