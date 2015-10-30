@@ -122,7 +122,7 @@ Building simple kernel with my friends named TOs(Tiny Operating System), targett
 	<div class="col-md-9">
 		<ul>
 			<li>
-				<h4>Introduction To Programming (Fall 2014)</h4>
+				<h4>Introduction To Programming (Fall 2014, 2015)</h4>
 				<h3><a href="http://ceit.aut.ac.ir/~bakhshis">Dr.Bakhshi</a></h3>
 			</li>
 			<li>
@@ -137,8 +137,7 @@ Building simple kernel with my friends named TOs(Tiny Operating System), targett
 			<li>
 				<h4>Discrete Mathematics (Spring 2015)</h4>
 				<h3>
-				<a href="http://www.aut.ac.ir/msfallah">
-				Dr.Fallah</a>
+				<a href="http://www.aut.ac.ir/msfallah">Dr.Fallah</a>
 				</h3>
 			</li>
 		</ul>
