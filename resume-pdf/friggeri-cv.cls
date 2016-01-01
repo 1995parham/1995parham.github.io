@@ -51,12 +51,12 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\bodyfont[]{Kurier}
-\newfontfamily\thinfont[]{Kurier Light}
-\newfontfamily\headingfont[]{Kurier Bold}
+\newfontfamily\bodyfont[]{Ubuntu}
+\newfontfamily\thinfont[]{Ubuntu Light}
+\newfontfamily\headingfont[]{Ubuntu Bold}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Kurier Light}
+\setmainfont[Mapping=tex-text, Color=textcolor]{Ubuntu Light}
 
 %\setmathfont{XITS Math}
 
