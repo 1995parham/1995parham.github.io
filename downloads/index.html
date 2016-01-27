@@ -1,34 +1,24 @@
 ---
-layout: master
+layout: page
 title: Parham Alvani's Downloads
 description: Landing Page for the downloads
-bloghome: true
+theme: yellow
 ---
 
 
-<div class="container-fluid">
+<div class="col-md-10 col-sm-9 col-md-offset-2 col-sm-offset-3">
     <div class="row">
-        <div class="hidden-xs col-md-2 col-sm-3 yellow sidebar">
-            {% include sidemenu.html %}
-        </div>
-        <div class="col-md-10 col-sm-9 col-md-offset-2 col-sm-offset-3">
-            <div class="row">
-                {% for file in site.data.downloads %}
-                <article class="col-md-12 justified">
-                    <h2 class="post-title">
-                        <a href="{{ file.url }}" class="yellow-link">
-                            {{ file.name }}
-                        </a>
-                    </h2>
-                    <div class=publish-tag>
-                        <span class="fa fa-calender"></span>&nbsp;CREATED ON {{ file.date | date: "%B %d, %Y" }}
-                    </div>
-                    <hr/>
-                </article>
-                {% endfor %}
+        {% for file in site.data.downloads %}
+        <article class="col-md-12 justified">
+            <h2 class="post-title">
+                <a href="{{ file.url }}" class="yellow-link">
+                    {{ file.name }}
+                </a>
+            </h2>
+            <div class=publish-tag>
+                <span class="fa fa-calender"></span>&nbsp;CREATED ON {{ file.date | date: "%B %d, %Y" }}
             </div>
-            <br/>
-            {% include footer.html %}
-        </div>
+            <hr/>
+        </article>
+        {% endfor %}
     </div>
-</div>
