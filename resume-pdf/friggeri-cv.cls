@@ -39,7 +39,7 @@
   \colorlet{header}{gray}
 \else
   \colorlet{fillheader}{gray}
-  \colorlet{header}{white}
+  \colorlet{header}{orange}
 \fi
 \colorlet{textcolor}{gray}
 \colorlet{headercolor}{gray}
