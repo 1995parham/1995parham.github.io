@@ -1,7 +1,13 @@
-Parham Alvani Homepage & Resume
-===============================
-# Introduction
-I developed (!) my resume and personal homepage in this repository under MIT license (:-D)
-
-# Theme
-Jekyll Metro is a metro inspired theme for [Jekyll](http://jekyllrb.com) developed by Abdel Raoof Olakera.
+# Parham Alvani Homepage & Resume
+## Introduction
+I developed (!) my resume and personal homepage in this repository under MIT license (:-D).
+I used MIT license because I have dream about MIT university ... :)
+## Jekyll Metro Theme
+### Introduction
+Jekyll Metro is a metro inspired theme for [Jekyll](http://jekyllrb.com).
+Jekyll Metro is a theme built on top of bootstrap and other freely available libraries.
+Its aimed to provide a fully furnished Jekyll theme for personal sites with blog.
+### Author
+[Abdel Raoof Olakara](http://abdelraoof.com/)
+### License
+Open sourced under the MIT license.
