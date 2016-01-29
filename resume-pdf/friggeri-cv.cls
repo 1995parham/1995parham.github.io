@@ -27,6 +27,7 @@
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
 \definecolor{yellow}{HTML}{FFF68F}
+\definecolor{cyan}{HTML}{00FFFF}
 
 \ifdefined\@cv@print
   \colorlet{green}{gray}
@@ -105,6 +106,7 @@
         green\or%
         purple\or%
 	yellow\or%
+	cyan\or%
         brown\else%
         headercolor\fi%
     } #1#2#3%
@@ -113,7 +115,7 @@
 }
 
 \renewcommand{\section}[1]{
-  \par\vspace{\parskip}
+  \par\vspace{2\parskip}
   {%
     \LARGE\headingfont\color{headercolor}%
     \@sectioncolor #1%
