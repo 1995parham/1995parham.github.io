@@ -23,7 +23,7 @@ I was borned in Tehran, Iran in winter of 1995. I enjoy C codding, kernel develo
 
 
 ## Work Experiences
-I have established a software company named Panama
+I have established a software company named Panamo
 with contributions of two of my friends
 
 1. Mr. Navid Mashayekhi
