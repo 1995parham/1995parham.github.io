@@ -1,7 +1,7 @@
 # Configurations
 markdown: kramdown
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
-highlighter: pygments
+highlighter: rouge
 
 # Permalinks
 permalink:        /blog/:year/:month/:day/:title
