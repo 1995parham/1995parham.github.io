@@ -33,6 +33,9 @@
   <link rel="stylesheet" href="{{site.url}}/assets/css/bootstrap.css">
   <link rel="stylesheet" href="{{site.url}}/assets/css/app.css">
   <link rel="stylesheet" href="{{site.url}}/assets/css/github.css">
+  {% if page.css And page.css != "" And page.css != nil %}
+  <link rel="stylesheet" href="{{site.url}}/assets/css/{{page.css}}">
+  {% endif %}
 
   <script src="/assets/js/all.js"></script>
   <script src="/assets/js/app.js"></script>
