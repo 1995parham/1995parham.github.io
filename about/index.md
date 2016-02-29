@@ -2,6 +2,7 @@
 layout: page
 title: Hi, I am Parham Alvani
 description: About Me page of Parham Alvani
+css: about.css
 theme: blue
 ---
 
