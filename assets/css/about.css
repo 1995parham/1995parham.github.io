@@ -2,8 +2,10 @@
 	border-radius: 0 120px 120px 120px;
 	margin-top: 10px;
 	margin-bottom: 5px;
+	margin-right: 5px;
 	width: 300px;
 	transition: width 2s, height 4s, border-radius 2s;
+	float: left;
 }
 
 #headshot:hover {
