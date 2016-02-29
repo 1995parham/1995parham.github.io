@@ -5,7 +5,6 @@
 	margin-right: 5px;
 	width: 300px;
 	transition: width 2s, height 4s, border-radius 2s;
-	float: left;
 }
 
 #headshot:hover {
