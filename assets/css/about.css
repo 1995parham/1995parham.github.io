@@ -3,7 +3,6 @@
 	margin-top: 10px;
 	margin-bottom: 5px;
 	width: 300px;
-	float: left;
 	transition: width 2s, height 4s, border-radius 2s;
 }
 
