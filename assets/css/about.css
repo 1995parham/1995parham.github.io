@@ -4,6 +4,7 @@
 	margin-bottom: 40px;
 	margin-right: 50px;
 	width: 300px;
+	float: left;
 	transition: width 2s, height 4s, border-radius 2s;
 }
 
