@@ -9,10 +9,10 @@ theme: blue
 I am a C developer mostly working using OpenSource technologies. I live in Tehran, Iran and studying CE at Amir Kabir University.
 This is my personal website and blog where I put down my thoughts, solutions to problems and learning notes. :-)
 
+![Parham Alvani Picture]({{site.url}}/assets/images/Parham_Alvani.jpg){:id="headshot"}
+
 ## About Me
 I was borned in Tehran, Iran in winter of 1995. I enjoy C codding, kernel developing, math problem solving ... :-)  
-
-![Parham Alvani Picture]({{site.url}}/assets/images/Parham_Alvani.jpg){:id="headshot"}
 
 ## Research Interests
 * Internet of Things (IoT)
@@ -22,14 +22,12 @@ I was borned in Tehran, Iran in winter of 1995. I enjoy C codding, kernel develo
 * Graph Theory
 * Mathematical Analysis
 
-
 ## Work Experiences
 I have established a software company named Panamo
 with contributions of two of my friends
 
-1. Mr. Navid Mashayekhi
-2. Mr. Mohammad Reza Mahboubi Ardakani
+- Mr. Navid Mashayekhi
+- Mr. Mohammad Reza Mahboubi Ardakani
 
 ## Contact Me
-
 For short messages and quick replies, you can contact me via [Gmail](mailto://parham.alvani@gmail.com).
