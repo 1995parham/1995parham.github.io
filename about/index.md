@@ -14,7 +14,7 @@ This is my personal website and blog where I put down my thoughts, solutions to 
 ## About Me
 I was borned in Tehran, Iran in winter of 1995. I enjoy C codding, kernel developing, math problem solving ... :-)  
 
-## Research Interests{:class="clear-both"}
+## Research Interests{: .clear-both}
 * Internet of Things (IoT)
 * Software Defined Networking (SDN)
 * Network Function Virtualization (NFV)
