@@ -12,3 +12,7 @@
 	width: 350px;
 	border-radius: 0 60px 60px 60px;
 }
+
+.clear-both {
+	clear: both;
+}
