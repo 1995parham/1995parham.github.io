@@ -13,6 +13,11 @@
 	border-radius: 0 60px 60px 60px;
 }
 
+#logoshot {
+	width: 300px;
+	float: left;
+}
+
 p {
 	width: 50%;
 }
