@@ -13,6 +13,10 @@
 	border-radius: 0 60px 60px 60px;
 }
 
+p {
+	width: 50%;
+}
+
 .clear-both {
 	clear: both;
 }
