@@ -39,6 +39,10 @@ p {
 	margin-bottom: 10px;
 }
 
+.interests:hover {
+	font-weight: bold;
+}
+
 .interests:hover .interests-tooltip {
 	display: block;
 }
