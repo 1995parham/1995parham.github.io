@@ -32,6 +32,7 @@ p {
 	font-size: 13px;
 	line-height: 1.4;
 	background-color: orange;
+	width: 33.3%;
 }
 
 .intersts-tooltip:hover {
