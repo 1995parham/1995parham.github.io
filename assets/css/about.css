@@ -19,7 +19,7 @@
 }
 
 p {
-	width: 50%;
+	width: 75%;
 }
 
 .clear-both {
@@ -31,4 +31,13 @@ p {
 	display: none;
 	font-size: 13px;
 	line-height: 1.4;
+	background-color: orange;
+}
+
+.intersts-tooltip:hover {
+	display: block;
+}
+
+.interests-tooltip p {
+	width: 100%;
 }
