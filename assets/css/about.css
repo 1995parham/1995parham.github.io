@@ -35,7 +35,7 @@ p {
 	width: 33.3%;
 }
 
-.intersts-tooltip:hover {
+.interests:hover .intersts-tooltip {
 	display: block;
 }
 
