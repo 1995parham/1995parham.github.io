@@ -35,6 +35,10 @@ p {
 	width: 33.3%;
 }
 
+.interests {
+	margin-bottom: 10px;
+}
+
 .interests:hover .interests-tooltip {
 	display: block;
 }
