@@ -25,3 +25,10 @@ p {
 .clear-both {
 	clear: both;
 }
+
+.interests-tooltip {
+	position: absolute;
+	display: none;
+	font-size: 13px;
+	line-height: 1.4;
+}
