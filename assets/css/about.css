@@ -14,15 +14,10 @@
 
 #logoshot {
 	width: 300px;
-	float: left;
 }
 
 p {
 	width: 75%;
-}
-
-.clear-both {
-	clear: both;
 }
 
 .interests-tooltip {
