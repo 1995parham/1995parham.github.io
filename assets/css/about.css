@@ -3,12 +3,12 @@
 	margin-top: 10px;
 	margin-bottom: 35px;
 	margin-right: 50px;
-	width: 75%;
+	width: 300px;
 	transition: width 2s, height 4s, border-radius 2s;
 }
 
 #headshot:hover {
-	width: 100%;
+	width: 350px;
 	border-radius: 0 60px 60px 60px;
 }
 
