@@ -4,3 +4,6 @@ function GetURLParameter(key) {
    while ((m=re.exec(document.location.search)) != null) r.push(m[1]);
    return r;
 }
+$(function () {
+	  $('[data-toggle="popover"]').popover()
+})
