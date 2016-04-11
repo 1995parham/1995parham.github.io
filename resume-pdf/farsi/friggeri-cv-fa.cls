@@ -52,12 +52,12 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\bodyfont[]{BNazanin}
-\newfontfamily\thinfont[]{BNazanin}
-\newfontfamily\headingfont[]{BRoya}
+\newfontfamily\bodyfont[Path=fonts/]{IRANSans-Light-web}
+\newfontfamily\thinfont[Path=fonts/]{IRANSans-UltraLight-web}
+\newfontfamily\headingfont[Path=fonts/]{IRANSans-Bold-web}
 
 %\defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{BNazanin}
+\setmainfont[Mapping=tex-text, Color=textcolor, Path=fonts/]{IRANSans-web}
 
 %\setmathfont{XITS Math}
 
