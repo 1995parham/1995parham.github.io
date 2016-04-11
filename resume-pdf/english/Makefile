@@ -11,3 +11,4 @@
 all: parham-cv
 
 parham-cv: friggeri-cv.cls parham-cv.sty parham-cv.tex
+	xelatex parham-cv.tex
