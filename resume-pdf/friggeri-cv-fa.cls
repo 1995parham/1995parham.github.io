@@ -57,7 +57,7 @@
 \newfontfamily\headingfont[]{BRoya}
 
 %\defaultfontfeatures{Mapping=tex-text}
-%\setmainfont[Mapping=tex-text, Color=textcolor]{BNazanin}
+\setmainfont[Mapping=tex-text, Color=textcolor]{BNazanin}
 
 %\setmathfont{XITS Math}
 
@@ -175,11 +175,11 @@
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
   \begin{textblock}{4}(1.5, 4.33)
-  \begin{flushleft}
+  \begin{flushright}
   \obeycr
 }{%
   \restorecr
-  \end{flushleft}
+  \end{flushright}
   \end{textblock}
   \let\section\oldsection
 }
