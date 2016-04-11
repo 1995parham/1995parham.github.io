@@ -27,8 +27,8 @@ navigation:
   url : /archive/
 - text: Downloads
   url: /downloads/
-- text: Resume (PDF)
-  url: /resume-pdf/parham-cv.pdf
+- text: Resume (PDF Version)
+  url: /resume-pdf/english/parham-cv.pdf
 
 # Author Details
 author:         'Parham Alvani'
