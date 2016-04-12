@@ -117,8 +117,7 @@
 \renewcommand{\section}[1]{
   \par\vspace{2\parskip}
   {%
-    \LARGE\headingfont\color{headercolor}%
-    \@sectioncolor #1%
+    \LARGE\headingfont\textcolor{headercolor}{\@sectioncolor #1}
   }
   \par\vspace{\parskip}
 }
