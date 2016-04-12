@@ -52,12 +52,12 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\bodyfont[]{Ubuntu}
-\newfontfamily\thinfont[]{Ubuntu Light}
-\newfontfamily\headingfont[]{Ubuntu Bold}
+\newfontfamily\bodyfont[Path=fonts/]{Ubuntu-R}
+\newfontfamily\thinfont[Path=fonts/]{Ubuntu-L}
+\newfontfamily\headingfont[Path=fonts/]{Ubuntu-B}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Ubuntu Light}
+\setmainfont[Mapping=tex-text, Color=textcolor, Path=fonts/]{Ubuntu-L}
 
 %\setmathfont{XITS Math}
 
