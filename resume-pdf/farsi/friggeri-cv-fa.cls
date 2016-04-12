@@ -78,7 +78,7 @@
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{40pt}{72pt}\color{header}%
-      \rl{{\thinfont #1} {\bodyfont #2}}
+      \rl{{\thinfont {#1}} {\bodyfont {#2}}}
     };
     \node [anchor=north] at (name.south) {%
       \fontsize{14pt}{24pt}\color{header}%
@@ -335,3 +335,11 @@
 \makeatletter
 \def\HyColor@@@@UseColor#1\@nil{\addfontfeatures{Color=#1}}
 \makeatother
+
+%%%%%%%%%%%%%
+% XePersian %
+%%%%%%%%%%%%%
+
+\RequirePackage{xepersian}
+
+\settextfont[Path=fonts/]{IRANSans-web}
