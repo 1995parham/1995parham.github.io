@@ -2,6 +2,11 @@
 ## Introduction
 I developed (!) my resume and personal homepage in this repository under MIT license (:-D).
 I used MIT license because I have dream about MIT university ... :)
+## Installation
+First install ruby bundle for project management :)
+```sh
+sudo gem install bundle
+```
 ## Jekyll Metro Theme
 ### Introduction
 Jekyll Metro is a metro inspired theme for [Jekyll](http://jekyllrb.com).
