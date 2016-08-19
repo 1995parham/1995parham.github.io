@@ -3,7 +3,7 @@
 I developed (!) my resume and personal homepage in this repository under MIT license (:-D).
 I used MIT license because I have dream about MIT university ... :)
 ## Installation
-First install ruby bundle for project management :)
+First install ruby bundle for dependency management:
 ```sh
 sudo gem install bundle
 ```
