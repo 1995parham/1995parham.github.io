@@ -11,7 +11,7 @@ When our university started to create IoT platform, we did some research and dec
 to use Kaa as our middleware. In this article we want to compare Kaa and ThingSpeak.
 </p>
 <h3>Introduction</h3>
-<h4>Kaa</h4>
+<h4><a href="http://www.kaaproject.org/">Kaa</a></h4>
 <p>
 Kaa is multi-purpose middleware platform for building complete end-to-end IoT solutions. Kaa has 3
 layer architecture as below:
@@ -29,7 +29,18 @@ you can store your log in NoSQL databases like MongoDB, you can analyze your dat
 many data processors like hadoop and at the end you can provide your log collector to kaa
 with simple REST URL callbacking.
 </p>
-<h4>ThingSpeak</h4>
+<h4><a href="http://thingspeak.com/">ThingSpeak</a></h4>
+<p>
+ThingSpeak provides <strong>Real-time data collection and storage</strong>. You can
+easily create channel for your data in this platform and send your data to it using
+simple and available REST protocol !
+</p>
+<p>
+Generally speaking ThingSpeak is less complicated than Kaa but in some point of views
+it's good thing because you can up and running it in few steps. ThingSpeak do not have
+any SDK or package requirements in your nodes, so can use whatever you want util they
+can create REST request for ThingSpeak
+</p>
 <h3>Comparison</h3>
 <table class="table table-striped">
 	<tr>
@@ -47,3 +58,14 @@ with simple REST URL callbacking.
 		<td>3</td>
 	</tr>
 </table>
+<h3>Conclusion</h3>
+<p>
+Personally I think Kaa can be used in a local environment when you have your own cloud and servers, with
+Kaa you can always have your data in your place and provide management on your devices based on your
+applications. It's good to remind that Kaa provides many way for creating management and other type
+applications from REST to SDK !
+</p>
+<p>
+With ThingSpeak you don't need even a PC but it restrict you to Mathlab for data analysis and you
+can't provide controller application for your nodes with this platform.
+</p>
