@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "Kaa vs ThingSpeak"
+date:   2015-09-04 00:30:00
+published: true
+categories: IoT
+tags: IoT Kaa ThingSpeak
+---
+<p>
+When our university started to create IoT platform, we did some research and decided
+to use Kaa as our middleware. In this article we want to compare Kaa and ThingSpeak.
+</p>
+<h3>Introduction</h3>
+<h4>Kaa</h4>
+<p>
+Kaa is multi-purpose middleware platform for building complete end-to-end IoT solutions. Kaa has 3
+layer architecture as below:
+</p>
+<img src="" alt="Kaa Architecture">
+<p>
+Kaa provides some basic services for you such as <strong>Notifications</strong>,
+<strong>Logging</strong> and <strong>Events</strong>.
+In Kaa you have to install SDK on your nodes in order to join them to your network, as a result
+your node choices decrease, but you have more control on your nodes.
+</p>
+<p>
+One the most important features of Kaa is it's log collector, with it's log collector
+you can store your log in NoSQL databases like MongoDB, you can analyze your data with
+many data processors like hadoop and at the end you can provide your log collector to kaa
+with simple REST URL callbacking.
+</p>
+<h4>ThingSpeak</h4>
+<h3>Comparison</h3>
+<table class="table table-striped">
+	<tr>
+		<th>Platform</th>
+		<th>Notification</th>
+		<th>Events</th>
+		<th>Logging</th>
+		<th>Layers</th>
+	</tr>
+	<tr>
+		<td>Kaa</td>
+		<td><i class="fa fa-check"></i></td>
+		<td><i class="fa fa-check"></i></td>
+		<td><i class="fa fa-check"></i></td>
+		<td>3</td>
+	</tr>
+</table>

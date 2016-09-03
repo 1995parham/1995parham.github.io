@@ -1,4 +1,4 @@
-\ProvidesClass{friggeri-cv}[2012/04/30 CV class]
+\ProvidesClass{friggeri-cv-fa}[2012/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 
 \DeclareOption{print}{\def\@cv@print{}}
@@ -52,12 +52,12 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\bodyfont[]{Ubuntu}
-\newfontfamily\thinfont[]{Ubuntu Light}
-\newfontfamily\headingfont[]{Ubuntu Bold}
+\newfontfamily\bodyfont[Path=fonts/]{IRANSans-Light-web}
+\newfontfamily\thinfont[Path=fonts/]{IRANSans-UltraLight-web}
+\newfontfamily\headingfont[Path=fonts/]{IRANSans-Bold-web}
 
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Ubuntu Light}
+%\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[Mapping=tex-text, Color=textcolor, Path=fonts/]{IRANSans-web}
 
 %\setmathfont{XITS Math}
 
@@ -78,11 +78,11 @@
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{40pt}{72pt}\color{header}%
-      {\thinfont #1}{\bodyfont  #2}
+      \rl{{\thinfont {#1}} {\bodyfont {#2}}}
     };
     \node [anchor=north] at (name.south) {%
       \fontsize{14pt}{24pt}\color{header}%
-      \thinfont #3%
+      \rl{\thinfont #3}%
     };
   \end{tikzpicture}
   \vspace{2.5cm}
@@ -117,8 +117,7 @@
 \renewcommand{\section}[1]{
   \par\vspace{2\parskip}
   {%
-    \LARGE\headingfont\color{headercolor}%
-    \@sectioncolor #1%
+    \LARGE\headingfont\textcolor{headercolor}{\@sectioncolor #1}
   }
   \par\vspace{\parskip}
 }
@@ -175,11 +174,11 @@
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
   \begin{textblock}{4}(1.5, 4.33)
-  \begin{flushleft}
+  \begin{flushright}
   \obeycr
 }{%
   \restorecr
-  \end{flushleft}
+  \end{flushright}
   \end{textblock}
   \let\section\oldsection
 }
@@ -335,3 +334,11 @@
 \makeatletter
 \def\HyColor@@@@UseColor#1\@nil{\addfontfeatures{Color=#1}}
 \makeatother
+
+%%%%%%%%%%%%%
+% XePersian %
+%%%%%%%%%%%%%
+
+\RequirePackage{xepersian}
+
+\settextfont[Path=fonts/]{IRANSans-web}
