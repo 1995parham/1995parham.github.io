@@ -29,6 +29,10 @@ you can store your log in NoSQL databases like MongoDB, you can analyze your dat
 many data processors like hadoop and at the end you can provide your log collector to kaa
 with simple REST URL callbacking.
 </p>
+<p>
+Kaa provides in distributed manner and you can build your Kaa based environment on a
+two or more server for load distribution.
+</p>
 <h4><a href="http://thingspeak.com/">ThingSpeak</a></h4>
 <p>
 ThingSpeak provides <strong>Real-time data collection and storage</strong>. You can
@@ -40,6 +44,10 @@ Generally speaking ThingSpeak is less complicated than Kaa but in some point of 
 it's good thing because you can up and running it in few steps. ThingSpeak do not have
 any SDK or package requirements in your nodes, so can use whatever you want util they
 can create REST request for ThingSpeak
+</p>
+<p>
+ThingSpeak indeed provides 2 layer architecture for your IoT platform, in this architecture
+ThingSpeak just collects and stores your data and you can do some Matlab based analysis on it.
 </p>
 <h3>Comparison</h3>
 <table class="table table-striped">
@@ -57,6 +65,13 @@ can create REST request for ThingSpeak
 		<td><i class="fa fa-check"></i></td>
 		<td>3</td>
 	</tr>
+	<tr>
+		<td>ThingSpeak</td>
+		<td><i class="fa fa-times"></i></td>
+		<td><i class="fa fa-times"></i></td>
+		<td><i class="fa fa-check"></i></td>
+		<td>2</td>
+	</tr>
 </table>
 <h3>Conclusion</h3>
 <p>
@@ -66,6 +81,6 @@ applications. It's good to remind that Kaa provides many way for creating manage
 applications from REST to SDK !
 </p>
 <p>
-With ThingSpeak you don't need even a PC but it restrict you to Mathlab for data analysis and you
+With ThingSpeak you don't need even a PC but it restrict you to Matlab for data analysis and you
 can't provide controller application for your nodes with this platform.
 </p>
