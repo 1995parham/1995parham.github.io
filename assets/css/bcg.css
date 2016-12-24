@@ -61,41 +61,14 @@ body {
 	background-repeat: no-repeat;
 }
 
-/* Mail server images ha ha ha */
-
-.gmail-ico-sm {
-	background-image: url('/assets/images/gmail_ico_sm.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.yahoomail-ico-sm {
-	background-image: url('/assets/images/yahoomail_ico_sm.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.hotmail-ico-sm {
-	background-image: url('/assets/images/hotmail_ico_sm.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-.workmail-ico-sm {
-	background-image: url('/assets/images/workmail_ico_sm.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-/* End of mail server images ha ha ha */
-
 /* Java icon .. ha ha ha */
 .java-ico {
 	background-image: url('/assets/images/java_ico.png');
 	background-position: center;
 	background-repeat: no-repeat;
 }
-/* */
 
+/* */
 .gh-ico {
 	background-image: url('/assets/images/gh_ico.png');
 	background-position: center;
@@ -114,23 +87,18 @@ body {
 	background-repeat: no-repeat;
 }
 
+.in-ico {
+	background-image: url('/assets/images/in_ico.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 .sto-ico-sm {
 	background-image: url('/assets/images/sto_ico_sm.png');
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
-.rs-ico {
-	background-image: url('/assets/images/rs_ico.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.rs-ico-sm {
-	background-image: url('/assets/images/rs_ico_sm.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
 
 .icon-resume {
 	background-image: url('/assets/images/icon-resume.png');
