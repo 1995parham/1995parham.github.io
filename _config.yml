@@ -8,6 +8,7 @@ permalink:        /blog/:year/:month/:day/:title
 
 # Setup
 title:            'Parham Alvani'
+username:         '1995parham'
 tagline:          'Parham Alvani Homepage'
 description:      'Parham Alvani Personal Homepage'
 url:              'http://1995parham.github.io'
@@ -32,10 +33,6 @@ navigation:
 
 # Author Details
 author:         'Parham Alvani'
-yahoomail:      'mailto:parham.alvani@yahoo.com'
-workmail:       'mailto:parham.alvani@aut.ac.ir'
-hotmail:        'mailto:parham.alvani@hotmail.com'
-gmail:          'mailto:parham.alvani@gmail.com'
 
 # Disqus
 disqushandler: '1995parham'
