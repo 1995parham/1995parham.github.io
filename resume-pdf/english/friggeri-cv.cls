@@ -28,6 +28,7 @@
 \definecolor{blue}{HTML}{6CE0F1}
 \definecolor{yellow}{HTML}{FFF68F}
 \definecolor{cyan}{HTML}{00FFFF}
+\definecolor{pink}{HTML}{FF668A}
 
 \ifdefined\@cv@print
   \colorlet{green}{gray}
@@ -107,6 +108,7 @@
         purple\or%
 	yellow\or%
 	cyan\or%
+	pink\or%
         brown\else%
         headercolor\fi%
     } #1#2#3%
@@ -174,7 +176,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{4}(1.5, 4.33)
+  \begin{textblock}{4} (1.5, 4.33)
   \begin{flushleft}
   \obeycr
 }{%
