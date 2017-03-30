@@ -27,14 +27,15 @@ theme: blue
 
 <section>
     <h2>Research Interests</h2>
-    <div class="panel-group" id="interests" role="tablist" aria-multiselectable="true">
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="interest-1">
-          <h4 class="panel-title">
-            <a role="button" data-toggle="collapse" data-parent="#interests" href="#interest-description-1" aria-expanded="false" aria-controls="interest-description-1">
-              Internet of Things (IoT)
-            </a>
-          </h4>
+    <ul>
+      <li data-toggle="popover"
+      data-content="The Internet of Things (IoT) is the network of physical objects—devices,
+      vehicles, buildings and other items—embedded with electronics, software,
+      sensors, and network connectivity that enables these objects to collect and exchange data."
+      title="wikipedia" data-trigger="hover">
+      Internet of Things (IoT)
+      </li>
+    </ul>
         </div>
         <div id="interest-description-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="interest-1">
           <div class="panel-body">
@@ -124,9 +125,9 @@ theme: blue
         </div>
       </div>
   </section>
-  <section>
+  <section class="clearfix">
     <h2>Work Experiences</h2>
-    <img src="{{site.url}}/assets/images/Panamo.jpg" id="logoshot" class="img-thumbnail rounded" alt="Panamo Logo"/>
+    <img src="{{site.url}}/assets/images/Panamo.jpg" id="logoshot" class="img-thumbnail rounded float-left" alt="Panamo Logo"/>
     <h3>Panamo Corporation</h3>
     <p>
     I have established a software company named Panamo
