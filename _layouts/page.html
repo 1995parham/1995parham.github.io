@@ -3,10 +3,10 @@ layout: master
 ---
 <div class="container-fluid">
 	<div class="row">
-		{% if page.theme And page.theme != "" And page.theme != nil %}
-		<div class="hidden-sm-down col-md-2 col-sm-3 {{page.theme}} sidebar">
-		{% else %}
+		{% if page.theme == blank %}
 		<div class="hidden-sm-down col-md-2 col-sm-3 purple sidebar">
+		{% else %}
+		<div class="hidden-sm-down col-md-2 col-sm-3 {{page.theme}} sidebar">
 		{% endif %}
 		{% include sidemenu.html %}
 		</div>
