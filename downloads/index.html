@@ -4,22 +4,15 @@ title: Parham Alvani's Downloads
 description: Landing Page for the downloads
 theme: yellow
 ---
-
-
-<div class="col-md-10 col-sm-9 col-md-offset-2 col-sm-offset-3">
-    <div class="row">
-        {% for file in site.data.downloads %}
-        <article class="col-md-12 justified">
-            <h2 class="post-title">
-                <a href="{{ file.url }}" class="yellow-link">
-                    {{ file.name }}
-                </a>
-            </h2>
-            <div class=publish-tag>
-                <span class="fa fa-calender"></span>&nbsp;CREATED ON {{ file.date | date: "%B %d, %Y" }}
-            </div>
-            <hr/>
-        </article>
-        {% endfor %}
+<div class="card-deck">
+  {% for file in site.data.downloads %}
+    <div class="card">
+      <div class="card-block">
+        <h4 class="card-title"><a href="{{ file.url }}" class="yellow-link">{{ file.name }}</a></h4>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Created on {{ file.date | date: "%B %d, %Y" }}</small>
+      </div>
     </div>
+  {% endfor %}
 </div>
