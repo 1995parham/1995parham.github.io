@@ -10,7 +10,7 @@ theme: red
       <ul class="nav">
         {% for tag in site.tags %}
           <li class="red nav-item" style="margin:5px">
-            <a class="nav-link" href="/tags/{{ tag | first | slugize }}/"> {{ tag | first }}&nbsp;<span class="badge badge-pill">{{ tag | last | size}}</span></a>
+            <a class="nav-link" href="/tags/{{ tag | first | slugize }}/"> {{ tag | first }}&nbsp;<span class="badge badge-default badge-pill ">{{ tag | last | size}}</span></a>
           </li>
         {% endfor %}
       </ul>
