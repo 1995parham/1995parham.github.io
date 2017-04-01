@@ -1,4 +1,5 @@
 # Parham Alvani Homepage & Resume
+[![Build Status](https://travis-ci.org/1995parham/1995parham.github.io.svg?branch=master)](https://travis-ci.org/1995parham/1995parham.github.io)
 
 ## Introduction
 
