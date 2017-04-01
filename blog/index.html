@@ -18,7 +18,7 @@ bloghome: true
         {% if post.tags %}
           {% for tag in post.tags %}
             <small class="text-muted">
-              <a href="/tags/{{tag}}"><span class="label btn-orange">{{tag}}</span></a>
+              <a href="/tags/{{tag}}" class="btn btn-orange" role="button">{{tag}}</a>
             </small>
           {% endfor %}
         {% else %}
