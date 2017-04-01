@@ -7,10 +7,10 @@ theme: red
 <div class="row">
   <div class="col-md-8 offset-md-2">
     <section class="tags">
-      <ul class="nav nav-pills">
+      <ul class="nav">
         {% for tag in site.tags %}
-          <li class="red" style="margin:5px">
-            <a href="/tags/{{ tag | first | slugize }}/"> {{ tag | first }}&nbsp;<span class="badge badge-pill">{{ tag | last | size}}</span></a>
+          <li class="red nav-item" style="margin:5px">
+            <a class="nav-link" href="/tags/{{ tag | first | slugize }}/"> {{ tag | first }}&nbsp;<span class="badge badge-pill">{{ tag | last | size}}</span></a>
           </li>
         {% endfor %}
       </ul>
