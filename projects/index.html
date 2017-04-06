@@ -5,12 +5,12 @@ description: List of my projects
 theme: green
 ---
 <div class="card-columns">
-  {% for repository in site.github.public_repositories %}
+  {% for repository in site.github.public_repositories | where_exp: "homepage" %}
     <div class="card p-3">
       <div class="card-block">
         <h4 class="card-title">{{repository.name}}</h4>
         <p class="card-text">{{repository.description}}<p>
-        <a href="{{repository.html_url}}" class="btn btn-primary"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+        <a href="{{repository.html_url}}" class="btn btn-primary"><i class="fa fa-github" aria-hidden="true"></i></a>
       </div>
       <div class="card-footer">
         <small class="text-muted">Last updated on {{repository.updated_at | date_to_string}}</small>
