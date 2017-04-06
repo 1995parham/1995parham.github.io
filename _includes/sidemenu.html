@@ -10,10 +10,10 @@
   </div>
   <div class="row">
       <div class="col-md-12">
-        <ul class="left-nav">
+        <ul class="nav flex-column">
         {% for link in site.navigation %}
-          <li class="left-nav-item">
-            <a href="{{link.url}}">{{link.text}}</a>
+          <li class="nav-item">
+            <a class="nav-link" href="{{link.url}}">{{link.text}}</a>
           </li>
         {% endfor %}
         </ul>
