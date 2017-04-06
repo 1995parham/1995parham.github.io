@@ -30,14 +30,14 @@
 	{% endif %}
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="{{site.url}}/assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="{{site.url}}/assets/css/tether.min.css">
-	<link rel="stylesheet" href="{{site.url}}/assets/css/app.css">
-	<link rel="stylesheet" href="{{site.url}}/assets/css/github.css">
-	<link rel="stylesheet" href="{{site.url}}/assets/css/pygments.css">
-	<link rel="stylesheet" href="{{site.url}}/assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{"/assets/css/bootstrap.min.css" | absolute_url}}">
+  <link rel="stylesheet" href="{{"/assets/css/tether.min.css" | absolute_url}}">
+  <link rel="stylesheet" href="{{"/assets/css/app.css" | absolute_url}}">
+  <link rel="stylesheet" href="{{"/assets/css/github.css" | absolute_url}}">
+  <link rel="stylesheet" href="{{"/assets/css/pygments.css" | absolute_url}}">
+  <link rel="stylesheet" href="{{"/assets/css/font-awesome.min.css" | absolute_url}}">
 	{% if page.css And page.css != "" And page.css != nil %}
-	<link rel="stylesheet" href="{{site.url}}/assets/css/{{page.css}}">
+    <link rel="stylesheet" href="{{"/assets/css/" | append: page.css | absolute_url}}">
 	{% endif %}
 
   <script src="{{site.url}}/assets/js/jquery-3.1.1.min.js"></script>
