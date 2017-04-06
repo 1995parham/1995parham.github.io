@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Hi, I am Parham Alvani
-description: About Me page of Parham Alvani
-theme: blue
+title: Projects
+description: List of my projects
+theme: green
 ---
 
 {% for repository in site.github.public_repositories %}
   {% if repository.homepage != blank %}
-    * [{{ repository.name }}]({{ repository.html_url }})
+    * [{{ repository.name }}]({{ repository.homepage }})
   {% endif %}
 {% endfor %}
