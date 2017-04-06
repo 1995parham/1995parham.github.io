@@ -6,7 +6,7 @@ theme: green
 ---
 
 {% for repository in site.github.public_repositories %}
-  {% if repository.homepage != blank %}
+  {% if repository.homepage != empty %}
     * [{{ repository.name }}]({{ repository.homepage }})
   {% endif %}
 {% endfor %}
