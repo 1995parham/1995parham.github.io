@@ -48,4 +48,6 @@ destination: ./_site
 version:          0.7.9
 
 # Gems
-gems: [jekyll-paginate]
+gems:
+  - jekyll-paginate
+  - jekyll-timeago
