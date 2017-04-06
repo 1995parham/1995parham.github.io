@@ -40,13 +40,13 @@
     <link rel="stylesheet" href="{{"/assets/css/" | append: page.css | absolute_url}}">
 	{% endif %}
 
-  <script src="{{site.url}}/assets/js/jquery-3.1.1.min.js"></script>
-	<script src="{{site.url}}/assets/js/tether.min.js"></script>
-	<script src="{{site.url}}/assets/js/bootstrap.min.js"></script>
+  <script src="{{"/assets/js/jquery-3.1.1.min.js" | absolute_url}}"></script>
+  <script src="{{"/assets/js/tether.min.js" | absolute_url}}"></script>
+  <script src="{{"/assets/js/bootstrap.min.js" | absolute_url}}"></script>
 
 	{% if page.title == "Home" %}
-	<link rel="stylesheet" href="{{site.url}}/assets/css/bcg.css">
-	<link rel="stylesheet" href="{{site.url}}/assets/css/MetroJs.min.css">
+  <link rel="stylesheet" href="{{"/assets/css/bcg.css" | absolute_url}}">
+  <link rel="stylesheet" href="{{"/assets/css/MetroJs.min.css" | absolute_url}}">
 	{% endif %}
 
 	{% if page.bloghome == true %}
@@ -61,8 +61,8 @@
 
 
 	<!-- Icons -->
-	<link rel="apple-touch-icon-precomposed" sizes="128x128" href="{{site.url}}/assets/images/favicon-128.png">
-	<link rel="shortcut icon" href="{{site.url}}/assets/images/favicon-16.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="128x128" href="{{"/assets/images/favicon-128.png" | absolute_url}}">
+  <link rel="shortcut icon" href="{{"/assets/images/favicon-16.ico" | absolute_url}}">
 
 	<!-- RSS -->
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
