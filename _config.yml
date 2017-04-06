@@ -30,6 +30,8 @@ navigation:
   url: /downloads/
 - text: Resume (PDF Version)
   url: /resume-pdf/
+- text: Projects
+  url: /projects/
 
 # Author Details
 author:         'Parham Alvani'
