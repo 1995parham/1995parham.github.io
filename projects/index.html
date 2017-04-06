@@ -4,9 +4,15 @@ title: Projects
 description: List of my projects
 theme: green
 ---
-
-{% for repository in site.github.public_repositories %}
-  {% if repository.homepage != "" %}
-    * [{{ repository.name }}]({{ repository.homepage }})
-  {% endif %}
+<div class="card-deck">
+  {% for repository in site.github.public_repositories %}
+    <div class="card">
+      <div class="card-block">
+        <h4 class="card-title">{{repository.name}}</h4>
+        <p class="card-text">{{repository.description}}<p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated {{repository.updated_at | timeago}}</small>
+      </div>
+    </div>
 {% endfor %}
