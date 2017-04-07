@@ -48,7 +48,7 @@ description: Parham Alvani Homepage
 					<div class="tile yellow bord">
 						<h3 class="title">Downloads</h3>
 						{% for file in site.data.downloads limit:2 %}
-						<h4 class="title">{{ file.name }}</h4>
+              <h4 class="title">{{ file.name | truncatewords: 5}}</h4>
 						{% endfor %}
 					</div>
 				</a>
@@ -60,7 +60,7 @@ description: Parham Alvani Homepage
 					<div class="tile red bord">
 						<h3 class="title">Latest Article</h3>
 						<h4 class="title">{{ post.title }}</h4>
-						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
+						<p> {{ post.content | strip_html | truncatewords: 5 }}</p>
 					</div>
 				</a>
 				{% endfor %}
@@ -73,7 +73,7 @@ description: Parham Alvani Homepage
 						<div class="tile orange bord">
 							<h3 class="title">Featured Article</h3>
 							<h4 class="title">{{ post.title }}</h4>
-							<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
+							<p> {{ post.content | strip_html | truncatewords: 5 }}</p>
 						</div>
 					</a>
 					{% break %}
