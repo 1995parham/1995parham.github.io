@@ -23,16 +23,25 @@ p {
 
 .google {
 	background: #fbbc05;
+	color: white;
 }
 
 .yahoo {
 	background: #780099;
+	color: white;
 }
 
 .telegram {
 	background: #4CA6FF;
+	color: white;
 }
 
 .skype {
 	background: #12A5F4;
+	color: white;
+}
+
+.university {
+	background: #00274c;
+	color: white;
 }
