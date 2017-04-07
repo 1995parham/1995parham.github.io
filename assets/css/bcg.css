@@ -25,10 +25,6 @@ body {
 	float: right;
 }
 
-#pin {
-	color: #fff;
-}
-
 .tile > h3 {
 	font-size: 24px;
 }
@@ -37,92 +33,6 @@ body {
 	font-size: 18px;
 }
 
-.fk-ico {
-	background-image: url('/assets/images/fk_ico.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.fk-ico-sm {
-	background-image: url('/assets/images/fk_ico_sm.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.gl-ico {
-	background-image: url('/assets/images/gl_ico.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.gl-ico-sm {
-	background-image: url('/assets/images/gl_ico_sm.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-/* Java icon .. ha ha ha */
-.java-ico {
-	background-image: url('/assets/images/java_ico.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-/* */
-.gh-ico {
-	background-image: url('/assets/images/gh_ico.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.gh-ico-sm {
-	background-image: url('/assets/images/gh_ico_sm.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.sto-ico {
-	background-image: url('/assets/images/sto_ico.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.in-ico {
-	background-image: url('/assets/images/in_ico.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.sto-ico-sm {
-	background-image: url('/assets/images/sto_ico_sm.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-
-.icon-resume {
-	background-image: url('/assets/images/icon-resume.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.icon-resume-small {
-	background-image: url('/assets/images/icon-resume-small.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.icon-blog {
-	background-image: url('/assets/images/icon-blog.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.icon-blog-small {
-	background-image: url('/assets/images/icon-blog-small.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
 
 .rep-1 {
     margin-top: -9%;

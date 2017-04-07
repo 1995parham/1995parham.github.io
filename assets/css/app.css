@@ -69,26 +69,6 @@
     background: #EEEE00;
 }
 
-.left-nav {
-    	margin-bottom: 20px;
-    	list-style: none;
-}
-
-.left-nav-item {
-    	position: relative;
-    	display: block;
-    	padding: 10px 15px;
-    	margin-bottom: -1px;
-    	font-size: 18px;
-}
-
-.left-nav > li > a,
-.left-nav > li > a:hover,
-.left-nav > li > a:focus {
-	color: #FFF;
-	text-decoration:none;
-}
-
 .alink {
 	font-size: 18px;
 }
@@ -210,11 +190,3 @@ a.yellow-link:hover,
 a.yellow-link:focus {
     color: #EEEE00;
 }
-
-.icon {
-    background-image: url("../images/icon.png");
-    background-repeat: no-repeat;
-    list-style: none outside none;
-}
-
-.icon-back{background-position:-966px -40px ; width: 48px ; height: 48px;display:inline-block;text-decoration:none}
