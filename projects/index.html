@@ -5,7 +5,7 @@ description: List of my projects
 theme: green
 ---
 <div class="card-columns">
-  {% for repository in site.github.public_repositories | where_exp: "homepage" %}
+  {% for repository in site.github.public_repositories | where_exp: "page, pages == true" %}
     <div class="card p-3">
       <div class="card-block">
         <h4 class="card-title">{{repository.name}}</h4>
