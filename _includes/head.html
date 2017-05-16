@@ -30,23 +30,23 @@
 	{% endif %}
 
 	<!-- CSS -->
-  <link rel="stylesheet" href="{{"/assets/css/bootstrap.min.css" | absolute_url}}">
-  <link rel="stylesheet" href="{{"/assets/css/tether.min.css" | absolute_url}}">
-  <link rel="stylesheet" href="{{"/assets/css/app.css" | absolute_url}}">
-  <link rel="stylesheet" href="{{"/assets/css/github.css" | absolute_url}}">
-  <link rel="stylesheet" href="{{"/assets/css/pygments.css" | absolute_url}}">
-  <link rel="stylesheet" href="{{"/assets/css/font-awesome.min.css" | absolute_url}}">
+  <link rel="stylesheet" href="{{"/assets/css/bootstrap.min.css" | relative_url}}">
+  <link rel="stylesheet" href="{{"/assets/css/tether.min.css" | relative_url}}">
+  <link rel="stylesheet" href="{{"/assets/css/app.css" | relative_url}}">
+  <link rel="stylesheet" href="{{"/assets/css/github.css" | relative_url}}">
+  <link rel="stylesheet" href="{{"/assets/css/pygments.css" | relative_url}}">
+  <link rel="stylesheet" href="{{"/assets/css/font-awesome.min.css" | relative_url}}">
 	{% if page.css And page.css != "" And page.css != nil %}
-    <link rel="stylesheet" href="{{"/assets/css/" | append: page.css | absolute_url}}">
+    <link rel="stylesheet" href="{{"/assets/css/" | append: page.css | relative_url}}">
 	{% endif %}
 
-  <script src="{{"/assets/js/jquery-3.1.1.min.js" | absolute_url}}"></script>
-  <script src="{{"/assets/js/tether.min.js" | absolute_url}}"></script>
-  <script src="{{"/assets/js/bootstrap.min.js" | absolute_url}}"></script>
+  <script src="{{"/assets/js/jquery-3.1.1.min.js" | relative_url}}"></script>
+  <script src="{{"/assets/js/tether.min.js" | relative_url}}"></script>
+  <script src="{{"/assets/js/bootstrap.min.js" | relative_url}}"></script>
 
 	{% if page.title == "Home" %}
-  <link rel="stylesheet" href="{{"/assets/css/bcg.css" | absolute_url}}">
-  <link rel="stylesheet" href="{{"/assets/css/MetroJs.min.css" | absolute_url}}">
+  <link rel="stylesheet" href="{{"/assets/css/bcg.css" | relative_url}}">
+  <link rel="stylesheet" href="{{"/assets/css/MetroJs.min.css" | relative_url}}">
 	{% endif %}
 
 	{% if page.bloghome == true %}
@@ -61,9 +61,7 @@
 
 
 	<!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="128x128" href="{{"/assets/images/favicon-128.png" | absolute_url}}">
-  <link rel="shortcut icon" href="{{"/assets/images/favicon-16.ico" | absolute_url}}">
+  <link rel="apple-touch-icon-precomposed" sizes="128x128" href="{{"/assets/images/favicon-128.png" | relative_url}}">
+  <link rel="shortcut icon" href="{{"/assets/images/favicon-16.ico" | relative_url}}">
 
-	<!-- RSS -->
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 </head>
