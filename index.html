@@ -11,9 +11,9 @@ description: Parham Alvani Homepage
       <h1 class="display-1 fixed-up text-white">{{site.title}} <small class="lead">@{{site.username}}</small></h1>
 	  </div>
 	</header>
-	<nav>
+	<nav class="hidden-sm-down">
 		<div class="row" style="margin-top:25px">
- 			<div class="col-md-4 col-sm-6 col-xs-12">
+ 			<div class="col-4">
 				<a href="about/">
 					<div class="tile blue profile bord">
 						<h2 class="title">About Me</h2>
@@ -21,12 +21,12 @@ description: Parham Alvani Homepage
 					</div>
 				</a>
 		    </div>
-			<div class="col-md-2 col-sm-3 col-xs-6">
+			<div class="col-2">
         <a href="resume/" title="Resume" class="tile red bord text-center">
           <i class="fa fa-file fa-5x mt-3 text-white" aria-hidden="true"></i>
         </a>
 			</div>
-			<div class="col-md-2 col-sm-3 col-xs-6">
+			<div class="col-2">
 				<div class="live-tile" data-mode="flip" data-delay="4000">
 					<div>
 						<a href="blog/" title="Blog" class="tile orange bord text-center">
@@ -47,7 +47,7 @@ description: Parham Alvani Homepage
 		</div>
 
 		<div class="row">
-			<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="col-4">
 				<a href="/downloads">
 					<div class="tile yellow bord">
 						<h3 class="title">Downloads</h3>
@@ -58,7 +58,7 @@ description: Parham Alvani Homepage
 				</a>
 			</div>
 
-			<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="col-4">
 				{% for post in site.posts limit:1 %}
 				<a href="{{post.url}}">
 					<div class="tile red bord">
@@ -70,7 +70,7 @@ description: Parham Alvani Homepage
 				{% endfor %}
 			</div>
 
-			<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="col-4">
 				{% for post in site.posts %}
 					{% if post.featured == true %}
 					<a href="{{post.url}}">
@@ -87,7 +87,7 @@ description: Parham Alvani Homepage
 		</div>
 
 		<div class="row" style="margin-bottom:25px">
-			<div class="col-md-2 col-sm-3 col-xs-6">
+			<div class="col-2">
 				<div class="live-tile" data-mode="flip" data-delay="4000">
           <div>
             <a class="tile green bord text-center" href="https://github.com/1995parham">
@@ -101,12 +101,12 @@ description: Parham Alvani Homepage
           </div>
         </div>
       </div>
-			<div class="col-md-2 col-sm-3 col-xs-6">
+			<div class="col-2">
         <a href="http://careers.stackoverflow.com/1995parham"  class="tile orange bord text-center">
           <i class="fa fa-stack-overflow fa-5x mt-3 text-muted" aria-hidden="true"></i>
         </a>
 			</div>
-			<div class="col-md-2 col-sm-3 col-xs-6">
+			<div class="col-2">
         <a href="https://www.instagram.com/1995parham/" class="tile red bord text-center">
           <i class="fa fa-instagram fa-5x mt-3 text-white" aria-hidden="true"></i>
         </a>
