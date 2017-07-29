@@ -51,7 +51,7 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage[math-style=TeX]{unicode-math}
 
 \newfontfamily\bodyfont[Path=fonts/]{Ubuntu-R}
 \newfontfamily\thinfont[Path=fonts/]{Ubuntu-L}
