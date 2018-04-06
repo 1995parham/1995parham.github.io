@@ -154,8 +154,11 @@
 	}
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]
-	{%
-		#1&\parbox[t]{11.8cm}{%
+  {%
+    \parbox[c]{3.2cm}{\begin{flushleft}
+      #1
+    \end{flushleft}}
+		&\parbox[t]{11.8cm}{%
     		\textbf{#2}%
     		\hfill%
     		{\footnotesize\addfontfeature{Color=lightgray} #3}\\%
