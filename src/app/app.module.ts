@@ -6,13 +6,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './sections/about/about.component';
 import { EducationComponent } from './sections/education/education.component';
 import { ExperienceComponent } from './sections/experience/experience.component';
+import { BlogComponent } from './sections/blog/blog.component';
+import { ContactComponent } from './sections/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     EducationComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    BlogComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
