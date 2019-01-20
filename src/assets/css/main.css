@@ -1445,7 +1445,7 @@ span.meta-date{
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
         input, textarea{-webkit-appearance: none;-webkit-border-radius:0;}
         .nopr {padding-right: 15px;}
-        .main-nav.tabbed ul li{float:left;width:25%;border-right:1px solid #26292e;border-bottom:none;}
+        .main-nav.tabbed ul li{border-right:1px solid #26292e;border-bottom:none;}
         .main-nav.tabbed ul li:last-child{border-right:none;border-bottom:none;}
         .img-profile .name-profile {display:none;}
         .bottom-header{margin-bottom:10px;}
