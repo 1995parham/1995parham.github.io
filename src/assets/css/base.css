@@ -39,30 +39,33 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         border: 0;
         font-size: 100%;
         font: inherit;
-        vertical-align: baseline; 
-text-decoration:none;}
+        vertical-align: baseline;
+        text-decoration:none;
+}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-display: block; }
+        display: block;
+}
 
 ol, ul {
-list-style: none; }
+        list-style: none;
+}
 blockquote, q {
-quotes: none; }
+        quotes: none;
+}
 blockquote:before, blockquote:after,
 q:before, q:after {
         content: '';
-content: none; }
+        content: none;
+}
 table {
         border-collapse: collapse;
-border-spacing: 0; }
+        border-spacing: 0;
+}
 
 
 a, a:hover, a:active, a:visited, a:focus {
         text-decoration: none;
 }
-
-
-
 
 img {
         display: inline-block;
@@ -93,16 +96,12 @@ iframe{width:100%;frameborder:0;display:inline-block;}
 /* #Basic Styles
 ================================================== */
 body {
-        background: #efefef;
+        background-color: #efefef;
         font: 14px/22px "open_sans",Arial,sans-serif;
         color: #999999;
         -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
         -webkit-text-size-adjust: 100%;
         margin:0;
-
-
-
-
 }
 
 
@@ -215,11 +214,6 @@ p{
 
 }
 
-
-
-
-
-
 .button{
         position:relative;
 }
@@ -294,10 +288,6 @@ p{
 .but.opc-3{
         background:#eb874f;
 }
-
-
-
-
 
 .but.opc-1.ico, .but.opc-2.ico, .but.opc-3.ico {
         vertical-align: middle;
