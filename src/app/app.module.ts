@@ -9,6 +9,7 @@ import { ExperienceComponent } from './sections/experience/experience.component'
 import { BlogComponent } from './sections/blog/blog.component';
 import { ContactComponent } from './sections/contact/contact.component';
 import { DividerComponent } from './divider/divider.component';
+import { MainTitleComponent } from './main-title/main-title.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DividerComponent } from './divider/divider.component';
     ExperienceComponent,
     BlogComponent,
     ContactComponent,
-    DividerComponent
+    DividerComponent,
+    MainTitleComponent
   ],
   imports: [
     BrowserModule,
