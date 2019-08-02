@@ -1,6 +1,6 @@
 {
-  "name": "parham",
-  "version": "0.0.0",
+  "name": "parham-homepage",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
