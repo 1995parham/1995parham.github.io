@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "publish": "ng build --prod --base-href '/' && npx ngh --dir=dist/parham --cname='1995parham.me' --branch=master --repo=https://github.com/1995parham/1995parham.github.io.git --name='1995parham' --email=parham.alvani@gmail.com -S",
+    "publish": "ng build --prod --base-href '/' && npx ngh --dir=dist/parham --cname='1995parham.me' --branch=master --repo=https://GH_TOKEN@github.com/1995parham/1995parham.github.io --name='Parham Alvani' --email=parham.alvani@gmail.com -S",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
