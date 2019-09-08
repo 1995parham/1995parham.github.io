@@ -5,9 +5,9 @@ name: default
 steps:
   - name: build
     image: node
-    secrets:
-      - source: token
-        target: GH_TOKEN
+    environment:
+      GH_TOKEN:
+        from_secret: token
     commands:
       - npm install
       - npm run publish
