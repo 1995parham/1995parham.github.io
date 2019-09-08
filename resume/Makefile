@@ -1,16 +1,10 @@
-# In The Name Of God
-# ========================================
-# [] File Name : Makefile
-#
-# [] Creation Date : 04-06-2017
-#
-# [] Created By : Parham Alvani (parham.alvani@gmail.com)
-# =======================================
+.PHONY: examples
 
-.PHONY: all
-all: parham-cv parham-cv-fa
+CC = xelatex
+RESUME_SRCS = $(shell find resume -name '*.tex')
 
-parham-cv:
-	cd english && $(MAKE)
-parham-cv-fa:
-	cd farsi && $(MAKE)
+resume.pdf: resume.tex $(RESUME_SRCS)
+	$(CC) $<
+
+clean:
+	rm -rf *.pdf
