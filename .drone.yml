@@ -10,5 +10,4 @@ steps:
         target: GH_TOKEN
     commands:
       - npm install
-      - ng add angular-cli-ghpages
-      - ng deploy --repo=https://github.com/1995parham/1995parham.github.io.git --branch=master --cname="1995parham.me" --dir="dist/parham" --name="Parham Alvani" --email=parham.alvani@gmail.com
+      - npm run publish
