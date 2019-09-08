@@ -1,7 +1,0 @@
-version: '2'
-services:
-  latex:
-    image: 'schickling/latex:latest'
-    command: make
-    volumes:
-      - .:/source
