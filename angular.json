@@ -140,5 +140,8 @@
       }
     }
   },
-  "defaultProject": "parham"
+  "defaultProject": "parham",
+  "cli": {
+    "analytics": "dda3c38c-d3eb-4a2e-a434-e24a5384db80"
+  }
 }
