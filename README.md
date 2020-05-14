@@ -6,7 +6,17 @@
 
 ## Introduction
 
-I developed (!) my resume and personal homepage in this repository.
+I am developing my resume and personal homepage in this repository.
+Homepage uses Angular and Resume uses Latex for themselves.
+
+## Up and Running
+
+```sh
+# builds and publishes the homepage on github
+npm run publish
+# install required packages for building the resume
+sudo tlmgr install trimspaces environ tcolorbox sourcesanspro enumitem xifthen ifmtarg
+```
 
 ## How to write a resume
 
