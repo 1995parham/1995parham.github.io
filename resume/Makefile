@@ -1,10 +1,5 @@
-.PHONY: examples
-
-CC = xelatex
-RESUME_SRCS = $(shell find resume -name '*.tex')
-
-resume.pdf: resume.tex $(RESUME_SRCS)
-	$(CC) $<
+resume.pdf: resume.tex awesome-cv.cls
+	xelatex resume.tex
 
 clean:
 	rm -rf *.pdf
