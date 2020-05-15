@@ -293,6 +293,10 @@
 % Usage: \gitlab{<gitlab-nick>}
 \newcommand*{\gitlab}[1]{\def\@gitlab{#1}}
 
+% Defines writer's instagram (optional)
+% Usage: \instagram{<instagram-nick>}
+\newcommand*{\instagram}[1]{\def\@instagram{#1}}
+
 % Defines writer's stackoverflow profile (optional)
 % Usage: \stackoverflow{<so userid>}{<so username>}
 %   e.g.https://stackoverflow.com/users/123456/sam-smith
@@ -484,6 +488,12 @@
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \href{https://gitlab.com/\@gitlab}{\faGitlab\acvHeaderIconSep\@gitlab}%
+        }%
+      \ifthenelse{\isundefined{\@instagram}}%
+        {}%
+        {%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+          \href{https://instagram.com/\@instagram}{\faInstagram\acvHeaderIconSep\@instagram}%
         }%
       \ifthenelse{\isundefined{\@stackoverflowid}}%
         {}%
