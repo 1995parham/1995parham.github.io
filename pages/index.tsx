@@ -1,6 +1,10 @@
 import Head from "next/head";
 
-export default function Home() {
+type HomeProps = {
+  resume_tag: string;
+};
+
+export default function Home({ resume_tag }: HomeProps) {
   return (
     <div className="container">
       <Head>
@@ -71,7 +75,7 @@ export default function Home() {
               <div className="col-md-12">
                 <a
                   target="_blank"
-                  href="https://github.com/1995parham/1995parham.github.io/raw/src/resume/resume.pdf"
+                  href={`https://github.com/1995parham/1995parham.pdf/releases/download/${resume_tag}/main.pdf`}
                   className="but opc-2"
                 >
                   <i className="fas fa-paperclip"></i> Here's my CV
@@ -83,4 +87,17 @@ export default function Home() {
       </section>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const res = await fetch(
+    "https://api.github.com/repos/1995parham/1995parham.pdf/releases/latest"
+  );
+  const latest = await res.json();
+
+  return {
+    props: {
+      resume_tag: latest.tag_name,
+    },
+  };
 }
