@@ -16,5 +16,7 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: out
+          fqdn: 1995parham.me
+          jekyll: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
