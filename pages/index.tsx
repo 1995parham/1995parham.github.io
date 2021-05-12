@@ -78,7 +78,8 @@ export default function Home({ resume_tag }: HomeProps) {
                   href={`https://github.com/1995parham/1995parham.pdf/releases/download/${resume_tag}/main.pdf`}
                   className="but opc-2"
                 >
-                  <i className="fas fa-paperclip"></i> Here's my CV
+                  <i className="fas fa-paperclip"></i> Here's my CV (updated at{" "}
+                  {resume_tag})
                 </a>
               </div>
             </div>
