@@ -1,7 +1,11 @@
+import Divier from "../components/divider";
+import Title from "../components/title";
+
 function Contact() {
   return (
     <section id="contact" className="bgWhite ofsInBottom">
       <div className="contact">
+        <Title title="Contact Me" />
         <div className="content">
           <div className="block-content margBSmall">
             <div className="row">
@@ -43,6 +47,7 @@ function Contact() {
                 <a href="tel://+989390909540" style={{ color: "#777" }}>
                   (+98) 939 0909 540
                 </a>
+                <Divier />
                 <iframe
                   src="https://api.neshan.org/v2/static?key=service.XzI8u04rz0BP19WwNJmjKqEc5gCwtEgqdYzIZEaz&type=dreamy&zoom=17&center=35.731965,51.393047&width=600&height=500&marker=red"
                   width="600"
