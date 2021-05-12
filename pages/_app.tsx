@@ -3,11 +3,16 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "../styles/base.css";
 import "../styles/main.css";
 
+import Head from "next/head";
 import { AppProps } from "next/app";
 
 function MainApp({ Component, pageProps }: AppProps) {
   return (
     <div id="wrapper" className="margLTop margLBottom">
+      <Head>
+        <title>Parham Alvani</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="container">
         <div className="row">
           <div className="col-md-3 left-content">
@@ -27,12 +32,12 @@ function MainApp({ Component, pageProps }: AppProps) {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link">
+                      <a href="/education" className="nav-link">
                         <i className="fas fa-graduation-cap"></i>Education
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link">
+                      <a href="/experience" className="nav-link">
                         <i className="fas fa-briefcase"></i>Work
                       </a>
                     </li>
@@ -78,7 +83,7 @@ function MainApp({ Component, pageProps }: AppProps) {
                     </a>
                   </li>
                 </ul>
-                <p>Success is the sole earthly judge of right and wrong</p>
+                <p>I Have a Dream</p>
               </div>
             </header>
           </div>
