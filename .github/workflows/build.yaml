@@ -1,7 +1,10 @@
 ---
 name: build
 on:
-  - push
+  push: {}
+  schedule:
+    - cron '0 0 15,30 * *'
+
 jobs:
   build:
     runs-on: ubuntu-20.04
