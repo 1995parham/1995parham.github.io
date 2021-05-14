@@ -47,6 +47,11 @@ function MainApp({ Component, pageProps }: AppProps) {
                       </a>
                     </li>
                     <li className="nav-item">
+                      <a href="/lecture" className="nav-link">
+                        <i className="fas fa-book"></i>Lecture
+                      </a>
+                    </li>
+                    <li className="nav-item">
                       <a
                         href="https://1995parham.github.io/stopwatch/"
                         target="_blank"
