@@ -1,4 +1,5 @@
-import Title from "../components/title";
+import Title from '../components/title'
+import React from 'react'
 
 function Experience() {
   return (
@@ -12,7 +13,7 @@ function Experience() {
               <img src="/snapp.png" alt="snapp" />
             </div>
             <div className="col-md-6">
-              <ul style={{ listStyleType: "disc" }}>
+              <ul style={{ listStyleType: 'disc' }}>
                 <li>Backend Engineer</li>
                 <li>Since 2017</li>
                 <li>Charlie, Shared Services and Dispatching Teams</li>
@@ -22,7 +23,7 @@ function Experience() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Experience;
+export default Experience

@@ -1,5 +1,6 @@
-import Divier from "../components/divider";
-import Title from "../components/title";
+import Divier from '../components/divider'
+import Title from '../components/title'
+import React from 'react'
 
 function Contact() {
   return (
@@ -10,41 +11,41 @@ function Contact() {
           <div className="block-content margBSmall">
             <div className="row">
               <div className="col-md-8">
-                <b style={{ fontWeight: "bold" }}>
+                <b style={{ fontWeight: 'bold' }}>
                   <i className="fab fa-google"></i> Email
                 </b>
-                :&nbsp; parham.alvani <b style={{ fontWeight: "bold" }}>at</b>{" "}
-                gmail <b style={{ fontWeight: "bold" }}>dot</b> com
+                :&nbsp; parham.alvani <b style={{ fontWeight: 'bold' }}>at</b>{' '}
+                gmail <b style={{ fontWeight: 'bold' }}>dot</b> com
                 <br />
-                <b style={{ fontWeight: "bold" }}>
+                <b style={{ fontWeight: 'bold' }}>
                   <i className="fab fa-windows"></i> Email
                 </b>
-                :&nbsp; parham.alvani <b style={{ fontWeight: "bold" }}>at</b>{" "}
-                hotmail <b style={{ fontWeight: "bold" }}>dot</b> com
+                :&nbsp; parham.alvani <b style={{ fontWeight: 'bold' }}>at</b>{' '}
+                hotmail <b style={{ fontWeight: 'bold' }}>dot</b> com
                 <br />
-                <b style={{ fontWeight: "bold" }}>
+                <b style={{ fontWeight: 'bold' }}>
                   <i className="fab fa-yahoo"></i> Email
                 </b>
-                :&nbsp; parham.alvani <b style={{ fontWeight: "bold" }}>at</b>{" "}
-                yahoo <b style={{ fontWeight: "bold" }}>dot</b> com
+                :&nbsp; parham.alvani <b style={{ fontWeight: 'bold' }}>at</b>{' '}
+                yahoo <b style={{ fontWeight: 'bold' }}>dot</b> com
                 <br />
-                <b style={{ fontWeight: "bold" }}>
+                <b style={{ fontWeight: 'bold' }}>
                   <i className="fas fa-university"></i> Email
                 </b>
-                :&nbsp; parham.alvani <b style={{ fontWeight: "bold" }}>at</b>{" "}
-                aut <b style={{ fontWeight: "bold" }}>dot</b> ac{" "}
-                <b style={{ fontWeight: "bold" }}>dot</b> ir
+                :&nbsp; parham.alvani <b style={{ fontWeight: 'bold' }}>at</b>{' '}
+                aut <b style={{ fontWeight: 'bold' }}>dot</b> ac{' '}
+                <b style={{ fontWeight: 'bold' }}>dot</b> ir
                 <br />
-                <b style={{ fontWeight: "bold" }}>
+                <b style={{ fontWeight: 'bold' }}>
                   <i className="fab fa-skype"></i> Skype
                 </b>
                 :&nbsp; parham.alvani
                 <br />
-                <b style={{ fontWeight: "bold" }}>
+                <b style={{ fontWeight: 'bold' }}>
                   <i className="fas fa-phone"></i> Phone
                 </b>
-                :&nbsp;{" "}
-                <a href="tel://+989390909540" style={{ color: "#777" }}>
+                :&nbsp;{' '}
+                <a href="tel://+989390909540" style={{ color: '#777' }}>
                   (+98) 939 0909 540
                 </a>
                 <Divier />
@@ -53,17 +54,16 @@ function Contact() {
                   width="600"
                   height="450"
                   frameBorder="0"
-                  style={{ border: 0, width: "100%" }}
-                  allowFullScreen
-                ></iframe>
+                  style={{ border: 0, width: '100%' }}
+                  allowFullScreen></iframe>
               </div>
               <div className="col-md-4">
                 <a
                   href="https://github.com/1995parham.key"
                   target="_blank"
                   role="button"
-                  className="btn btn-outline-dark"
-                >
+                  rel="noreferrer"
+                  className="btn btn-outline-dark">
                   Public Keys
                 </a>
               </div>
@@ -72,7 +72,7 @@ function Contact() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Contact;
+export default Contact

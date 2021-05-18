@@ -1,4 +1,5 @@
-import Title from "../components/title";
+import Title from '../components/title'
+import React from 'react'
 
 function Lecture() {
   return (
@@ -43,7 +44,7 @@ function Lecture() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Lecture;
+export default Lecture
