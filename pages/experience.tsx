@@ -1,7 +1,7 @@
 import Title from '../components/title'
 import React from 'react'
 
-function Experience() {
+function Experience () {
   return (
     <section id="work-exp" className="bgWhite ofsInBottom">
       <div className="experience">

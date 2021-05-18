@@ -2,7 +2,7 @@ import Divier from '../components/divider'
 import Title from '../components/title'
 import React from 'react'
 
-function Contact() {
+function Contact () {
   return (
     <section id="contact" className="bgWhite ofsInBottom">
       <div className="contact">

@@ -1,7 +1,7 @@
 import Title from '../components/title'
 import React from 'react'
 
-function Lecture() {
+function Lecture () {
   return (
     <section id="lecture" className="bgWhite ofsInBottom">
       <div>

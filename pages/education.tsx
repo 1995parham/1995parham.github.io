@@ -2,7 +2,7 @@ import Divier from '../components/divider'
 import Title from '../components/title'
 import React from 'react'
 
-function Education() {
+function Education () {
   return (
     <section id="education" className="bgWhite ofsInBottom">
       <div className="expertise">
