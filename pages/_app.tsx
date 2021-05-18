@@ -7,7 +7,7 @@ import React from 'react'
 import Head from 'next/head'
 import { AppProps } from 'next/app'
 
-function MainApp({ Component, pageProps }: AppProps) {
+function MainApp ({ Component, pageProps }: AppProps) {
   return (
     <div id="wrapper" className="margLTop margLBottom">
       <Head>

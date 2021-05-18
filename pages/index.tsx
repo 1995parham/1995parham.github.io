@@ -6,7 +6,7 @@ type HomeProps = {
   resumeTag: string
 }
 
-export default function Home({ resumeTag }: HomeProps) {
+export default function Home ({ resumeTag }: HomeProps) {
   return (
     <section id="about" className="bgWhite ofsInBottom">
       <div className="about">
