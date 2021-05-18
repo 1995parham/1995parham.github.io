@@ -1,5 +1,6 @@
-import Divier from "../components/divider";
-import Title from "../components/title";
+import Divier from '../components/divider'
+import Title from '../components/title'
+import React from 'react'
 
 function Education() {
   return (
@@ -16,7 +17,7 @@ function Education() {
                       <div className="hgroup">
                         <h4>Ph.D. Network Engineering</h4>
                         <h6>
-                          <i className="fas fa-calendar"></i>2019 -{" "}
+                          <i className="fas fa-calendar"></i>2019 -{' '}
                           <span className="current">present</span>
                         </h6>
                         <h6>
@@ -24,8 +25,7 @@ function Education() {
                           <b className="bold">
                             <a
                               className="gpacolor"
-                              href="http://aut.ac.ir/aut/"
-                            >
+                              href="http://aut.ac.ir/aut/">
                               Amirkabir University of Technology
                             </a>
                           </b>
@@ -46,8 +46,7 @@ function Education() {
                           <b className="bold">
                             <a
                               className="gpacolor"
-                              href="http://aut.ac.ir/aut/"
-                            >
+                              href="http://aut.ac.ir/aut/">
                               Amirkabir University of Technology
                             </a>
                           </b>
@@ -70,8 +69,7 @@ function Education() {
                           <b className="bold">
                             <a
                               className="gpacolor"
-                              href="http://aut.ac.ir/aut/"
-                            >
+                              href="http://aut.ac.ir/aut/">
                               Amirkabir University of Technology
                             </a>
                           </b>
@@ -102,7 +100,7 @@ function Education() {
           <div className="row margTop">
             <div className="col-md-12">
               <p>
-                Reports and Assignments are available at{" "}
+                Reports and Assignments are available at{' '}
                 <a href="https://github.com/9231058">this</a> Github
                 organization.
               </p>
@@ -115,7 +113,7 @@ function Education() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Education;
+export default Education
