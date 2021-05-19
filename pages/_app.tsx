@@ -1,18 +1,21 @@
-import 'bootstrap/dist/css/bootstrap.css'
-import '@fortawesome/fontawesome-free/css/all.min.css'
-import '../styles/base.css'
-import '../styles/main.css'
+import "bootstrap/dist/css/bootstrap.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "../styles/base.css";
+import "../styles/main.css";
 
-import React from 'react'
-import Head from 'next/head'
-import { AppProps } from 'next/app'
+import React from "react";
+import Head from "next/head";
+import { AppProps } from "next/app";
 
-function MainApp ({ Component, pageProps }: AppProps) {
+function MainApp({ Component, pageProps }: AppProps) {
   return (
     <div id="wrapper" className="margLTop margLBottom">
       <Head>
         <title>Parham Alvani</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐼</text></svg>"
+        />
       </Head>
       <div className="container">
         <div className="row">
@@ -57,7 +60,8 @@ function MainApp ({ Component, pageProps }: AppProps) {
                         href="https://1995parham.github.io/stopwatch/"
                         rel="noreferrer"
                         target="_blank"
-                        className="nav-link">
+                        className="nav-link"
+                      >
                         <i className="fas fa-stopwatch"></i>Stopwatch
                       </a>
                     </li>
@@ -66,7 +70,8 @@ function MainApp ({ Component, pageProps }: AppProps) {
                         href="https://1995parham.github.io/MeInBSc/"
                         rel="noreferrer"
                         target="_blank"
-                        className="nav-link">
+                        className="nav-link"
+                      >
                         <i className="fas fa-memory"></i>Me in B.Sc.
                       </a>
                     </li>
@@ -79,7 +84,8 @@ function MainApp ({ Component, pageProps }: AppProps) {
                     <a
                       href="https://github.com/1995parham"
                       target="_blank"
-                      rel="noreferrer">
+                      rel="noreferrer"
+                    >
                       <i className="fab fa-github"></i>
                     </a>
                   </li>
@@ -87,7 +93,8 @@ function MainApp ({ Component, pageProps }: AppProps) {
                     <a
                       href="http://stackoverflow.com/users/4242097/parham-alvani"
                       target="_blank"
-                      rel="noreferrer">
+                      rel="noreferrer"
+                    >
                       <i className="fab fa-stack-overflow"></i>
                     </a>
                   </li>
@@ -102,7 +109,7 @@ function MainApp ({ Component, pageProps }: AppProps) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default MainApp
+export default MainApp;
