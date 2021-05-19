@@ -7,8 +7,7 @@
 
 ## Introduction
 
-I am developing my resume and personal homepage in this repository.
-Homepage uses Angular and Resume uses Latex for themselves.
+I am developing personal homepage in this repository.
 
 ## Up and Running
 
@@ -16,4 +15,3 @@ Homepage uses Angular and Resume uses Latex for themselves.
 npm install
 npm run dev
 ```
-
