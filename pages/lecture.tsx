@@ -1,14 +1,14 @@
-import Title from '../components/title'
-import React from 'react'
+import Title from "../components/title";
+import React from "react";
 
-function Lecture () {
+function Lecture() {
   return (
     <section id="lecture" className="bgWhite ofsInBottom">
-      <div>
+      <div className="expertise">
         <Title title="Lectures" />
         <div className="content">
           <div className="block-content">
-            <div className="timeline teach">
+            <div className="timeline book">
               <div className="row">
                 <div className="col-md-12">
                   <div className="exp-holder margTop">
@@ -44,7 +44,7 @@ function Lecture () {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Lecture
+export default Lecture;
