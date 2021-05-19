@@ -573,6 +573,10 @@ html {
   content: "\f19d";
 }
 
+.timeline.book:after {
+  content: "\f02d";
+}
+
 .exp {
   padding-left: 50px;
   padding-top: 20px;
