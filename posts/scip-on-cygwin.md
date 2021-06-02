@@ -18,17 +18,19 @@ Do following steps in order to install scip on 32bit windows using cygwin
 5. Go to scipsuite root directory and run make command
 6. Go to scpi/bin folder and run `./scip` everything must work and you must see welcome message as follow:
 
-> parham@SVE14A27CXH ~/scipoptsuite-3.1.0/scip-3.1.0/bin
-> $ ./scip
-> SCIP version 3.1.0 [precision: 8 byte] [memory: block] [mode: optimized] [LP solver: SoPlex 2.0.0] [GitHash: 577ee45]
-> Copyright (c) 2002-2014 Konrad-Zuse-Zentrum fuer Informationstechnik Berlin (ZIB)
-> External codes:
-> Readline 6.1 GNU library for command line editing (gnu.org/s/readline)
-> SoPlex 2.0.0 Linear Programming Solver developed at Zuse Institute Berlin (soplex.zib.de) [GitHash: 568f354]
-> cppad-20140000.1 Algorithmic Differentiation of C++ algorithms developed by B. Bell (www.coin-or.org/CppAD)
-> ZLIB 1.2.8 General purpose compression library by J. Gailly and M. Adler (zlib.net)
-> GMP 6.0.0 GNU Multiple Precision Arithmetic Library developed by T.Granlund (gmplib.org)
-> ZIMPL 3.3.2 Zuse Institute Mathematical Programming Language developed by T. Koch (zimpl.zib.de)
-> user parameter file <scip.set> not found - using default parameters
->
-> SCIP>
+```sh
+parham@SVE14A27CXH ~/scipoptsuite-3.1.0/scip-3.1.0/bin
+$ ./scip
+SCIP version 3.1.0 [precision: 8 byte] [memory: block] [mode: optimized] [LP solver: SoPlex 2.0.0] [GitHash: 577ee45]
+Copyright (c) 2002-2014 Konrad-Zuse-Zentrum fuer Informationstechnik Berlin (ZIB)
+External codes:
+Readline 6.1 GNU library for command line editing (gnu.org/s/readline)
+SoPlex 2.0.0 Linear Programming Solver developed at Zuse Institute Berlin (soplex.zib.de) [GitHash: 568f354]
+cppad-20140000.1 Algorithmic Differentiation of C++ algorithms developed by B. Bell (www.coin-or.org/CppAD)
+ZLIB 1.2.8 General purpose compression library by J. Gailly and M. Adler (zlib.net)
+GMP 6.0.0 GNU Multiple Precision Arithmetic Library developed by T.Granlund (gmplib.org)
+ZIMPL 3.3.2 Zuse Institute Mathematical Programming Language developed by T. Koch (zimpl.zib.de)
+user parameter file <scip.set> not found - using default parameters
+
+SCIP>
+```
