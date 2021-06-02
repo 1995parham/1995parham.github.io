@@ -1,4 +1,5 @@
 import Divier from "./divider";
+import React from "react";
 
 type TitpProps = {
   title: string;
