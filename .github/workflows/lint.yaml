@@ -11,4 +11,4 @@ jobs:
       - uses: actions/setup-node@v2
       - run: npm install
       - run: npx eslint pages/*/**.tsx
-      - run: npx eslint components/*/**.tsx
+      - run: npx eslint components/**/*.tsx
