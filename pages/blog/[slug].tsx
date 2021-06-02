@@ -14,15 +14,21 @@ interface BlogProps {
 function BlogPostPage(props: BlogProps) {
   return (
     <section id="blog" className="bgWhite ofsInBottom">
-      <div className="contact">
+      <div className="content single">
         <Title title={props.blog.title} />
-        <div className="content">
-          <div className="block-content margBSmall">
+        <div className="block-content">
+          <div className="block-content">
             <div className="row">
-              <div
-                className="col-md-8"
-                dangerouslySetInnerHTML={{ __html: props.blog.content }}
-              ></div>
+              <div className="block-posts clearfix">
+                <div className="block-post single clearfix">
+                  <div className="col-md-12">
+                    <hr />
+                    <div
+                      dangerouslySetInnerHTML={{ __html: props.blog.content }}
+                    ></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
