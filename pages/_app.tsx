@@ -46,6 +46,11 @@ function MainApp({ Component, pageProps }: AppProps) {
                       </a>
                     </li>
                     <li className="nav-item">
+                      <a href="/blog" className="nav-link">
+                        <i className="fas fa-blog"></i>Blog
+                      </a>
+                    </li>
+                    <li className="nav-item">
                       <a href="/contact" className="nav-link">
                         <i className="fas fa-pen"></i>Contact
                       </a>
