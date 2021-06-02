@@ -13,7 +13,7 @@ interface BlogProps {
 
 function BlogPostPage(props: BlogProps) {
   return (
-    <section id="contact" className="bgWhite ofsInBottom">
+    <section id="blog" className="bgWhite ofsInBottom">
       <div className="contact">
         <Title title={props.blog.title} />
         <div className="content">
@@ -34,10 +34,14 @@ function BlogPostPage(props: BlogProps) {
 // pass props to BlogPostPage component
 export const getStaticProps: GetStaticProps<BlogProps> = async (context) => {
   const fs = require("fs");
-  const html = require("remark-html");
+
+  const html = require("rehype-stringify");
   const highlight = require("remark-highlight.js");
   const unified = require("unified");
   const markdown = require("remark-parse");
+  const remark2rehype = require("remark-rehype");
+  const format = require("rehype-format");
+
   const matter = require("gray-matter");
 
   const slug = context.params.slug; // get slug from params
@@ -53,6 +57,8 @@ export const getStaticProps: GetStaticProps<BlogProps> = async (context) => {
   const result = await unified()
     .use(markdown)
     .use(highlight) // highlight code block
+    .use(remark2rehype)
+    .use(format)
     .use(html)
     .process(content); // pass content to process
 
