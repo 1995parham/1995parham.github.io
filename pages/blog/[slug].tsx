@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../../components/title";
-import { GetStaticProps, GetStaticPaths } from "next";
+import { GetStaticProps, GetStaticPaths, GetStaticPropsContext } from "next";
 
 interface Blog {
   title: string;
@@ -9,6 +9,11 @@ interface Blog {
 
 interface BlogProps {
   blog: Blog;
+}
+
+interface PathParams {
+  slug: string;
+  [key: string]: string;
 }
 
 function BlogPostPage(props: BlogProps) {
@@ -38,7 +43,9 @@ function BlogPostPage(props: BlogProps) {
 }
 
 // pass props to BlogPostPage component
-export const getStaticProps: GetStaticProps<BlogProps> = async (context) => {
+export const getStaticProps: GetStaticProps<BlogProps> = async (
+  context: GetStaticPropsContext<PathParams>
+) => {
   const fs = require("fs");
 
   const html = require("rehype-stringify");
@@ -79,7 +86,7 @@ export const getStaticProps: GetStaticProps<BlogProps> = async (context) => {
 };
 
 // generate HTML paths at build time
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths<PathParams> = async () => {
   const fs = require("fs");
 
   const path = `${process.cwd()}/posts`;
