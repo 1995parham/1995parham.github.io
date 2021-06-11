@@ -1,6 +1,20 @@
 import React from "react";
 import Title from "../../components/title";
+import fs from "fs";
 import { GetStaticProps, GetStaticPaths, GetStaticPropsContext } from "next";
+
+import "highlight.js";
+import "highlight.js/styles/github.css";
+
+import html from "rehype-stringify";
+import highlight from "remark-highlight.js";
+import unified from "unified";
+import markdown from "remark-parse";
+import remark2rehype from "remark-rehype";
+import format from "rehype-format";
+import gfm from "remark-gfm";
+
+import matter from "gray-matter";
 
 interface Blog {
   title: string;
@@ -46,17 +60,6 @@ function BlogPostPage(props: BlogProps) {
 export const getStaticProps: GetStaticProps<BlogProps> = async (
   context: GetStaticPropsContext<PathParams>
 ) => {
-  const fs = require("fs");
-
-  const html = require("rehype-stringify");
-  const highlight = require("remark-highlight.js");
-  const unified = require("unified");
-  const markdown = require("remark-parse");
-  const remark2rehype = require("remark-rehype");
-  const format = require("rehype-format");
-
-  const matter = require("gray-matter");
-
   const slug = context.params.slug; // get slug from params
   const path = `${process.cwd()}/posts/${slug}.md`;
 
@@ -69,6 +72,7 @@ export const getStaticProps: GetStaticProps<BlogProps> = async (
 
   const result = await unified()
     .use(markdown)
+    .use(gfm)
     .use(highlight) // highlight code block
     .use(remark2rehype)
     .use(format)
@@ -78,7 +82,7 @@ export const getStaticProps: GetStaticProps<BlogProps> = async (
   return {
     props: {
       blog: {
-        ...data,
+        ...(data as Blog),
         content: result.toString(),
       },
     },
@@ -87,8 +91,6 @@ export const getStaticProps: GetStaticProps<BlogProps> = async (
 
 // generate HTML paths at build time
 export const getStaticPaths: GetStaticPaths<PathParams> = async () => {
-  const fs = require("fs");
-
   const path = `${process.cwd()}/posts`;
   const files = fs.readdirSync(path, "utf-8");
 
