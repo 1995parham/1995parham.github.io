@@ -1,7 +1,7 @@
 ---
 title: "Temperature Alarm System"
 date: "2016-09-05"
-tags: IoT Hardware
+tags: [IoT, Hardware]
 ---
 
 We want to design a system that creates alarm on high or low environment
