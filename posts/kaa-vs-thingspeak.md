@@ -4,9 +4,9 @@ date: "2016-09-04"
 tags: [IoT, Kaa, ThingSpeak]
 ---
 
-When our university started to create IoT platform, we did some research and
-decided to use Kaa as our middleware. In this article we want to compare Kaa
-and ThingSpeak.
+When our university had started to create IoT platform, we did some research and
+decided to use Kaa as our middleware/platform.
+In this article we want to compare Kaa and ThingSpeak.
 
 ### Introduction
 
@@ -21,8 +21,8 @@ solutions. Kaa has 3 layer architecture as below:
 />
 
 Kaa provides some basic services for you such as
-<strong>Notifications</strong>, <strong>Logging</strong> and
-<strong>Events</strong>. In Kaa you have to install SDK on your nodes in order
+**Notifications**, **Logging** and
+**Events**. In Kaa you have to install SDK on your nodes in order
 to join them to your network, as a result your node choices decrease, but you
 have more control on your nodes.
 
@@ -36,7 +36,7 @@ environment on a two or more server for load distribution.
 
 #### [ThingSpeak](http://thingspeak.com/)
 
-ThingSpeak provides <strong>Real-time data collection and storage</strong>.
+ThingSpeak provides **Real-time data collection and storage**.
 You can easily create channel for your data in this platform and send your
 data to it using simple and available REST protocol!
 
@@ -51,29 +51,10 @@ Matlab based analysis on it.
 
 ### Comparison
 
-<table class="table table-striped">
-  <tr>
-    <th>Platform</th>
-    <th>Notification</th>
-    <th>Events</th>
-    <th>Logging</th>
-    <th>Layers</th>
-  </tr>
-  <tr>
-    <td>Kaa</td>
-    <td><i class="fa fa-check"></i></td>
-    <td><i class="fa fa-check"></i></td>
-    <td><i class="fa fa-check"></i></td>
-    <td>3</td>
-  </tr>
-  <tr>
-    <td>ThingSpeak</td>
-    <td><i class="fa fa-times"></i></td>
-    <td><i class="fa fa-times"></i></td>
-    <td><i class="fa fa-check"></i></td>
-    <td>2</td>
-  </tr>
-</table>
+|  Platform  | Notification | Events | Logging | Layers |
+| :--------: | :----------: | :----: | :-----: | :----: |
+|    Kaa     |      ✔️      |   ✔️   |   ✔️    |   3    |
+| ThingSpeak |      ❌      |   ❌   |   ✔️    |   2    |
 
 ### Conclusion
 
