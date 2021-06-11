@@ -4,7 +4,7 @@ date: "2016-09-05"
 tags: [IoT, ThingSpeak]
 ---
 
-##[Domain Model](https://en.wikipedia.org/wiki/Domain_model)
+## [Domain Model](https://en.wikipedia.org/wiki/Domain_model)
 
 In the [Unified Modeling Language (UML)](https://en.wikipedia.org/wiki/Unified_Modeling_Language) a [class diagram](https://en.wikipedia.org/wiki/Class_diagram) is used to represent the domain model.
 
