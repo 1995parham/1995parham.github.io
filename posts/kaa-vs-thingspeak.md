@@ -15,10 +15,7 @@ In this article we want to compare Kaa and ThingSpeak.
 Kaa is multi-purpose middleware platform for building complete end-to-end IoT
 solutions. Kaa has 3 layer architecture as below:
 
-<img
-  src="{{ '/assets/images/Kaa-Arch.jpg' | relative_url }}"
-  alt="Kaa Architecture"
-/>
+![kaa-arch](/posts/kaa-arch.jpg)
 
 Kaa provides some basic services for you such as
 **Notifications**, **Logging** and
