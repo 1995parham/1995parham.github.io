@@ -10,6 +10,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^5.0.0",
+    "highlight.js": "^10.7.2",
     "next": "^10.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1"
@@ -28,6 +29,7 @@
     "gray-matter": "^4.0.3",
     "rehype-format": "^3.1.0",
     "rehype-stringify": "^8.0.0",
+    "remark-gfm": "^1.0.0",
     "remark-highlight.js": "^6.0.0",
     "remark-parse": "^9.0.0",
     "remark-rehype": "^8.1.0",
