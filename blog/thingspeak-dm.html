@@ -1,0 +1,42 @@
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><title>Parham Alvani</title><link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🐼&lt;/text&gt;&lt;/svg&gt;"/><meta name="next-head-count" content="4"/><link rel="preload" href="/_next/static/css/72c397d60171794e3cef.css" as="style"/><link rel="stylesheet" href="/_next/static/css/72c397d60171794e3cef.css" data-n-g=""/><link rel="preload" href="/_next/static/css/448a12cd707e89683278.css" as="style"/><link rel="stylesheet" href="/_next/static/css/448a12cd707e89683278.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-a54b4f32bdc1ef890ddd.js"></script><script src="/_next/static/chunks/webpack-61095c13c5984b221292.js" defer=""></script><script src="/_next/static/chunks/framework-92300432a1172ef1338b.js" defer=""></script><script src="/_next/static/chunks/main-a3a79aff3ff232b41814.js" defer=""></script><script src="/_next/static/chunks/pages/_app-0c2f7dfe38187f362db8.js" defer=""></script><script src="/_next/static/chunks/750-c4346b6470b8418dc36d.js" defer=""></script><script src="/_next/static/chunks/pages/blog/%5Bslug%5D-a2fb71f12b9ced5c391c.js" defer=""></script><script src="/_next/static/pc7akSAm3eMiHXobKXkeO/_buildManifest.js" defer=""></script><script src="/_next/static/pc7akSAm3eMiHXobKXkeO/_ssgManifest.js" defer=""></script></head><body><div id="__next"><div id="wrapper" class="margLTop margLBottom"><div class="container"><div class="row"><div class="col-md-3 left-content"><header id="header"><div class="main-header"><figure class="img-profile"><img src="/me-1.png" alt="Parham Alvani"/><figcaption class="name-profile"><span>PARHAM ALVANI</span></figcaption></figure><nav id="main-nav" class="main-nav clearfix tabbed"><ul><li class="nav-item"><a href="/" class="nav-link"><i class="fas fa-user"></i>About Me</a></li><li class="nav-item"><a href="/education" class="nav-link"><i class="fas fa-graduation-cap"></i>Education</a></li><li class="nav-item"><a href="/experience" class="nav-link"><i class="fas fa-briefcase"></i>Work</a></li><li class="nav-item"><a href="/blog" class="nav-link"><i class="fas fa-blog"></i>Blog</a></li><li class="nav-item"><a href="/contact" class="nav-link"><i class="fas fa-pen"></i>Contact</a></li><li class="nav-item"><a href="/lecture" class="nav-link"><i class="fas fa-book"></i>Lecture</a></li><li class="nav-item"><a href="https://1995parham.github.io/stopwatch/" rel="noreferrer" target="_blank" class="nav-link"><i class="fas fa-stopwatch"></i>Stopwatch</a></li><li class="nav-item"><a href="https://1995parham.github.io/MeInBSc/" rel="noreferrer" target="_blank" class="nav-link"><i class="fas fa-memory"></i>Me in B.Sc.</a></li></ul></nav></div><div class="bottom-header bgWhite ofsTSmall ofsBSmall tCenter"><ul class="social"><li class="anim"><a href="https://github.com/1995parham" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a></li><li class="anim"><a href="http://stackoverflow.com/users/4242097/parham-alvani" target="_blank" rel="noreferrer"><i class="fab fa-stack-overflow"></i></a></li></ul><p>I Have a Dream</p></div></header></div><div class="col-md-9 right-content"><section id="blog" class="bgWhite ofsInBottom"><div class="content single"><div class="main-title"><h1>ThingSpeak Domain Model</h1><div class="divider"><div data-svg-drawing="yes" class="zigzag large clearfix "><svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1"><path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 " style="stroke-dasharray:93.9851, 93.9851;stroke-dashoffset:0"></path></svg></div></div></div><div class="block-content"><div class="block-content"><div class="row"><div class="block-posts clearfix"><div class="block-post single clearfix"><div class="col-md-12"><hr/><div>
+<h2><a href="https://en.wikipedia.org/wiki/Domain_model">Domain Model</a></h2>
+<p>In the <a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">Unified Modeling Language (UML)</a> a <a href="https://en.wikipedia.org/wiki/Class_diagram">class diagram</a> is used to represent the domain model.</p>
+<h2>Code Review</h2>
+<p>
+  In ThingSpeak code there is a ruby file is named <em>config/routes.rb</em>, in
+  this file ThinkSpeak provides mapping between HTTP URLs and HTTP Controllers
+  that resident under <em>app/controllers/</em> folder.
+</p>
+<p>
+  Models are provided under <em>app/models</em> folder and database migirations
+  also provided under <em>app/admin</em>.
+</p>
+<h2>Tables</h2>
+<p>ThigSpeak provides following tables:</p>
+<ul>
+  <li>Active Admin Comments</li>
+  <li>Admin Users</li>
+  <li>API Keys</li>
+  <li>Channels</li>
+  <li>Commands</li>
+  <li>Comments</li>
+  <li>Daily Feeds</li>
+  <li>Devices</li>
+  <li>Failed Logins</li>
+  <li>Feeds</li>
+  <li>Headers</li>
+  <li>Pipes</li>
+  <li>Plugins</li>
+  <li>Reacts</li>
+  <li>Scheduled Thing Https</li>
+  <li>Taggings</li>
+  <li>Tags</li>
+  <li>Talk Backs</li>
+  <li>Thing Https</li>
+  <li>Tweet Controls</li>
+  <li>Twitters Accounts</li>
+  <li>Users</li>
+  <li>Watchings</li>
+  <li>Windows</li>
+</ul>
+</div></div></div></div></div></div></div></div></section></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"blog":{"title":"ThingSpeak Domain Model","date":"2016-09-05","tags":["IoT","ThingSpeak"],"content":"\n\u003ch2\u003e\u003ca href=\"https://en.wikipedia.org/wiki/Domain_model\"\u003eDomain Model\u003c/a\u003e\u003c/h2\u003e\n\u003cp\u003eIn the \u003ca href=\"https://en.wikipedia.org/wiki/Unified_Modeling_Language\"\u003eUnified Modeling Language (UML)\u003c/a\u003e a \u003ca href=\"https://en.wikipedia.org/wiki/Class_diagram\"\u003eclass diagram\u003c/a\u003e is used to represent the domain model.\u003c/p\u003e\n\u003ch2\u003eCode Review\u003c/h2\u003e\n\u003cp\u003e\n  In ThingSpeak code there is a ruby file is named \u003cem\u003econfig/routes.rb\u003c/em\u003e, in\n  this file ThinkSpeak provides mapping between HTTP URLs and HTTP Controllers\n  that resident under \u003cem\u003eapp/controllers/\u003c/em\u003e folder.\n\u003c/p\u003e\n\u003cp\u003e\n  Models are provided under \u003cem\u003eapp/models\u003c/em\u003e folder and database migirations\n  also provided under \u003cem\u003eapp/admin\u003c/em\u003e.\n\u003c/p\u003e\n\u003ch2\u003eTables\u003c/h2\u003e\n\u003cp\u003eThigSpeak provides following tables:\u003c/p\u003e\n\u003cul\u003e\n  \u003cli\u003eActive Admin Comments\u003c/li\u003e\n  \u003cli\u003eAdmin Users\u003c/li\u003e\n  \u003cli\u003eAPI Keys\u003c/li\u003e\n  \u003cli\u003eChannels\u003c/li\u003e\n  \u003cli\u003eCommands\u003c/li\u003e\n  \u003cli\u003eComments\u003c/li\u003e\n  \u003cli\u003eDaily Feeds\u003c/li\u003e\n  \u003cli\u003eDevices\u003c/li\u003e\n  \u003cli\u003eFailed Logins\u003c/li\u003e\n  \u003cli\u003eFeeds\u003c/li\u003e\n  \u003cli\u003eHeaders\u003c/li\u003e\n  \u003cli\u003ePipes\u003c/li\u003e\n  \u003cli\u003ePlugins\u003c/li\u003e\n  \u003cli\u003eReacts\u003c/li\u003e\n  \u003cli\u003eScheduled Thing Https\u003c/li\u003e\n  \u003cli\u003eTaggings\u003c/li\u003e\n  \u003cli\u003eTags\u003c/li\u003e\n  \u003cli\u003eTalk Backs\u003c/li\u003e\n  \u003cli\u003eThing Https\u003c/li\u003e\n  \u003cli\u003eTweet Controls\u003c/li\u003e\n  \u003cli\u003eTwitters Accounts\u003c/li\u003e\n  \u003cli\u003eUsers\u003c/li\u003e\n  \u003cli\u003eWatchings\u003c/li\u003e\n  \u003cli\u003eWindows\u003c/li\u003e\n\u003c/ul\u003e\n"}},"__N_SSG":true},"page":"/blog/[slug]","query":{"slug":"thingspeak-dm"},"buildId":"pc7akSAm3eMiHXobKXkeO","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
