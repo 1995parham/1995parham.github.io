@@ -17,7 +17,7 @@ function MainApp({ Component, pageProps }: AppProps) {
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐼</text></svg>"
         />
       </Head>
-      <div id="wrapper" className="margLTop margLBottom">
+      <div className="margLTop margLBottom">
         <div className="container">
           <div className="row">
             <div className="col-md-3 left-content">
@@ -29,7 +29,7 @@ function MainApp({ Component, pageProps }: AppProps) {
                       <span>PARHAM ALVANI</span>
                     </figcaption>
                   </figure>
-                  <nav id="main-nav" className="main-nav clearfix tabbed">
+                  <nav className="main-nav">
                     <ul>
                       <li className="nav-item">
                         <a href="/" className="nav-link">
