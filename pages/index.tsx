@@ -1,12 +1,12 @@
-import Title from '../components/title'
-import React from 'react'
-import { GetStaticProps } from 'next'
+import Title from "../components/title";
+import React from "react";
+import { GetStaticProps } from "next";
 
 type HomeProps = {
-  resumeTag: string
-}
+  resumeTag: string;
+};
 
-export default function Home ({ resumeTag }: HomeProps) {
+export default function Home({ resumeTag }: HomeProps) {
   return (
     <section id="about" className="bgWhite ofsInBottom">
       <div className="about">
@@ -34,23 +34,24 @@ export default function Home ({ resumeTag }: HomeProps) {
                 <img src="/me-2.jpg" alt="Parham Alvani" />
               </div>
               <div className="col-md-4">
-                <b style={{ fontSize: '18px', fontWeight: 'bold' }}>
+                <b style={{ fontSize: "18px", fontWeight: "bold" }}>
                   Interests:
                 </b>
                 <ul className="bullet">
                   <li>Internet of Things (IoT)</li>
-                  <li>Software Defined Networking (SDN)</li>
-                  <li>Network Function Virtualization (NFV)</li>
+                  <li>Embedded Programming</li>
+                  <li>Cyber-Physical Systems</li>
                   <li>Kernel Hacking</li>
                   <li>Mathematical Optimization</li>
                 </ul>
                 <b
                   style={{
-                    display: 'block',
-                    fontSize: '18px',
-                    fontWeight: 'bold',
-                    marginTop: '30px'
-                  }}>
+                    display: "block",
+                    fontSize: "18px",
+                    fontWeight: "bold",
+                    marginTop: "30px",
+                  }}
+                >
                   TOEFL iBT score:
                 </b>
                 <b>(95/120)</b>
@@ -72,8 +73,9 @@ export default function Home ({ resumeTag }: HomeProps) {
                 target="_blank"
                 rel="noreferrer"
                 href={`https://github.com/1995parham/1995parham.pdf/releases/download/${resumeTag}/main.pdf`}
-                className="but opc-2">
-                <i className="fas fa-paperclip"></i> Here is my CV (updated at{' '}
+                className="but opc-2"
+              >
+                <i className="fas fa-paperclip"></i> Here is my CV (updated at{" "}
                 {resumeTag})
               </a>
             </div>
@@ -81,18 +83,18 @@ export default function Home ({ resumeTag }: HomeProps) {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   const res = await fetch(
-    'https://api.github.com/repos/1995parham/1995parham.pdf/releases/latest'
-  )
-  const latest = await res.json()
+    "https://api.github.com/repos/1995parham/1995parham.pdf/releases/latest"
+  );
+  const latest = await res.json();
 
   return {
     props: {
-      resumeTag: latest.tag_name
-    }
-  }
-}
+      resumeTag: latest.tag_name,
+    },
+  };
+};
