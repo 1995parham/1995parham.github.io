@@ -6,8 +6,9 @@ import "../styles/main.css";
 import React from "react";
 import Head from "next/head";
 import { AppProps } from "next/app";
+import { withRouter, NextRouter } from "next/router";
 
-function MainApp({ Component, pageProps }: AppProps) {
+function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
   return (
     <>
       <Head>
@@ -32,32 +33,68 @@ function MainApp({ Component, pageProps }: AppProps) {
                   <nav className="main-nav">
                     <ul>
                       <li className="nav-item">
-                        <a href="/" className="nav-link">
+                        <a
+                          href="/"
+                          className={
+                            "nav-link " +
+                            (router.pathname === "/" ? "active" : "")
+                          }
+                        >
                           <i className="fas fa-user"></i>About Me
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a href="/education" className="nav-link">
+                        <a
+                          href="/education"
+                          className={
+                            "nav-link " +
+                            (router.pathname === "/education" ? "active" : "")
+                          }
+                        >
                           <i className="fas fa-graduation-cap"></i>Education
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a href="/experience" className="nav-link">
+                        <a
+                          href="/experience"
+                          className={
+                            "nav-link " +
+                            (router.pathname === "/experience" ? "active" : "")
+                          }
+                        >
                           <i className="fas fa-briefcase"></i>Work
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a href="/blog" className="nav-link">
+                        <a
+                          href="/blog"
+                          className={
+                            "nav-link " +
+                            (router.pathname === "/blog" ? "active" : "")
+                          }
+                        >
                           <i className="fas fa-blog"></i>Blog
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a href="/contact" className="nav-link">
+                        <a
+                          href="/contact"
+                          className={
+                            "nav-link " +
+                            (router.pathname === "/contact" ? "active" : "")
+                          }
+                        >
                           <i className="fas fa-pen"></i>Contact
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a href="/lecture" className="nav-link">
+                        <a
+                          href="/lecture"
+                          className={
+                            "nav-link " +
+                            (router.pathname === "/lecture" ? "active" : "")
+                          }
+                        >
                           <i className="fas fa-book"></i>Lecture
                         </a>
                       </li>
@@ -119,4 +156,4 @@ function MainApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default MainApp;
+export default withRouter(MainApp);
