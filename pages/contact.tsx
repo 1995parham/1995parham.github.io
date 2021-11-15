@@ -12,7 +12,7 @@ function Contact() {
             <div className="row">
               <div className="col-md-8">
                 <b style={{ fontWeight: "bold" }}>
-                  <i className="fas fa-envelope"></i> Email
+                  <i className="fab fa-tutanota"></i> Email
                 </b>
                 :&nbsp; parham.alvani <b style={{ fontWeight: "bold" }}>at</b>{" "}
                 tuta <b style={{ fontWeight: "bold" }}>dot</b> io
