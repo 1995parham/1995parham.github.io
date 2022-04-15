@@ -8,7 +8,7 @@ import "highlight.js/styles/github.css";
 
 import html from "rehype-stringify";
 import highlight from "remark-highlight.js";
-import unified from "unified";
+import { unified } from "unified";
 import markdown from "remark-parse";
 import remark2rehype from "remark-rehype";
 import format from "rehype-format";
