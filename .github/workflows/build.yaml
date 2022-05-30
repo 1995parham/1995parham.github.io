@@ -15,7 +15,7 @@ jobs:
       - run: npm run build
       - name: deploy to github pages
         if: ${{ success() && github.event_name != 'pull_request' }}
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
           build_dir: out
