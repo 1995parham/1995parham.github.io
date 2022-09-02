@@ -15,27 +15,6 @@ function Education () {
                   <div className="exp-holder margTop">
                     <div className="exp">
                       <div className="hgroup">
-                        <h4>Ph.D. Network Engineering</h4>
-                        <h6>
-                          <i className="fas fa-calendar"></i>2019 -{' '}
-                          <span className="current">present</span>
-                        </h6>
-                        <h6>
-                          <i className="fas fa-thumbtack"></i>
-                          <b className="bold">
-                            <a
-                              className="gpacolor"
-                              href="http://aut.ac.ir/aut/">
-                              Amirkabir University of Technology
-                            </a>
-                          </b>
-                          , Tehran, Iran
-                        </h6>
-                      </div>
-                      <br />
-                    </div>
-                    <div className="exp">
-                      <div className="hgroup">
                         <h4>M.Sc. Network Engineering</h4>
                         <h6>
                           <i className="fas fa-calendar"></i>

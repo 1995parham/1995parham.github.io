@@ -17,20 +17,29 @@ function Lecture() {
                         <h4>Internet Engineering</h4>
                         <h6>
                           <i className="fas fa-external-link-alt"></i>
-                          <a href="https://sbu-ce.github.io/IE-lecture">
+                          <a href="https://1995parham-teaching.github.io/ie-lecture/">
                             Course Homepage
                           </a>
                         </h6>
                       </div>
                     </div>
-                  </div>
-                  <div className="exp-holder margTop">
+                    <div className="exp">
+                      <div className="hgroup">
+                        <h4>Python 201</h4>
+                        <h6>
+                          <i className="fas fa-external-link-alt"></i>
+                          <a href="https://1995parham-teaching.github.io/Python201/">
+                            Course Homepage
+                          </a>
+                        </h6>
+                      </div>
+                    </div>
                     <div className="exp">
                       <div className="hgroup">
                         <h4>Introduction to Programming</h4>
                         <h6>
                           <i className="fas fa-external-link-alt"></i>
-                          <a href="https://aut-ce.github.io/C-lecture">
+                          <a href="https://github.com/1995parham-teaching/c-lecture/">
                             Course Homepage
                           </a>
                         </h6>
