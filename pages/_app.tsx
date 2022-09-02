@@ -95,7 +95,7 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                             (router.pathname === "/lecture" ? "active" : "")
                           }
                         >
-                          <i className="fas fa-book"></i>Lecture
+                          <i className="fas fa-book"></i>Lectures
                         </a>
                       </li>
                       <li className="nav-item">
