@@ -15,7 +15,7 @@ export default function Home({ resumeTag }: HomeProps) {
           <div className="block-content margBSmall">
             <div className="profile margBSmall">
               <h1>Parham Alvani</h1>
-              <h3>PhD Student, Backend developer</h3>
+              <h3>Backend developer</h3>
             </div>
             <div className="row">
               <div className="col-md-8">
