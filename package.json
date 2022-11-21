@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.1.2",
+    "@fortawesome/fontawesome-free": "^6.2.1",
     "bootstrap": "^5.2.2",
     "highlight.js": "^11.6.0",
     "next": "^13.0.4",
