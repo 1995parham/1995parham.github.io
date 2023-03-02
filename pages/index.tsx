@@ -20,15 +20,24 @@ export default function Home({ resumeTag }: HomeProps) {
             <div className="row">
               <div className="col-md-8">
                 <p>
-                  I was born in February 20 1995 in Tehran where I currently
-                  live and study Network Engineering at Amirkabir University of
-                  Technology.
+                  I was born on February 20, 1995, in Tehran, where I currently live.
+                  I work as a Backend Engineer and I love to write codes.
+                  Everything for me began in 2012 when I finished my high school
+                  and start my bachelor at Amirkabir University in Software engineer.
+                  My first programming course was with Prof. Bakhshi which was great
+                  and motivated me to learn more about Unix, Linux and the world of Computer.
                 </p>
                 <br />
                 <p>
                   I am interested in networks and using of them in Internet of
                   Things and I do my best to improve the network connections of
                   things around the world.
+                </p>
+                <br />
+                <p>
+                  As a researcher, I love to do hands-on research and create a thing instead of writing useless equations.
+                  In the world of Internet of Things you have this opportunity to do this because here we
+                  have more hands-on journals and your requirements to create things is not too much.
                 </p>
                 <br />
                 <img src="/me-2.jpg" alt="Parham Alvani" />
