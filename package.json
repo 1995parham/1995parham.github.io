@@ -20,7 +20,7 @@
     "@types/react": "^18.2.15",
     "@typescript-eslint/parser": "^5.61.0",
     "@typescript-eslint/eslint-plugin": "^6.1.0",
-    "eslint": "^8.44.0",
+    "eslint": "^8.45.0",
     "eslint-config-next": "^13.4.12",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-node": "^11.1.0",
