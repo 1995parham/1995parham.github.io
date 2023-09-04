@@ -6,6 +6,7 @@ import "../styles/main.css";
 import React from "react";
 import Head from "next/head";
 import { AppProps } from "next/app";
+import Link from "next/link";
 import { withRouter, NextRouter } from "next/router";
 
 function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
@@ -33,7 +34,7 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                   <nav className="main-nav">
                     <ul>
                       <li className="nav-item">
-                        <a
+                        <Link
                           href="/"
                           className={
                             "nav-link " +
@@ -41,10 +42,10 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                           }
                         >
                           <i className="fas fa-user"></i>About Me
-                        </a>
+                        </Link>
                       </li>
                       <li className="nav-item">
-                        <a
+                        <Link
                           href="/education"
                           className={
                             "nav-link " +
@@ -52,10 +53,10 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                           }
                         >
                           <i className="fas fa-graduation-cap"></i>Education
-                        </a>
+                        </Link>
                       </li>
                       <li className="nav-item">
-                        <a
+                        <Link
                           href="/experience"
                           className={
                             "nav-link " +
@@ -63,10 +64,10 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                           }
                         >
                           <i className="fas fa-briefcase"></i>Work
-                        </a>
+                        </Link>
                       </li>
                       <li className="nav-item">
-                        <a
+                        <Link
                           href="/blog"
                           className={
                             "nav-link " +
@@ -74,10 +75,10 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                           }
                         >
                           <i className="fas fa-blog"></i>Blog
-                        </a>
+                        </Link>
                       </li>
                       <li className="nav-item">
-                        <a
+                        <Link
                           href="/contact"
                           className={
                             "nav-link " +
@@ -85,10 +86,10 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                           }
                         >
                           <i className="fas fa-pen"></i>Contact
-                        </a>
+                        </Link>
                       </li>
                       <li className="nav-item">
-                        <a
+                        <Link
                           href="/lecture"
                           className={
                             "nav-link " +
@@ -96,7 +97,7 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                           }
                         >
                           <i className="fas fa-book"></i>Lectures
-                        </a>
+                        </Link>
                       </li>
                       <li className="nav-item">
                         <a
