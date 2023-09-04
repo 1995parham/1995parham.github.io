@@ -3,16 +3,13 @@ import Title from "../../components/title";
 import fs from "fs";
 import { GetStaticProps, GetStaticPaths, GetStaticPropsContext } from "next";
 
-import "highlight.js";
-import "highlight.js/styles/github.css";
-
-import html from "rehype-stringify";
-import highlight from "remark-highlight.js";
+import rehypeStringify from "rehype-stringify";
 import { unified } from "unified";
-import markdown from "remark-parse";
-import remark2rehype from "remark-rehype";
-import format from "rehype-format";
-import gfm from "remark-gfm";
+import remarkParse from "remark-parse";
+import rehypeHighlight from 'rehype-highlight'
+import remarkRehype from "remark-rehype";
+import rehypeFormat from "rehype-format";
+import remarkGfm from "remark-gfm";
 
 import matter from "gray-matter";
 
@@ -71,12 +68,12 @@ export const getStaticProps: GetStaticProps<BlogProps> = async (
   const { data, content } = matter(rawContent); // pass rawContent to gray-matter to get data and content
 
   const result = await unified()
-    .use(markdown)
-    .use(gfm)
-    .use(highlight) // highlight code block
-    .use(remark2rehype)
-    .use(format)
-    .use(html)
+    .use(remarkParse)
+    .use(remarkGfm)
+    .use(remarkRehype)
+    .use(rehypeHighlight) // highlight code block
+    .use(rehypeFormat)
+    .use(rehypeStringify)
     .process(content); // pass content to process
 
   return {
