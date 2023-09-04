@@ -3,12 +3,15 @@ import Title from "../../components/title";
 import fs from "fs";
 import { GetStaticProps, GetStaticPaths, GetStaticPropsContext } from "next";
 
-import rehypeStringify from "rehype-stringify";
+import "highlight.js";
+import "highlight.js/styles/github.css";
+
+import rehypeStringify from 'rehype-stringify';
 import { unified } from "unified";
 import remarkParse from "remark-parse";
 import rehypeHighlight from 'rehype-highlight'
 import remarkRehype from "remark-rehype";
-import rehypeFormat from "rehype-format";
+import rehypeFormat from 'rehype-format';
 import remarkGfm from "remark-gfm";
 
 import matter from "gray-matter";
