@@ -36,7 +36,7 @@
     "remark-rehype": "^11.0.0",
     "rehype-highlight": "^7.0.0",
     "typescript": "^5.2.2",
-    "unified": "^11.0.2",
+    "unified": "^11.0.4",
     "uuid": "^9.0.0"
   }
 }
