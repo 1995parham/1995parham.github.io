@@ -5,6 +5,7 @@ import "../styles/main.css";
 
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
 import { AppProps } from "next/app";
 import Link from "next/link";
 import { withRouter, NextRouter } from "next/router";
@@ -26,7 +27,7 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
               <header id="header">
                 <div className="main-header">
                   <figure className="img-profile">
-                    <img src="/me-1.png" alt="Parham Alvani" />
+                    <Image src="/me-1.png" alt="Parham Alvani" />
                     <figcaption className="name-profile">
                       <span>PARHAM ALVANI</span>
                     </figcaption>

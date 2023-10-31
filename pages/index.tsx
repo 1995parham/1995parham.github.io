@@ -1,5 +1,6 @@
 import Title from "../components/title";
 import React from "react";
+import Image from 'next/image';
 import { GetStaticProps } from "next";
 
 type HomeProps = {
@@ -40,7 +41,7 @@ export default function Home({ resumeTag }: HomeProps) {
                   have more hands-on journals and your requirements to create things is not too much.
                 </p>
                 <br />
-                <img src="/me-2.jpg" alt="Parham Alvani" />
+                <Image src="/me-2.jpg" alt="Parham Alvani" />
               </div>
               <div className="col-md-4">
                 <b style={{ fontSize: "18px", fontWeight: "bold" }}>
