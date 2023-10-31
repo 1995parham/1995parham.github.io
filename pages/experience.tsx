@@ -1,5 +1,6 @@
 import Title from "../components/title";
 import React from "react";
+import Image from "next/image"
 
 function Experience() {
   return (
@@ -10,7 +11,7 @@ function Experience() {
         <div className="content">
           <div className="row">
             <div className="col-md-6">
-              <img src="/snapp.png" alt="snapp" />
+              <Image src="/snapp.png" alt="snapp" />
             </div>
             <div className="col-md-6">
               <p>
