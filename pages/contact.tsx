@@ -24,12 +24,6 @@ function Contact () {
                 hotmail <b style={{ fontWeight: 'bold' }}>dot</b> com
                 <br />
                 <b style={{ fontWeight: 'bold' }}>
-                  <i className="fab fa-yahoo"></i> Email
-                </b>
-                :&nbsp; parham.alvani <b style={{ fontWeight: 'bold' }}>at</b>{' '}
-                yahoo <b style={{ fontWeight: 'bold' }}>dot</b> com
-                <br />
-                <b style={{ fontWeight: 'bold' }}>
                   <i className="fas fa-university"></i> Email
                 </b>
                 :&nbsp; parham.alvani <b style={{ fontWeight: 'bold' }}>at</b>{' '}
