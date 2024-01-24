@@ -25,7 +25,7 @@ export default function Home({ resumeTag }: HomeProps) {
                   I work as a Backend Engineer and I love to write codes.
                   Everything for me began in 2012 when I finished my high school
                   and start my bachelor at Amirkabir University in Software engineer.
-                  My first programming course was with <a href="https://ceit.aut.ac.ir/~bakhshis/">Prof. Bakhshi</a> which was great
+                  My first programming course was with <a href="https://ce.aut.ac.ir/~bakhshis/">Prof. Bakhshi</a> which was great
                   and motivated me to learn more about Unix, Linux and the world of Computer.
                 </p>
                 <br />
@@ -41,7 +41,7 @@ export default function Home({ resumeTag }: HomeProps) {
                   have more hands-on journals and your requirements to create things is not too much.
                 </p>
                 <br />
-                <Image src="/me-2.jpg" alt="Parham Alvani" />
+                <Image src="/me-2.jpg" width={1024} height={1024} alt="Parham Alvani" />
               </div>
               <div className="col-md-4">
                 <b style={{ fontSize: "18px", fontWeight: "bold" }}>

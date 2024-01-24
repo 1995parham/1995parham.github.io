@@ -10,8 +10,7 @@ Basic design schema as follow:
 
 ![circuit](/posts/circuit.jpg)
 
-When gate voltage of transistors changed one led turned on and another turned
-off.
+When gate voltage of transistors changed one led turned on and another turned off.
 
 ![sim-1](/posts/sim-1.jpg)
 ![sim-2](/posts/sim-2.jpg)

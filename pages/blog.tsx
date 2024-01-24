@@ -29,7 +29,7 @@ export default function IndexPage(props: BlogProps) {
                     return (
                       <li key={post.id}>
                         <Link href={`/blog/${post.slug}`}>
-                          <a>{`${post.title} ${post.date}`}</a>
+                          {`${post.title} @ ${post.date}`}
                         </Link>
                       </li>
                     );

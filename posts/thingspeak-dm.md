@@ -19,7 +19,7 @@ also provided under _app/admin_.
 
 ## Tables
 
-ThigSpeak provides following tables:
+ThingSpeak provides following tables:
 
 - Active Admin Comments
 - Admin Users

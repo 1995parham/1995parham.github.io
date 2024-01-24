@@ -27,7 +27,7 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
               <header id="header">
                 <div className="main-header">
                   <figure className="img-profile">
-                    <Image src="/me-1.png" alt="Parham Alvani" />
+                    <Image src="/me-1.png" width={1024} height={1024} alt="Parham Alvani" />
                     <figcaption className="name-profile">
                       <span>PARHAM ALVANI</span>
                     </figcaption>
@@ -103,7 +103,7 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                       <li className="nav-item">
                         <a
                           href="https://1995parham.github.io/stopwatch/"
-                          rel="noreferrer"
+                          rel="noopener"
                           target="_blank"
                           className="nav-link"
                         >
@@ -113,7 +113,7 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                       <li className="nav-item">
                         <a
                           href="https://1995parham.github.io/MeInBSc/"
-                          rel="noreferrer"
+                          rel="noopener"
                           target="_blank"
                           className="nav-link"
                         >
@@ -129,7 +129,8 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                       <a
                         href="https://github.com/1995parham"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener"
+                        aria-label="Github"
                       >
                         <i className="fab fa-github"></i>
                       </a>
@@ -138,7 +139,8 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                       <a
                         href="http://stackoverflow.com/users/4242097/parham-alvani"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener"
+                        aria-label="Stackoverflow"
                       >
                         <i className="fab fa-stack-overflow"></i>
                       </a>

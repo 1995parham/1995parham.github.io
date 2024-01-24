@@ -1,8 +1,7 @@
-import Divier from '../components/divider'
-import Title from '../components/title'
-import React from 'react'
+import Title from "../components/title";
+import React from "react";
 
-function Contact () {
+function Contact() {
   return (
     <section id="contact" className="bgWhite ofsInBottom">
       <div className="contact">
@@ -11,53 +10,42 @@ function Contact () {
           <div className="block-content margBSmall">
             <div className="row">
               <div className="col-md-8">
-                <b style={{ fontWeight: 'bold' }}>
+                <strong>
                   <i className="fab fa-google"></i> Email
-                </b>
-                :&nbsp; parham.alvani <b style={{ fontWeight: 'bold' }}>at</b>{' '}
-                gmail <b style={{ fontWeight: 'bold' }}>dot</b> com
+                </strong>
+                :&nbsp; parham.alvani <strong>at</strong>{" "}
+                gmail <strong>dot</strong> com
                 <br />
-                <b style={{ fontWeight: 'bold' }}>
+
+                <strong>
                   <i className="fab fa-windows"></i> Email
-                </b>
-                :&nbsp; parham.alvani <b style={{ fontWeight: 'bold' }}>at</b>{' '}
-                hotmail <b style={{ fontWeight: 'bold' }}>dot</b> com
+                </strong>
+                :&nbsp; parham.alvani <strong>at</strong>{" "}
+                outlook <strong>dot</strong> com
                 <br />
-                <b style={{ fontWeight: 'bold' }}>
+
+                <strong>
                   <i className="fas fa-university"></i> Email
-                </b>
-                :&nbsp; parham.alvani <b style={{ fontWeight: 'bold' }}>at</b>{' '}
-                aut <b style={{ fontWeight: 'bold' }}>dot</b> ac{' '}
-                <b style={{ fontWeight: 'bold' }}>dot</b> ir
+                </strong>
+                :&nbsp; parham.alvani <strong>at</strong>{" "}
+                aut <strong>dot</strong> ac{" "}
+                <strong>dot</strong> ir
                 <br />
-                <b style={{ fontWeight: 'bold' }}>
+
+                <strong>
                   <i className="fab fa-skype"></i> Skype
-                </b>
+                </strong>
                 :&nbsp; parham.alvani
                 <br />
-                <b style={{ fontWeight: 'bold' }}>
-                  <i className="fas fa-phone"></i> Phone
-                </b>
-                :&nbsp;{' '}
-                <a href="tel://+989390909540" style={{ color: '#777' }}>
-                  (+98) 939 0909 540
-                </a>
-                <Divier />
-                <iframe
-                  src="https://api.neshan.org/v2/static?key=service.XzI8u04rz0BP19WwNJmjKqEc5gCwtEgqdYzIZEaz&type=dreamy&zoom=17&center=35.731965,51.393047&width=600&height=500&marker=red"
-                  width="600"
-                  height="450"
-                  frameBorder="0"
-                  style={{ border: 0, width: '100%' }}
-                  allowFullScreen></iframe>
               </div>
               <div className="col-md-4">
                 <a
                   href="https://github.com/1995parham.key"
                   target="_blank"
                   role="button"
-                  rel="noreferrer"
-                  className="btn btn-outline-dark">
+                  rel="noopener"
+                  className="btn btn-outline-dark"
+                >
                   Public Keys
                 </a>
               </div>
@@ -66,7 +54,7 @@ function Contact () {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

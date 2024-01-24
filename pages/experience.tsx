@@ -11,7 +11,7 @@ function Experience() {
         <div className="content">
           <div className="row">
             <div className="col-md-6">
-              <Image src="/snapp.png" alt="snapp" />
+              <Image src="/snapp.png" height={1024} width={1024} alt="snapp" />
             </div>
             <div className="col-md-6">
               <p>
