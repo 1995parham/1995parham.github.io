@@ -8,15 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.4.2",
-    "bootstrap": "^5.3.1",
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "bootstrap": "^5.3.2",
     "highlight.js": "^11.9.0",
     "next": "^14.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^14.0.4",
+    "@next/eslint-plugin-next": "^14.1.0",
     "@types/node": "^20.11.19",
     "@types/react": "^18.2.56",
     "@typescript-eslint/eslint-plugin": "^7.0.1",
@@ -37,6 +37,6 @@
     "rehype-highlight": "^7.0.0",
     "typescript": "^5.3.3",
     "unified": "^11.0.4",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.1"
   }
 }
