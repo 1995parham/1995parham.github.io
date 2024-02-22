@@ -6,11 +6,12 @@
     <img alt="license" src="https://img.shields.io/github/license/1995parham/1995parham.github.io.svg?style=for-the-badge" />
     <img alt="me" src="https://img.shields.io/badge/me-parham-orange.svg?style=for-the-badge">
     <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/1995parham/1995parham.github.io?style=for-the-badge" />
+    <img alt="Next.js" src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white">
 </p>
 
 ## Introduction
 
-I am developing personal homepage in this repository.
+I am developing personal homepage in this repository based on [Next.js](https://nextjs.org/).
 
 ## Up and Running
 
