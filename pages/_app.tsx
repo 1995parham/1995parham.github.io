@@ -102,22 +102,12 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                       </li>
                       <li className="nav-item">
                         <a
-                          href="https://1995parham.github.io/stopwatch/"
-                          rel="noopener"
-                          target="_blank"
-                          className="nav-link"
-                        >
-                          <i className="fas fa-stopwatch"></i>Stopwatch
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a
                           href="https://1995parham.github.io/MeInBSc/"
                           rel="noopener"
                           target="_blank"
                           className="nav-link"
                         >
-                          <i className="fas fa-memory"></i>Me in B.Sc.
+                          <i className="fas fa-memory"></i>Me in B.Sc. (Persian)
                         </a>
                       </li>
                     </ul>
