@@ -18,21 +18,6 @@ function Contact() {
                 <br />
 
                 <strong>
-                  <i className="fab fa-windows"></i> Email
-                </strong>
-                :&nbsp; parham.alvani <strong>at</strong>{" "}
-                outlook <strong>dot</strong> com
-                <br />
-
-                <strong>
-                  <i className="fas fa-university"></i> Email
-                </strong>
-                :&nbsp; parham.alvani <strong>at</strong>{" "}
-                aut <strong>dot</strong> ac{" "}
-                <strong>dot</strong> ir
-                <br />
-
-                <strong>
                   <i className="fab fa-skype"></i> Skype
                 </strong>
                 :&nbsp; parham.alvani
@@ -40,7 +25,7 @@ function Contact() {
               </div>
               <div className="col-md-4">
                 <a
-                  href="https://github.com/1995parham.key"
+                  href="https://github.com/1995parham.keys"
                   target="_blank"
                   role="button"
                   rel="noopener"
