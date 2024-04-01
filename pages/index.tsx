@@ -62,7 +62,7 @@ export default function Home({ resumeTag }: HomeProps) {
                     marginTop: "30px",
                   }}
                 >
-                  TOEFL iBT score:
+                  TOEFL iBT score (2018):
                 </b>
                 <b>(95/120)</b>
                 <ul className="bullet">
