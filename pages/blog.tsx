@@ -25,6 +25,8 @@ export default function IndexPage(props: BlogProps) {
             <div className="row">
               <div className="col-md-8">
                 <ul>
+                  <li><Link href="https://github.com/1995parham-learning/cloud-roadmap">Cloud Engineer Roadmap</Link></li>
+                  <li><Link href="https://github.com/1995parham-teaching/interviews">Getting ready for interviews</Link></li>
                   {props.posts.map((post, _) => {
                     return (
                       <li key={post.id}>
