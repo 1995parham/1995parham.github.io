@@ -1,6 +1,6 @@
 import Title from "../components/title";
 import React from "react";
-import Image from "next/image"
+import Image from "next/image";
 
 function Experience() {
   return (
@@ -15,11 +15,26 @@ function Experience() {
             </div>
             <div className="col-md-6">
               <p>
-                I&apos;ve started to work at Snapp in the 27 January 2019. Those days I worked at the Charlie team,
-                and we wanted to re-write high load endpoints of Snapp in Go and start dismantling
-                the huge monotonic PHP code in microservices. One of my achievements on those days is writing Surge service in Go.
-                I worked under supervision of Sina Saeedi and my direct manager was Reza Saftari.
-                After our team structured changed, and I joined the Shared services team to work under management of Sina Saeedi and Rashad Ansari. At the shared services team we provided services in Go which are useful for multiple teams. Then I promoted to Tech specialist and started working at the Dispatching team. Since then, I work at the Dispatching team and have chance to work with many talented and awesome people. Dispatching team provides services to deliver event (including ride offer) to drivers and passenger.
+                I began my journey at Snapp on January 27, 2019. During those
+                early days, I was part of the Charlie team. Our mission was to
+                rewrite high-load endpoints of Snapp using Go and gradually
+                dismantle the monolithic PHP codebase by transitioning to
+                microservices. One of my significant achievements during this
+                period was creating the Surge service in Go.
+              </p>
+              <p>
+                Under the guidance of Sina Saeedi, I worked diligently, with
+                Reza Saftari as my direct manager. However, as our team
+                structure evolved, I transitioned to the Shared Services team.
+                There, under the joint management of Sina Saeedi and Rashad
+                Ansari, we developed Go-based services that proved valuable
+                across multiple teams.
+              </p>
+              <p>
+                Subsequently, I was promoted to Team Leader and joined the
+                Dispatching team. Working alongside talented and dedicated
+                colleagues, we provide essential services for delivering events
+                (including ride offers) to both drivers and passengers.
               </p>
             </div>
           </div>
