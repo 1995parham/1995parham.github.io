@@ -19,7 +19,7 @@ export default function Home({ resumeTag }: HomeProps) {
               <h3>Backend developer</h3>
             </div>
             <div className="row">
-              <div className="col-md-8">
+              <div className="col-md-8 text-body">
                 <p>
                   I was born on February 20, 1995, in Tehran.
                   I work as a Backend Engineer and I love to write codes.
@@ -39,6 +39,11 @@ export default function Home({ resumeTag }: HomeProps) {
                   As a researcher, I love to do hands-on research and create a thing instead of writing useless equations.
                   In the world of Internet of Things you have this opportunity to do this because here we
                   have more hands-on journals and your requirements to create things is not too much.
+                </p>
+                <br />
+                <p>
+                  As a developer, I love to solve challenges, learn the root cause of our issues, increasing performance, etc.
+                  During the 8+ years of experience in this field, I worked with legacy softwares, I do refactoring, being on-calls, etc.
                 </p>
                 <br />
                 <Image src="/me-2.jpg" width={1024} height={1024} alt="Parham Alvani" />
