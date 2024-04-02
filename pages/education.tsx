@@ -1,4 +1,4 @@
-import Divier from '../components/divider'
+import Divider from '../components/divider'
 import Title from '../components/title'
 import React from 'react'
 
@@ -37,7 +37,7 @@ function Education () {
                     <div className="exp">
                       <div className="hgroup">
                         <h4>
-                          B.Sc. Computer Engineering ( Software Engineering)
+                          B.Sc. Computer Engineering (Software Engineering)
                         </h4>
                         <h6>
                           <i className="fas fa-calendar"></i>
@@ -88,7 +88,7 @@ function Education () {
         </div>
 
         <div className="button margTop ofsInTop tCenter">
-          <Divier />
+          <Divider />
         </div>
       </div>
     </section>
