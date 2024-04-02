@@ -1,6 +1,6 @@
 import Title from "../components/title";
 import React from "react";
-import Image from 'next/image';
+import Image from "next/image";
 import { GetStaticProps } from "next";
 
 type HomeProps = {
@@ -21,12 +21,14 @@ export default function Home({ resumeTag }: HomeProps) {
             <div className="row">
               <div className="col-md-8 text-body">
                 <p>
-                  I was born on February 20, 1995, in Tehran.
-                  I work as a Backend Engineer and I love to write codes.
-                  Everything for me began in 2012 when I finished my high school
-                  and start my bachelor at Amirkabir University in Software engineer.
-                  My first programming course was with <a href="https://ce.aut.ac.ir/~bakhshis/">Prof. Bakhshi</a> which was great
-                  and motivated me to learn more about Unix, Linux and the world of Computer.
+                  I was born on February 20, 1995, in Tehran. I work as a
+                  Backend Engineer and I love to write codes. Everything for me
+                  began in 2012 when I finished my high school and start my
+                  bachelor at Amirkabir University in Software engineer. My
+                  first programming course was with{" "}
+                  <a href="https://ce.aut.ac.ir/~bakhshis/">Prof. Bakhshi</a>{" "}
+                  which was great and motivated me to learn more about Unix,
+                  Linux and the world of Computer.
                 </p>
                 <br />
                 <p>
@@ -36,22 +38,30 @@ export default function Home({ resumeTag }: HomeProps) {
                 </p>
                 <br />
                 <p>
-                  As a researcher, I love to do hands-on research and create a thing instead of writing useless equations.
-                  In the world of Internet of Things you have this opportunity to do this because here we
-                  have more hands-on journals and your requirements to create things is not too much.
+                  As a researcher, I love to do hands-on research and create a
+                  thing instead of writing useless equations. In the world of
+                  Internet of Things you have this opportunity to do this
+                  because here we have more hands-on journals and your
+                  requirements to create things is not too much.
                 </p>
                 <br />
                 <p>
-                  As a developer, I love to solve challenges, learn the root cause of our issues, increasing performance, etc.
-                  During the 8+ years of experience in this field, I worked with legacy softwares, I do refactoring, being on-calls, etc.
+                  As a developer, I love to solve challenges, learn the root
+                  cause of our issues, increasing performance, etc. During the
+                  8+ years of experience in this field, I worked with legacy
+                  softwares, I do refactoring, being on-calls, etc.
                 </p>
                 <br />
-                <Image src="/me-2.jpg" width={1024} height={1024} alt="Parham Alvani" />
+                <Image
+                  src="/me-2.jpg"
+                  width={1024}
+                  height={1024}
+                  alt="Parham Alvani"
+                  className="img-fluid rounded"
+                />
               </div>
               <div className="col-md-4">
-                <b style={{ fontSize: "18px", fontWeight: "bold" }}>
-                  Interests:
-                </b>
+                <b className="fw-bold fs-5">Interests:</b>
                 <ul className="bullet">
                   <li>Internet of Things (IoT)</li>
                   <li>Embedded Programming</li>
@@ -59,16 +69,8 @@ export default function Home({ resumeTag }: HomeProps) {
                   <li>Kernel Hacking</li>
                   <li>Mathematical Optimization</li>
                 </ul>
-                <b
-                  style={{
-                    display: "block",
-                    fontSize: "18px",
-                    fontWeight: "bold",
-                    marginTop: "30px",
-                  }}
-                >
-                  TOEFL iBT score (2018):
-                </b>
+                <hr />
+                <b className="fw-bold fs-5">TOEFL iBT score (2018):</b>
                 <b>(95/120)</b>
                 <ul className="bullet">
                   <li>Reading: (28/30)</li>
@@ -81,19 +83,17 @@ export default function Home({ resumeTag }: HomeProps) {
           </div>
         </div>
 
-        <div className="button margTop ofsInTop tCenter">
-          <div className="row">
-            <div className="col-md-12">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href={`https://github.com/1995parham/1995parham.pdf/releases/download/${resumeTag}/main.pdf`}
-                className="but opc-2"
-              >
-                <i className="fas fa-paperclip"></i> Here is my CV (updated at{" "}
-                {resumeTag})
-              </a>
-            </div>
+        <div className="row">
+          <div className="col-md-6 mx-auto">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={`https://github.com/1995parham/1995parham.pdf/releases/download/${resumeTag}/main.pdf`}
+              className="but opc-2"
+            >
+              <i className="fas fa-paperclip"></i> Here is my CV (updated at{" "}
+              {resumeTag})
+            </a>
           </div>
         </div>
       </div>

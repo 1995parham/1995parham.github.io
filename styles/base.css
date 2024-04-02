@@ -195,8 +195,9 @@ body {
   background-color: #efefef;
   font: 14px/22px "open_sans", Arial, sans-serif;
   color: #999999;
-  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   margin: 0;
 }
 
@@ -511,11 +512,11 @@ span.meta-date {
 .block-quote .block-icon,
 .block-nav-work li a,
 .address-info i {
-  border-radius: 100%;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
+  border-radius: 100%;
 }
 
 /* #Links
@@ -530,11 +531,11 @@ nav.main-nav ul,
 .reply-form .submit,
 .item a .desc,
 .owl-page span {
-  transition: all 0.3s ease-in-out 0s;
   -ms-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 /* #Browser Fix
@@ -583,8 +584,8 @@ form,
 .testi-profile,
 .experience .experience-single .exp-icon,
 .exp-icon:before {
-  box-sizing: border-box;
   -moz-box-sizing: border-box; /* Firefox */
+  box-sizing: border-box;
 }
 
 /* #Misc

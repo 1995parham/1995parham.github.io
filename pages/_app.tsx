@@ -27,7 +27,12 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
               <header id="header">
                 <div className="main-header">
                   <figure className="img-profile">
-                    <Image src="/me-1.png" width={1024} height={1024} alt="Parham Alvani" />
+                    <Image
+                      src="/me-1.png"
+                      width={1024}
+                      height={1024}
+                      alt="Parham Alvani"
+                    />
                     <figcaption className="name-profile">
                       <span>PARHAM ALVANI</span>
                     </figcaption>
@@ -47,17 +52,6 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                       </li>
                       <li className="nav-item">
                         <Link
-                          href="/education"
-                          className={
-                            "nav-link " +
-                            (router.pathname === "/education" ? "active" : "")
-                          }
-                        >
-                          <i className="fas fa-graduation-cap"></i>Education
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
                           href="/experience"
                           className={
                             "nav-link " +
@@ -65,6 +59,17 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                           }
                         >
                           <i className="fas fa-briefcase"></i>Work
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link
+                          href="/education"
+                          className={
+                            "nav-link " +
+                            (router.pathname === "/education" ? "active" : "")
+                          }
+                        >
+                          <i className="fas fa-graduation-cap"></i>Education
                         </Link>
                       </li>
                       <li className="nav-item">
