@@ -25,7 +25,7 @@
     "eslint-config-next": "^14.2.5",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-promise": "^7.0.0",
+    "eslint-plugin-promise": "^7.1.0",
     "eslint-plugin-react": "^7.35.0",
     "gray-matter": "^4.0.3",
     "rehype-format": "^5.0.0",
