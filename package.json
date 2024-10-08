@@ -18,10 +18,10 @@
   },
   "devDependencies": {
     "@types/uuid": "^10.0.0",
-    "@types/node": "^22.7.4",
+    "@types/node": "^22.7.5",
     "@types/react": "^18.3.11",
-    "@typescript-eslint/eslint-plugin": "^8.8.0",
-    "@typescript-eslint/parser": "^8.8.0",
+    "@typescript-eslint/eslint-plugin": "^8.8.1",
+    "@typescript-eslint/parser": "^8.8.1",
     "eslint-config-next": "14.2.14",
     "gray-matter": "^4.0.3",
     "rehype-format": "^5.0.1",
