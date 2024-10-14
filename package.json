@@ -12,7 +12,7 @@
     "@fortawesome/fontawesome-free": "^6.6.0",
     "bootstrap": "^5.3.3",
     "highlight.js": "^11.10.0",
-    "next": "^14.2.14",
+    "next": "^14.2.15",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -20,9 +20,9 @@
     "@types/uuid": "^10.0.0",
     "@types/node": "^22.7.5",
     "@types/react": "^18.3.11",
-    "@typescript-eslint/eslint-plugin": "^8.8.1",
-    "@typescript-eslint/parser": "^8.8.1",
-    "eslint-config-next": "14.2.14",
+    "@typescript-eslint/eslint-plugin": "^8.9.0",
+    "@typescript-eslint/parser": "^8.9.0",
+    "eslint-config-next": "14.2.15",
     "gray-matter": "^4.0.3",
     "rehype-format": "^5.0.1",
     "rehype-highlight": "^7.0.0",
@@ -30,7 +30,7 @@
     "remark-gfm": "^4.0.0",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.1",
-    "typescript": "^5.6.2",
+    "typescript": "^5.6.3",
     "unified": "^11.0.5",
     "uuid": "^10.0.0"
   }
