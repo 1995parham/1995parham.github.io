@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@types/uuid": "^10.0.0",
-    "@types/node": "^22.8.7",
+    "@types/node": "^22.9.0",
     "@types/react": "^18.3.12",
     "@typescript-eslint/eslint-plugin": "^8.12.2",
     "@typescript-eslint/parser": "^8.12.2",
