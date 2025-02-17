@@ -21,7 +21,7 @@
     "@types/node": "^22.13.1",
     "@types/react": "^19.0.8",
     "@typescript-eslint/eslint-plugin": "^8.23.0",
-    "@typescript-eslint/parser": "^8.23.0",
+    "@typescript-eslint/parser": "^8.24.0",
     "eslint-config-next": "15.1.6",
     "gray-matter": "^4.0.3",
     "rehype-format": "^5.0.1",
