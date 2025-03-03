@@ -22,7 +22,7 @@
     "@types/react": "^19.0.10",
     "@typescript-eslint/eslint-plugin": "^8.24.1",
     "@typescript-eslint/parser": "^8.24.1",
-    "eslint-config-next": "15.1.7",
+    "eslint-config-next": "15.2.0",
     "gray-matter": "^4.0.3",
     "rehype-format": "^5.0.1",
     "rehype-highlight": "^7.0.2",
