@@ -19,7 +19,7 @@
   "devDependencies": {
     "@types/uuid": "^10.0.0",
     "@types/node": "^22.13.16",
-    "@types/react": "^19.0.12",
+    "@types/react": "^19.1.0",
     "@typescript-eslint/eslint-plugin": "^8.29.0",
     "@typescript-eslint/parser": "^8.29.0",
     "eslint-config-next": "15.2.4",
