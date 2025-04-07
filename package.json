@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^5.3.5",
     "highlight.js": "^11.11.1",
     "next": "^15.2.4",
     "react": "^19.1.0",
@@ -18,8 +18,8 @@
   },
   "devDependencies": {
     "@types/uuid": "^10.0.0",
-    "@types/node": "^22.13.16",
-    "@types/react": "^19.0.12",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.0",
     "@typescript-eslint/eslint-plugin": "^8.29.0",
     "@typescript-eslint/parser": "^8.29.0",
     "eslint-config-next": "15.2.4",
@@ -29,8 +29,8 @@
     "rehype-stringify": "^10.0.1",
     "remark-gfm": "^4.0.1",
     "remark-parse": "^11.0.0",
-    "remark-rehype": "^11.1.1",
-    "typescript": "^5.8.2",
+    "remark-rehype": "^11.1.2",
+    "typescript": "^5.8.3",
     "unified": "^11.0.5",
     "uuid": "^11.1.0"
   }
