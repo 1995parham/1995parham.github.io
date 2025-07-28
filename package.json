@@ -9,20 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@fortawesome/fontawesome-free": "^7.0.0",
     "bootstrap": "^5.3.7",
     "highlight.js": "^11.11.1",
-    "next": "^15.3.5",
+    "next": "^15.4.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@types/uuid": "^10.0.0",
-    "@types/node": "^24.0.13",
+    "@types/node": "^24.1.0",
     "@types/react": "^19.1.8",
-    "@typescript-eslint/eslint-plugin": "^8.36.0",
-    "@typescript-eslint/parser": "^8.36.0",
-    "eslint-config-next": "15.3.5",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "eslint-config-next": "15.4.4",
     "gray-matter": "^4.0.3",
     "rehype-format": "^5.0.1",
     "rehype-highlight": "^7.0.2",
