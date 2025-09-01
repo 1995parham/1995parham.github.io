@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.0",
-    "bootstrap": "^5.3.7",
+    "bootstrap": "^5.3.8",
     "highlight.js": "^11.11.1",
     "next": "^15.5.0",
     "react": "^19.1.1",
