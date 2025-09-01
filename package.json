@@ -12,7 +12,7 @@
     "@fortawesome/fontawesome-free": "^7.0.0",
     "bootstrap": "^5.3.7",
     "highlight.js": "^11.11.1",
-    "next": "^15.5.0",
+    "next": "^15.5.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
