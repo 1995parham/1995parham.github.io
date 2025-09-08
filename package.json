@@ -9,7 +9,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^7.0.0",
+    "@fortawesome/fontawesome-free": "^7.0.1",
     "bootstrap": "^5.3.8",
     "highlight.js": "^11.11.1",
     "next": "^15.5.2",
