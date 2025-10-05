@@ -88,7 +88,7 @@ export default function Home({ resumeTag }: HomeProps) {
             <a
               target="_blank"
               rel="noreferrer"
-              href={`https://github.com/1995parham/1995parham.pdf/releases/download/${resumeTag}/main.pdf`}
+              href={`https://github.com/1995parham/1995parham.pdf/releases/download/${resumeTag}/parham.pdf`}
               className="but opc-2"
             >
               <i className="fas fa-paperclip"></i> Here is my CV (updated at{" "}
@@ -104,7 +104,7 @@ export default function Home({ resumeTag }: HomeProps) {
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   try {
     const res = await fetch(
-      "https://api.github.com/repos/1995parham/1995parham.pdf/releases/latest"
+      "https://api.github.com/repos/1995parham/1995parham.pdf/releases/latest",
     );
 
     if (!res.ok) {
