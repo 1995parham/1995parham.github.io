@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../../components/title";
 import fs from "fs";
-import { GetStaticProps, GetStaticPaths, GetStaticPropsContext } from "next";
+import { GetStaticProps, GetStaticPaths } from "next";
 
 import "highlight.js";
 import "highlight.js/styles/github.css";
@@ -57,10 +57,15 @@ function BlogPostPage(props: BlogProps) {
 }
 
 // pass props to BlogPostPage component
-export const getStaticProps: GetStaticProps<BlogProps> = async (
-  context: GetStaticPropsContext<PathParams>
+export const getStaticProps: GetStaticProps<BlogProps, PathParams> = async (
+  context
 ) => {
-  const slug = context.params.slug; // get slug from params
+  const slug = context.params?.slug; // get slug from params
+
+  if (!slug) {
+    throw new Error("Slug parameter is missing");
+  }
+
   const path = `${process.cwd()}/posts/${slug}.md`;
 
   // read file content and store into rawContent variable

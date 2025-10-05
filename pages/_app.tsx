@@ -8,13 +8,41 @@ import Head from "next/head";
 import Image from "next/image";
 import { AppProps } from "next/app";
 import Link from "next/link";
-import { withRouter, NextRouter } from "next/router";
+import { useRouter } from "next/router";
+import clsx from "clsx";
 
-function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
+function MainApp({ Component, pageProps }: AppProps) {
+  const router = useRouter();
   return (
     <>
       <Head>
-        <title>Parham Alvani</title>
+        <title>Parham Alvani - Backend Developer & IoT Enthusiast</title>
+        <meta
+          name="description"
+          content="Backend Engineer passionate about Internet of Things, Embedded Programming, and Cyber-Physical Systems. 8+ years of experience in software development."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Parham Alvani" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Parham Alvani - Backend Developer" />
+        <meta
+          property="og:description"
+          content="Backend Engineer passionate about Internet of Things, Embedded Programming, and Cyber-Physical Systems."
+        />
+        <meta property="og:url" content="https://1995parham.github.io" />
+        <meta property="og:image" content="https://1995parham.github.io/me-1.png" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Parham Alvani - Backend Developer" />
+        <meta
+          name="twitter:description"
+          content="Backend Engineer passionate about Internet of Things, Embedded Programming, and Cyber-Physical Systems."
+        />
+        <meta name="twitter:image" content="https://1995parham.github.io/me-1.png" />
+
         <link
           rel="icon"
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐼</text></svg>"
@@ -42,10 +70,9 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                       <li className="nav-item">
                         <Link
                           href="/"
-                          className={
-                            "nav-link " +
-                            (router.pathname === "/" ? "active" : "")
-                          }
+                          className={clsx("nav-link", {
+                            active: router.pathname === "/",
+                          })}
                         >
                           <i className="fas fa-user"></i>About Me
                         </Link>
@@ -53,10 +80,9 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                       <li className="nav-item">
                         <Link
                           href="/experience"
-                          className={
-                            "nav-link " +
-                            (router.pathname === "/experience" ? "active" : "")
-                          }
+                          className={clsx("nav-link", {
+                            active: router.pathname === "/experience",
+                          })}
                         >
                           <i className="fas fa-briefcase"></i>Work
                         </Link>
@@ -64,10 +90,9 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                       <li className="nav-item">
                         <Link
                           href="/education"
-                          className={
-                            "nav-link " +
-                            (router.pathname === "/education" ? "active" : "")
-                          }
+                          className={clsx("nav-link", {
+                            active: router.pathname === "/education",
+                          })}
                         >
                           <i className="fas fa-graduation-cap"></i>Education
                         </Link>
@@ -75,10 +100,9 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                       <li className="nav-item">
                         <Link
                           href="/blog"
-                          className={
-                            "nav-link " +
-                            (router.pathname === "/blog" ? "active" : "")
-                          }
+                          className={clsx("nav-link", {
+                            active: router.pathname === "/blog",
+                          })}
                         >
                           <i className="fas fa-blog"></i>Blog
                         </Link>
@@ -86,10 +110,9 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                       <li className="nav-item">
                         <Link
                           href="/contact"
-                          className={
-                            "nav-link " +
-                            (router.pathname === "/contact" ? "active" : "")
-                          }
+                          className={clsx("nav-link", {
+                            active: router.pathname === "/contact",
+                          })}
                         >
                           <i className="fas fa-pen"></i>Contact
                         </Link>
@@ -97,10 +120,9 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
                       <li className="nav-item">
                         <Link
                           href="/lecture"
-                          className={
-                            "nav-link " +
-                            (router.pathname === "/lecture" ? "active" : "")
-                          }
+                          className={clsx("nav-link", {
+                            active: router.pathname === "/lecture",
+                          })}
                         >
                           <i className="fas fa-book"></i>Lectures
                         </Link>
@@ -155,4 +177,4 @@ function MainApp({ Component, pageProps, router }: AppProps & NextRouter) {
   );
 }
 
-export default withRouter(MainApp);
+export default MainApp;

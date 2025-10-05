@@ -102,14 +102,28 @@ export default function Home({ resumeTag }: HomeProps) {
 }
 
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
-  const res = await fetch(
-    "https://api.github.com/repos/1995parham/1995parham.pdf/releases/latest"
-  );
-  const latest = await res.json();
+  try {
+    const res = await fetch(
+      "https://api.github.com/repos/1995parham/1995parham.pdf/releases/latest"
+    );
 
-  return {
-    props: {
-      resumeTag: latest.tag_name,
-    },
-  };
+    if (!res.ok) {
+      throw new Error(`GitHub API returned ${res.status}`);
+    }
+
+    const latest = await res.json();
+
+    return {
+      props: {
+        resumeTag: latest.tag_name || "latest",
+      },
+    };
+  } catch (error) {
+    console.error("Failed to fetch resume tag:", error);
+    return {
+      props: {
+        resumeTag: "latest",
+      },
+    };
+  }
 };
