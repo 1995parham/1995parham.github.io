@@ -3,9 +3,6 @@ import Title from "../../components/title";
 import fs from "fs";
 import { GetStaticProps, GetStaticPaths } from "next";
 
-import "highlight.js";
-import "highlight.js/styles/github.css";
-
 import rehypeStringify from 'rehype-stringify';
 import { unified } from "unified";
 import remarkParse from "remark-parse";

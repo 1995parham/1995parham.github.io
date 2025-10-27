@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "../styles/base.css";
 import "../styles/main.css";
+import "highlight.js/styles/github.css";
 
 import React from "react";
 import Head from "next/head";
