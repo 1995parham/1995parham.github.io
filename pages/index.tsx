@@ -16,40 +16,38 @@ export default function Home({ resumeTag }: HomeProps) {
           <div className="block-content margBSmall">
             <div className="profile margBSmall">
               <h1>Parham Alvani</h1>
-              <h3>Backend developer</h3>
+              <h3>Senior Software & Platform Engineer</h3>
             </div>
             <div className="row">
               <div className="col-md-8 text-body">
                 <p>
-                  I was born on February 20, 1995, in Tehran. I work as a
-                  Backend Engineer and I love to write codes. Everything for me
-                  began in 2012 when I finished my high school and start my
-                  bachelor at Amirkabir University in Software engineer. My
-                  first programming course was with{" "}
+                  Software engineer with a Ph.D. and over 10 years of experience
+                  building backend systems and cloud-native platforms. Proven
+                  expertise in Go, Python, Kubernetes, and microservices
+                  architecture, with hands-on success engineering high-throughput
+                  solutions handling 300,000+ messages/sec.
+                </p>
+                <br />
+                <p>
+                  My journey began in 2012 at Amirkabir University of Technology,
+                  where my first programming course with{" "}
                   <a href="https://ce.aut.ac.ir/~bakhshis/">Prof. Bakhshi</a>{" "}
-                  which was great and motivated me to learn more about Unix,
-                  Linux and the world of Computer.
+                  sparked my passion for Unix, Linux, and the world of computing.
                 </p>
                 <br />
                 <p>
-                  I am interested in networks and using of them in Internet of
-                  Things and I do my best to improve the network connections of
-                  things around the world.
+                  I am deeply interested in networks and their applications in
+                  Internet of Things. As a researcher, I love hands-on work—building
+                  real systems rather than theoretical models. My Ph.D. research
+                  focused on practical IoT solutions and network protocols.
                 </p>
                 <br />
                 <p>
-                  As a researcher, I love to do hands-on research and create a
-                  thing instead of writing useless equations. In the world of
-                  Internet of Things you have this opportunity to do this
-                  because here we have more hands-on journals and your
-                  requirements to create things is not too much.
-                </p>
-                <br />
-                <p>
-                  As a developer, I love to solve challenges, learn the root
-                  cause of our issues, increasing performance, etc. During the
-                  8+ years of experience in this field, I worked with legacy
-                  softwares, I do refactoring, being on-calls, etc.
+                  As a developer, I thrive on solving complex challenges, understanding
+                  root causes, and optimizing performance. My track record spans
+                  full-stack development, distributed systems design, and platform
+                  engineering—from writing production services to architecting
+                  company-wide infrastructure.
                 </p>
                 <br />
                 <Image
@@ -67,16 +65,15 @@ export default function Home({ resumeTag }: HomeProps) {
                   <li>Embedded Programming</li>
                   <li>Cyber-Physical Systems</li>
                   <li>Kernel Hacking</li>
-                  <li>Mathematical Optimization</li>
+                  <li>Cloud-Native Platforms</li>
                 </ul>
                 <hr />
-                <b className="fw-bold fs-5">TOEFL iBT score (2018):</b>
-                <b>(95/120)</b>
+                <b className="fw-bold fs-5">Key Skills:</b>
                 <ul className="bullet">
-                  <li>Reading: (28/30)</li>
-                  <li>Listening: (27/30)</li>
-                  <li>Speaking: (20/30)</li>
-                  <li>Writing: (20/30)</li>
+                  <li>Go, Python, Rust</li>
+                  <li>Kubernetes, Docker</li>
+                  <li>Microservices Architecture</li>
+                  <li>Platform Engineering</li>
                 </ul>
               </div>
             </div>
