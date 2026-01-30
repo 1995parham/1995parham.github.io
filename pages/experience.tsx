@@ -1,5 +1,4 @@
 import Title from "../components/title";
-import React from "react";
 import Image from "next/image";
 
 function Experience() {
@@ -23,8 +22,8 @@ function Experience() {
               </li>
               <li>
                 Architected and implemented Django database models, overcoming
-                the project&apos;s most significant technical challenge to ensure
-                data integrity and system functionality.
+                the project&apos;s most significant technical challenge to
+                ensure data integrity and system functionality.
               </li>
               <li>
                 Built an AI-powered transcription pipeline using Deepgram, RAG,
@@ -35,9 +34,6 @@ function Experience() {
           </div>
 
           {/* Snapp */}
-          <div className="col-3 mx-auto">
-            <Image src="/snapp.png" height={1024} width={1024} alt="snapp" />
-          </div>
           <div className="text-body">
             <h4>Snapp!</h4>
             <h6 className="text-muted">
@@ -46,7 +42,8 @@ function Experience() {
             <ul>
               <li>
                 Led the design and implementation of a company-wide cloud
-                platform, progressing to lead engineer for platform architecture.
+                platform, progressing to lead engineer for platform
+                architecture.
               </li>
               <li>
                 Engineered Kubernetes operators (CRDs) to automate ArgoCD
@@ -89,9 +86,6 @@ function Experience() {
           </div>
 
           {/* IoT Working Group / AIOTRC */}
-          <div className="col-3 mx-auto">
-            <Image src="/aiotrc.png" height={1024} width={1024} alt="aiotrc" />
-          </div>
           <div className="text-body">
             <h4>IoT Working Group of Amirkabir University of Technology</h4>
             <h6 className="text-muted">

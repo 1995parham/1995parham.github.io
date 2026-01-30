@@ -110,16 +110,6 @@ function MainApp({ Component, pageProps }: AppProps) {
                       </li>
                       <li className="nav-item">
                         <Link
-                          href="/contact"
-                          className={clsx("nav-link", {
-                            active: router.pathname === "/contact",
-                          })}
-                        >
-                          <i className="fas fa-pen"></i>Contact
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
                           href="/lecture"
                           className={clsx("nav-link", {
                             active: router.pathname === "/lecture",
@@ -188,8 +178,61 @@ function MainApp({ Component, pageProps }: AppProps) {
                 </div>
               </header>
             </div>
-            <div className="col-md-9 right-content">
+            <div className="col-md-7 right-content">
               <Component {...pageProps} />
+            </div>
+            <div className="col-md-2">
+              <aside className="contact-sidebar sticky-top pt-4">
+                <div className="sidebar-title">
+                  <h5>Contact Me</h5>
+                  <div className="divider">
+                    <div data-svg-drawing="yes" className="zigzag large clearfix">
+                      <svg
+                        xmlSpace="preserve"
+                        viewBox="0 0 69.172 14.975"
+                        width="37"
+                        height="28"
+                        y="0px"
+                        x="0px"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        version="1.1"
+                      >
+                        <path
+                          d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793"
+                          style={{ strokeDasharray: "93.9851, 93.9851", strokeDashoffset: 0 }}
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <ul className="contact-list">
+                  <li>
+                    <a href="https://wa.me/989390909540" target="_blank" rel="noopener">
+                      <i className="fab fa-whatsapp"></i>
+                      <span>WhatsApp</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/parham_alvani" target="_blank" rel="noopener">
+                      <i className="fab fa-telegram"></i>
+                      <span>Telegram</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:parham.alvani@gmail.com">
+                      <i className="fab fa-google"></i>
+                      <span>Email</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/1995parham.keys" target="_blank" rel="noopener">
+                      <i className="fas fa-key"></i>
+                      <span>Public Keys</span>
+                    </a>
+                  </li>
+                </ul>
+              </aside>
             </div>
           </div>
         </div>

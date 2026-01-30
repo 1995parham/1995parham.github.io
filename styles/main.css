@@ -1583,3 +1583,86 @@ span.meta-date {
 }
 
 /* -------------------- End media queries -------------------- */
+
+/* -------------------- About Page -------------------- */
+.about .col-md-4 b.fw-bold {
+  color: #eb874f;
+  font-size: 13px !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* -------------------- Experience Page -------------------- */
+.experience .text-body h4 {
+  color: #eb874f;
+}
+
+/* -------------------- Contact Sidebar -------------------- */
+.contact-sidebar {
+  background: #ffffff;
+  padding: 20px 15px;
+  border-left: 1px solid #efefef;
+}
+
+.contact-sidebar .sidebar-title {
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.contact-sidebar .sidebar-title h5 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.contact-sidebar .sidebar-title .divider {
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+}
+
+.contact-sidebar .contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-sidebar .contact-list li {
+  margin-bottom: 12px;
+}
+
+.contact-sidebar .contact-list li a {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.3s ease;
+}
+
+.contact-sidebar .contact-list li a:hover {
+  color: #eb874f;
+}
+
+.contact-sidebar .contact-list li a i {
+  width: 20px;
+  margin-right: 10px;
+  color: #eb874f;
+  font-size: 16px;
+}
+
+.contact-sidebar .contact-list li a span {
+  flex: 1;
+}
+
+@media (max-width: 991px) {
+  .contact-sidebar {
+    margin-top: 30px;
+    border-left: none;
+    border-top: 1px solid #efefef;
+  }
+}
