@@ -155,7 +155,7 @@ function MainApp({ Component, pageProps }: AppProps) {
                     </li>
                     <li className="anim">
                       <a
-                        href="http://stackoverflow.com/users/4242097/parham-alvani"
+                        href="https://stackoverflow.com/users/4242097/parham-alvani"
                         target="_blank"
                         rel="noopener"
                         aria-label="Stackoverflow"

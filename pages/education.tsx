@@ -25,7 +25,7 @@ function Education () {
                           <b className="bold">
                             <a
                               className="gpacolor"
-                              href="http://aut.ac.ir/aut/">
+                              href="https://aut.ac.ir/">
                               Amirkabir University of Technology
                             </a>
                           </b>
@@ -48,7 +48,7 @@ function Education () {
                           <b className="bold">
                             <a
                               className="gpacolor"
-                              href="http://aut.ac.ir/aut/">
+                              href="https://aut.ac.ir/">
                               Amirkabir University of Technology
                             </a>
                           </b>

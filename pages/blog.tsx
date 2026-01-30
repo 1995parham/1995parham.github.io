@@ -20,7 +20,7 @@ interface PostInfo {
 
 export default function IndexPage(props: BlogProps) {
   return (
-    <section id="contact" className="bgWhite ofsInBottom">
+    <section id="blog" className="bgWhite ofsInBottom">
       <div className="contact">
         <Title title="Blog" />
         <div className="content">
@@ -28,8 +28,7 @@ export default function IndexPage(props: BlogProps) {
             <div className="row">
               <div className="col-md-8">
                 <ul>
-                  <li><Link href="https://github.com/1995parham-learning/cloud-roadmap">Cloud Engineer Roadmap</Link></li>
-                  <li><Link href="https://github.com/1995parham-teaching/interviews">Getting ready for interviews</Link></li>
+                  <li><a href="https://github.com/1995parham-teaching/interviews" target="_blank" rel="noopener">Getting ready for interviews</a></li>
                   {props.posts.map((post,) => {
                     return (
                       <li key={post.id}>

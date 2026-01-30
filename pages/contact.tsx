@@ -18,9 +18,29 @@ function Contact() {
                 <br />
 
                 <strong>
-                  <i className="fab fa-skype"></i> Skype
+                  <i className="fab fa-whatsapp"></i> WhatsApp
                 </strong>
-                :&nbsp; parham.alvani
+                :&nbsp;
+                <a
+                  href="https://wa.me/98XXXXXXXXXX"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  +98 XXX XXX XXXX
+                </a>
+                <br />
+
+                <strong>
+                  <i className="fab fa-telegram"></i> Telegram
+                </strong>
+                :&nbsp;
+                <a
+                  href="https://t.me/parham_alvani"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  @parham_alvani
+                </a>
                 <br />
               </div>
               <div className="col-md-4">

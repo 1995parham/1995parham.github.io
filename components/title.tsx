@@ -1,15 +1,15 @@
-import Divier from "./divider";
+import Divider from "./divider";
 import React from "react";
 
-type TitpProps = {
+type TitleProps = {
   title: string;
 };
 
-function Title({ title }: TitpProps) {
+function Title({ title }: TitleProps) {
   return (
     <div className="main-title">
       <h1>{title}</h1>
-      <Divier />
+      <Divider />
     </div>
   );
 }
