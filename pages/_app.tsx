@@ -17,23 +17,37 @@ function MainApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+
         <title>Parham Alvani - Senior Software & Platform Engineer</title>
         <meta
           name="description"
           content="Software engineer with a Ph.D. and 10+ years of experience building backend systems and cloud-native platforms. Expertise in Go, Python, Kubernetes, and microservices architecture."
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Parham Alvani" />
+        <meta
+          name="keywords"
+          content="Parham Alvani, Senior Software Engineer, Platform Engineer, Go Developer, Kubernetes Expert, Cloud Native Engineer, Backend Developer, Microservices, Python, DevOps"
+        />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href={`https://1995parham.github.io${router.asPath === "/" ? "" : router.asPath}`} />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Parham Alvani" />
+        <meta property="og:locale" content="en_US" />
         <meta property="og:title" content="Parham Alvani - Senior Software & Platform Engineer" />
         <meta
           property="og:description"
           content="Software engineer with a Ph.D. and 10+ years of experience in backend systems, cloud-native platforms, and microservices architecture."
         />
         <meta property="og:url" content="https://1995parham.github.io" />
-        <meta property="og:image" content="https://1995parham.github.io/me-1.png" />
+        <meta property="og:image" content="https://1995parham.github.io/parham-alvani-profile.png" />
+        <meta property="og:image:alt" content="Parham Alvani - Software Engineer" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary" />
@@ -42,7 +56,36 @@ function MainApp({ Component, pageProps }: AppProps) {
           name="twitter:description"
           content="Software engineer with a Ph.D. and 10+ years of experience in backend systems, cloud-native platforms, and microservices architecture."
         />
-        <meta name="twitter:image" content="https://1995parham.github.io/me-1.png" />
+        <meta name="twitter:image" content="https://1995parham.github.io/parham-alvani-profile.png" />
+
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Parham Alvani",
+              "jobTitle": "Senior Software & Platform Engineer",
+              "description": "Software engineer with a Ph.D. and 10+ years of experience building backend systems and cloud-native platforms.",
+              "url": "https://1995parham.github.io",
+              "image": "https://1995parham.github.io/parham-alvani-profile.png",
+              "email": "parham.alvani@gmail.com",
+              "sameAs": [
+                "https://github.com/1995parham",
+                "https://stackoverflow.com/users/4242097/parham-alvani",
+                "https://www.youtube.com/@parhamalvani",
+                "https://www.reddit.com/user/1995parham",
+                "https://t.me/parham_alvani"
+              ],
+              "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "Amirkabir University of Technology"
+              },
+              "knowsAbout": ["Go", "Python", "Kubernetes", "Microservices", "Cloud Native", "IoT", "Backend Development"]
+            })
+          }}
+        />
 
         <link
           rel="icon"
@@ -57,7 +100,7 @@ function MainApp({ Component, pageProps }: AppProps) {
                 <div className="main-header">
                   <figure className="img-profile">
                     <Image
-                      src="/me-1.png"
+                      src="/parham-alvani-profile.png"
                       width={1024}
                       height={1024}
                       alt="Parham Alvani"
@@ -232,6 +275,15 @@ function MainApp({ Component, pageProps }: AppProps) {
                     </a>
                   </li>
                 </ul>
+                <a
+                  href="https://github.com/1995parham"
+                  target="_blank"
+                  rel="noopener"
+                  className="github-follow-btn"
+                >
+                  <i className="fab fa-github"></i>
+                  <span>Follow me on GitHub</span>
+                </a>
               </aside>
             </div>
           </div>

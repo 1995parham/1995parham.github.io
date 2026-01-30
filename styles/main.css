@@ -1597,6 +1597,11 @@ span.meta-date {
   color: #eb874f;
 }
 
+.experience .text-body h6.text-muted {
+  color: #3d9970 !important;
+  font-weight: 500;
+}
+
 /* -------------------- Contact Sidebar -------------------- */
 .contact-sidebar {
   background: #ffffff;
@@ -1657,6 +1662,31 @@ span.meta-date {
 
 .contact-sidebar .contact-list li a span {
   flex: 1;
+}
+
+.contact-sidebar .github-follow-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #24292e;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-sidebar .github-follow-btn:hover {
+  background-color: #eb874f;
+  color: #ffffff;
+}
+
+.contact-sidebar .github-follow-btn i {
+  font-size: 16px;
 }
 
 @media (max-width: 991px) {

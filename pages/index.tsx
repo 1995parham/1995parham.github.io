@@ -51,7 +51,7 @@ export default function Home({ resumeTag }: HomeProps) {
                 </p>
                 <br />
                 <Image
-                  src="/me-2.jpg"
+                  src="/parham-alvani-software-engineer.jpg"
                   width={1024}
                   height={1024}
                   alt="Parham Alvani"

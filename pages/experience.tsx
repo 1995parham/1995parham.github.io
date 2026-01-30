@@ -1,9 +1,18 @@
 import Title from "../components/title";
 import Image from "next/image";
+import Head from "next/head";
 
 function Experience() {
   return (
-    <section id="work-exp" className="bgWhite ofsInBottom">
+    <>
+      <Head>
+        <title>Work Experience - Parham Alvani | Senior Software Engineer</title>
+        <meta
+          name="description"
+          content="Professional experience of Parham Alvani: Senior Cloud Engineer at Snapp!, Software Engineer at AveeHealth, and Software Architect at Amirkabir University IoT Lab."
+        />
+      </Head>
+      <section id="work-exp" className="bgWhite ofsInBottom">
       <div className="experience">
         <Title title="Work Experience" />
 
@@ -115,6 +124,7 @@ function Experience() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

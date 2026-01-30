@@ -1,10 +1,18 @@
 import Divider from '../components/divider'
 import Title from '../components/title'
-import React from 'react'
+import Head from 'next/head'
 
 function Education () {
   return (
-    <section id="education" className="bgWhite ofsInBottom">
+    <>
+      <Head>
+        <title>Education - Parham Alvani | Ph.D. in Computer Network</title>
+        <meta
+          name="description"
+          content="Educational background of Parham Alvani: Ph.D. and M.Sc. in Computer Network, B.Sc. in Computer Software Engineering from Amirkabir University of Technology."
+        />
+      </Head>
+      <section id="education" className="bgWhite ofsInBottom">
       <div className="expertise">
         <Title title="Education" />
         <div className="content">
@@ -113,6 +121,7 @@ function Education () {
         </div>
       </div>
     </section>
+    </>
   )
 }
 

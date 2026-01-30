@@ -1,0 +1,6 @@
+# robots.txt for https://1995parham.github.io
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://1995parham.github.io/sitemap.xml

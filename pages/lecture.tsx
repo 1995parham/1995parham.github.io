@@ -1,9 +1,17 @@
 import Title from "../components/title";
-import React from "react";
+import Head from "next/head";
 
 function Lecture() {
   return (
-    <section id="lecture" className="bgWhite ofsInBottom">
+    <>
+      <Head>
+        <title>Lectures - Parham Alvani | Teaching & Courses</title>
+        <meta
+          name="description"
+          content="Teaching materials and courses by Parham Alvani: Internet Engineering, Python 201, and Introduction to Programming."
+        />
+      </Head>
+      <section id="lecture" className="bgWhite ofsInBottom">
       <div className="expertise">
         <Title title="Lectures" />
         <div className="content">
@@ -53,6 +61,7 @@ function Lecture() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

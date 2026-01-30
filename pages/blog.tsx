@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Head from "next/head";
 import { GetStaticProps } from "next";
 import Title from "../components/title";
 import fs from "fs";
@@ -20,7 +21,15 @@ interface PostInfo {
 
 export default function IndexPage(props: BlogProps) {
   return (
-    <section id="blog" className="bgWhite ofsInBottom">
+    <>
+      <Head>
+        <title>Blog - Parham Alvani | Technical Articles & Tutorials</title>
+        <meta
+          name="description"
+          content="Technical blog posts by Parham Alvani covering IoT platforms, software development, cloud engineering, and programming tutorials."
+        />
+      </Head>
+      <section id="blog" className="bgWhite ofsInBottom">
       <div className="contact">
         <Title title="Blog" />
         <div className="content">
@@ -45,6 +54,7 @@ export default function IndexPage(props: BlogProps) {
         </div>
       </div>
     </section>
+    </>
   );
 }
 
