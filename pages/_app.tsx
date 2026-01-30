@@ -163,6 +163,26 @@ function MainApp({ Component, pageProps }: AppProps) {
                         <i className="fab fa-stack-overflow"></i>
                       </a>
                     </li>
+                    <li className="anim">
+                      <a
+                        href="https://www.youtube.com/@parhamalvani"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="YouTube"
+                      >
+                        <i className="fab fa-youtube"></i>
+                      </a>
+                    </li>
+                    <li className="anim">
+                      <a
+                        href="https://www.reddit.com/user/1995parham"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Reddit"
+                      >
+                        <i className="fab fa-reddit"></i>
+                      </a>
+                    </li>
                   </ul>
                   <p>I Have a Dream</p>
                 </div>
