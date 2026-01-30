@@ -17,30 +17,30 @@ function MainApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Parham Alvani - Backend Developer & IoT Enthusiast</title>
+        <title>Parham Alvani - Senior Software & Platform Engineer</title>
         <meta
           name="description"
-          content="Backend Engineer passionate about Internet of Things, Embedded Programming, and Cyber-Physical Systems. 8+ years of experience in software development."
+          content="Software engineer with a Ph.D. and 10+ years of experience building backend systems and cloud-native platforms. Expertise in Go, Python, Kubernetes, and microservices architecture."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Parham Alvani" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Parham Alvani - Backend Developer" />
+        <meta property="og:title" content="Parham Alvani - Senior Software & Platform Engineer" />
         <meta
           property="og:description"
-          content="Backend Engineer passionate about Internet of Things, Embedded Programming, and Cyber-Physical Systems."
+          content="Software engineer with a Ph.D. and 10+ years of experience in backend systems, cloud-native platforms, and microservices architecture."
         />
         <meta property="og:url" content="https://1995parham.github.io" />
         <meta property="og:image" content="https://1995parham.github.io/me-1.png" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Parham Alvani - Backend Developer" />
+        <meta name="twitter:title" content="Parham Alvani - Senior Software & Platform Engineer" />
         <meta
           name="twitter:description"
-          content="Backend Engineer passionate about Internet of Things, Embedded Programming, and Cyber-Physical Systems."
+          content="Software engineer with a Ph.D. and 10+ years of experience in backend systems, cloud-native platforms, and microservices architecture."
         />
         <meta name="twitter:image" content="https://1995parham.github.io/me-1.png" />
 
