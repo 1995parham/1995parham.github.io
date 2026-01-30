@@ -13,23 +13,21 @@ function Contact() {
                 <strong>
                   <i className="fab fa-google"></i> Email
                 </strong>
-                :&nbsp; parham.alvani <strong>at</strong>{" "}
-                gmail <strong>dot</strong> com
+                :&nbsp; parham.alvani <strong>at</strong> gmail{" "}
+                <strong>dot</strong> com
                 <br />
-
                 <strong>
                   <i className="fab fa-whatsapp"></i> WhatsApp
                 </strong>
                 :&nbsp;
                 <a
-                  href="https://wa.me/98XXXXXXXXXX"
+                  href="https://wa.me/989390909540"
                   target="_blank"
                   rel="noopener"
                 >
-                  +98 XXX XXX XXXX
+                  +98 939 09 09 540
                 </a>
                 <br />
-
                 <strong>
                   <i className="fab fa-telegram"></i> Telegram
                 </strong>
