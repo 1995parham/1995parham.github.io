@@ -23,7 +23,7 @@
     "@types/node": "^25.2.3",
     "@types/react": "^19.2.14",
     "@typescript-eslint/eslint-plugin": "^8.55.0",
-    "@typescript-eslint/parser": "^8.55.0",
+    "@typescript-eslint/parser": "^8.56.0",
     "eslint": "^9.39.2",
     "eslint-config-next": "16.1.6",
     "gray-matter": "^4.0.3",
