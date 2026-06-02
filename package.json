@@ -1,46 +1,37 @@
 {
-  "name": "1995parham-me",
-  "version": "0.1.0",
-  "private": true,
-  "packageManager": "pnpm@10.33.0",
-  "scripts": {
-    "dev": "next dev --turbo",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint ."
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^7.2.0",
-    "bootstrap": "^5.3.8",
-    "clsx": "^2.1.1",
-    "highlight.js": "^11.11.1",
-    "next": "^16.2.7",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.6"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3.3.5",
-    "@types/node": "^25.9.1",
-    "@types/react": "^19.2.16",
-    "@typescript-eslint/eslint-plugin": "^8.59.4",
-    "@typescript-eslint/parser": "^8.60.1",
-    "eslint": "^9.39.4",
-    "eslint-config-next": "16.2.7",
-    "gray-matter": "^4.0.3",
-    "rehype-format": "^5.0.1",
-    "rehype-highlight": "^7.0.2",
-    "rehype-stringify": "^10.0.1",
-    "remark-gfm": "^4.0.1",
-    "remark-parse": "^11.0.0",
-    "remark-rehype": "^11.1.2",
-    "typescript": "^6.0.3",
-    "unified": "^11.0.5",
-    "uuid": "^14.0.0"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "sharp",
-      "unrs-resolver"
-    ]
-  }
+	"name": "1995parham-me",
+	"version": "0.1.0",
+	"private": true,
+	"packageManager": "pnpm@10.33.0",
+	"scripts": {
+		"dev": "next dev --turbo",
+		"build": "next build",
+		"start": "next start",
+		"lint": "biome check .",
+		"format": "biome check --write ."
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "^7.2.0",
+		"bootstrap": "^5.3.8",
+		"clsx": "^2.1.1",
+		"highlight.js": "^11.11.1",
+		"next": "^16.2.7",
+		"react": "^19.2.7",
+		"react-dom": "^19.2.7"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.16",
+		"@types/node": "^25.9.1",
+		"@types/react": "^19.2.16",
+		"gray-matter": "^4.0.3",
+		"rehype-format": "^5.0.1",
+		"rehype-highlight": "^7.0.2",
+		"rehype-stringify": "^10.0.1",
+		"remark-gfm": "^4.0.1",
+		"remark-parse": "^11.0.0",
+		"remark-rehype": "^11.1.2",
+		"typescript": "^6.0.3",
+		"unified": "^11.0.5",
+		"uuid": "^14.0.0"
+	}
 }

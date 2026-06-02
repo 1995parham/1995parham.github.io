@@ -4,6 +4,9 @@ default:
 lint:
     pnpm lint
 
+format:
+    pnpm format
+
 build:
     pnpm build
 
