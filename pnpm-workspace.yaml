@@ -1,3 +1,7 @@
 onlyBuiltDependencies:
   - sharp
   - unrs-resolver
+
+# Force a patched postcss (transitive via next) for CVE-2026-41305.
+overrides:
+  postcss: ">=8.5.10"
