@@ -15,13 +15,13 @@
 		"bootstrap": "^5.3.8",
 		"clsx": "^2.1.1",
 		"highlight.js": "^11.11.1",
-		"next": "^16.2.7",
+		"next": "^16.2.9",
 		"react": "^19.2.7",
 		"react-dom": "^19.2.7"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.4.16",
-		"@types/node": "^25.9.2",
+		"@biomejs/biome": "^2.5.0",
+		"@types/node": "^25.9.3",
 		"@types/react": "^19.2.17",
 		"gray-matter": "^4.0.3",
 		"rehype-format": "^5.0.1",
