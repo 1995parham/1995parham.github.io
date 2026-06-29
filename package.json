@@ -11,7 +11,7 @@
 		"format": "biome check --write ."
 	},
 	"dependencies": {
-		"@fortawesome/fontawesome-free": "^7.2.0",
+		"@fortawesome/fontawesome-free": "^7.3.0",
 		"bootstrap": "^5.3.8",
 		"clsx": "^2.1.1",
 		"highlight.js": "^11.11.1",
