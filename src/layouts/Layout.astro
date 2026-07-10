@@ -1,0 +1,272 @@
+---
+import { Image } from "astro:assets";
+import profile from "../assets/parham-alvani-profile.png";
+import "bootstrap/dist/css/bootstrap.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "../styles/base.css";
+import "../styles/main.css";
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const {
+	title = "Parham Alvani - Senior Software & Platform Engineer",
+	description = "Software engineer with a Ph.D. and 10+ years of experience building backend systems and cloud-native platforms. Expertise in Go, Python, Kubernetes, and microservices architecture.",
+} = Astro.props;
+
+const { pathname } = Astro.url;
+const canonical = new URL(pathname, Astro.site).href;
+
+// Normalize the current path (drop the trailing slash Astro emits for
+// directory routes) so nav links match regardless of `trailingSlash` config.
+const currentPath = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
+
+const nav = [
+	{ href: "/", icon: "fa-user", label: "About Me" },
+	{ href: "/experience", icon: "fa-briefcase", label: "Work" },
+	{ href: "/education", icon: "fa-graduation-cap", label: "Education" },
+	{ href: "/blog", icon: "fa-blog", label: "Blog" },
+	{ href: "/lecture", icon: "fa-book", label: "Lectures" },
+];
+
+const socials = [
+	{ href: "https://github.com/1995parham", icon: "fa-github", label: "Github" },
+	{
+		href: "https://stackoverflow.com/users/4242097/parham-alvani",
+		icon: "fa-stack-overflow",
+		label: "Stackoverflow",
+	},
+	{
+		href: "https://www.youtube.com/@parhamalvani",
+		icon: "fa-youtube",
+		label: "YouTube",
+	},
+	{
+		href: "https://www.reddit.com/user/1995parham",
+		icon: "fa-reddit",
+		label: "Reddit",
+	},
+];
+
+const jsonLd = {
+	"@context": "https://schema.org",
+	"@type": "Person",
+	name: "Parham Alvani",
+	jobTitle: "Senior Software & Platform Engineer",
+	description:
+		"Software engineer with a Ph.D. and 10+ years of experience building backend systems and cloud-native platforms.",
+	url: "https://1995parham.github.io",
+	image: "https://1995parham.github.io/parham-alvani-profile.png",
+	email: "parham.alvani@gmail.com",
+	sameAs: [
+		"https://github.com/1995parham",
+		"https://stackoverflow.com/users/4242097/parham-alvani",
+		"https://www.youtube.com/@parhamalvani",
+		"https://www.reddit.com/user/1995parham",
+		"https://t.me/parham_alvani",
+	],
+	alumniOf: {
+		"@type": "CollegeOrUniversity",
+		name: "Amirkabir University of Technology",
+	},
+	knowsAbout: [
+		"Go",
+		"Python",
+		"Kubernetes",
+		"Microservices",
+		"Cloud Native",
+		"IoT",
+		"Backend Development",
+	],
+};
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#ffffff" />
+		<meta name="robots" content="index, follow" />
+		<meta name="googlebot" content="index, follow" />
+		<meta name="generator" content={Astro.generator} />
+
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="author" content="Parham Alvani" />
+		<meta
+			name="keywords"
+			content="Parham Alvani, Senior Software Engineer, Platform Engineer, Go Developer, Kubernetes Expert, Cloud Native Engineer, Backend Developer, Microservices, Python, DevOps"
+		/>
+
+		<link rel="canonical" href={canonical} />
+
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Parham Alvani" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonical} />
+		<meta
+			property="og:image"
+			content="https://1995parham.github.io/parham-alvani-profile.png"
+		/>
+		<meta property="og:image:alt" content="Parham Alvani - Software Engineer" />
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta
+			name="twitter:image"
+			content="https://1995parham.github.io/parham-alvani-profile.png"
+		/>
+
+		<!-- RSS feed autodiscovery -->
+		<link
+			rel="alternate"
+			type="application/rss+xml"
+			title="Parham Alvani | Blog"
+			href={new URL("rss.xml", Astro.site).href}
+		/>
+
+		<!-- JSON-LD Structured Data -->
+		<script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐼</text></svg>"
+		/>
+	</head>
+	<body>
+		<div class="margLTop margLBottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 left-content">
+						<header id="header">
+							<div class="main-header">
+								<figure class="img-profile">
+									<Image
+									src={profile}
+									alt="Parham Alvani"
+									width={1024}
+									height={1024}
+									loading="eager"
+									fetchpriority="high"
+								/>
+									<figcaption class="name-profile">
+										<span>PARHAM ALVANI</span>
+									</figcaption>
+								</figure>
+								<nav class="main-nav">
+									<ul>
+										{
+											nav.map((item) => (
+												<li class="nav-item">
+													<a
+														href={item.href}
+														class:list={["nav-link", { active: currentPath === item.href }]}
+													>
+														<i class={`fas ${item.icon}`} />
+														{item.label}
+													</a>
+												</li>
+											))
+										}
+										<li class="nav-item">
+											<a
+												href="https://1995parham.github.io/MeInBSc/"
+												rel="noopener"
+												target="_blank"
+												class="nav-link"
+											>
+												<i class="fas fa-memory" />Me in B.Sc. (Persian)
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<div class="bottom-header bgWhite ofsTSmall ofsBSmall tCenter">
+								<ul class="social">
+									{
+										socials.map((s) => (
+											<li class="anim">
+												<a href={s.href} target="_blank" rel="me noopener" aria-label={s.label}>
+													<i class={`fab ${s.icon}`} />
+												</a>
+											</li>
+										))
+									}
+								</ul>
+								<p>I Have a Dream</p>
+							</div>
+						</header>
+					</div>
+					<main id="main" class="col-md-7 right-content">
+						<slot />
+					</main>
+					<div class="col-md-2">
+						<aside class="contact-sidebar sticky-top pt-4">
+							<div class="sidebar-title">
+								<h5>Contact Me</h5>
+								<div class="divider">
+									<div data-svg-drawing="yes" class="zigzag large clearfix">
+										<svg
+											aria-hidden="true"
+											xml:space="preserve"
+											viewBox="0 0 69.172 14.975"
+											width="37"
+											height="28"
+											y="0px"
+											x="0px"
+											version="1.1"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+										>
+											<path
+												d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793"
+												style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"
+											></path>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<ul class="contact-list">
+								<li>
+									<a href="https://wa.me/989390909540" target="_blank" rel="noopener">
+										<i class="fab fa-whatsapp" /><span>WhatsApp</span>
+									</a>
+								</li>
+								<li>
+									<a href="https://t.me/parham_alvani" target="_blank" rel="noopener">
+										<i class="fab fa-telegram" /><span>Telegram</span>
+									</a>
+								</li>
+								<li>
+									<a href="mailto:parham.alvani@gmail.com">
+										<i class="fab fa-google" /><span>Email</span>
+									</a>
+								</li>
+								<li>
+									<a href="https://github.com/1995parham.keys" target="_blank" rel="noopener">
+										<i class="fas fa-key" /><span>Public Keys</span>
+									</a>
+								</li>
+							</ul>
+							<a
+								href="https://github.com/1995parham"
+								target="_blank"
+								rel="noopener"
+								class="github-follow-btn"
+							>
+								<i class="fab fa-github" /><span>Follow me on GitHub</span>
+							</a>
+						</aside>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

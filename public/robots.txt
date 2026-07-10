@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://1995parham.github.io/sitemap.xml
+Sitemap: https://1995parham.github.io/sitemap-index.xml

@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+import Title from "../../components/Title.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const posts = (await getCollection("blog")).sort(
+	(a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+---
+<Layout
+	title="Blog - Parham Alvani | Technical Articles & Tutorials"
+	description="Technical blog posts by Parham Alvani covering IoT platforms, software development, cloud engineering, and programming tutorials."
+>
+	<section id="blog" class="bgWhite ofsInBottom">
+		<div class="contact">
+			<Title title="Blog" />
+			<div class="content">
+				<div class="block-content margBSmall">
+					<div class="row">
+						<div class="col-md-8">
+							<ul>
+								<li>
+									<a
+										href="https://github.com/1995parham-teaching/interviews"
+										target="_blank"
+										rel="noopener"
+									>
+										Getting ready for interviews
+									</a>
+								</li>
+								{
+									posts.map((post) => (
+										<li>
+											<a href={`/blog/${post.id}`}>
+												{post.data.title} @ {post.data.date.toISOString().slice(0, 10)}
+											</a>
+										</li>
+									))
+								}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>

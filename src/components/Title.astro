@@ -1,0 +1,13 @@
+---
+import Divider from "./Divider.astro";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+<div class="main-title">
+	<h1>{title}</h1>
+	<Divider />
+</div>

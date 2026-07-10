@@ -1,5 +1,5 @@
 {
-	"$schema": "https://biomejs.dev/schemas/2.4.16/schema.json",
+	"$schema": "https://biomejs.dev/schemas/2.5.3/schema.json",
 	"vcs": {
 		"enabled": true,
 		"clientKind": "git",
@@ -7,7 +7,7 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"includes": ["**", "!styles", "!tsconfig.json", "!next-env.d.ts"]
+		"includes": ["**", "!src/styles", "!dist", "!.astro", "!tsconfig.json"]
 	},
 	"formatter": {
 		"enabled": true,
@@ -15,10 +15,6 @@
 	},
 	"linter": {
 		"enabled": true,
-		"domains": {
-			"next": "recommended",
-			"react": "recommended"
-		},
 		"rules": {
 			"recommended": true
 		}
@@ -35,5 +31,18 @@
 				"organizeImports": "on"
 			}
 		}
-	}
+	},
+	"overrides": [
+		{
+			"includes": ["**/*.astro"],
+			"linter": {
+				"rules": {
+					"correctness": {
+						"noUnusedImports": "off",
+						"noUnusedVariables": "off"
+					}
+				}
+			}
+		}
+	]
 }

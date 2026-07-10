@@ -1,7 +1,13 @@
+allowBuilds:
+  esbuild: true
+  sharp: true
+
+# sharp powers Astro's build-time image optimization (astro:assets);
+# esbuild is Vite's bundler used by Astro.
 onlyBuiltDependencies:
   - sharp
-  - unrs-resolver
+  - esbuild
 
-# Force a patched postcss (transitive via next) for CVE-2026-41305.
+# Keep postcss on a patched release for CVE-2026-41305 (pulled transitively).
 overrides:
   postcss: ">=8.5.10"

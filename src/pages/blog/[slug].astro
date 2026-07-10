@@ -1,0 +1,40 @@
+---
+import { getCollection, render } from "astro:content";
+import Title from "../../components/Title.astro";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+	const posts = await getCollection("blog");
+	return posts.map((post) => ({
+		params: { slug: post.id },
+		props: { post },
+	}));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+<Layout
+	title={`${post.data.title} - Parham Alvani`}
+	description={`${post.data.title} — a technical article by Parham Alvani.`}
+>
+	<section id="blog" class="bgWhite ofsInBottom">
+		<div class="content single">
+			<Title title={post.data.title} />
+			<div class="block-content">
+				<div class="block-content">
+					<div class="row">
+						<div class="block-posts clearfix">
+							<div class="block-post single clearfix">
+								<div class="col-md-12">
+									<hr />
+									<Content />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
