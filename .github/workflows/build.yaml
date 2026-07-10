@@ -22,29 +22,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v6
-      - name: Setup Node
-        uses: actions/setup-node@v6
+      - name: Build with Astro
+        uses: withastro/action@v6
         with:
-          node-version: "current"
-          cache: pnpm
-      - name: Restore cache
-        uses: actions/cache@v6
-        with:
-          path: |
-            .next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
-          restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-      - name: Build with Next.js
-        run: pnpm next build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: ./out
+          package-manager: pnpm@latest
+          node-version: 24
 
   deploy:
     environment:

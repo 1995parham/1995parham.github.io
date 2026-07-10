@@ -4,6 +4,9 @@ default:
 lint:
     pnpm lint
 
+check:
+    pnpm check
+
 format:
     pnpm format
 
