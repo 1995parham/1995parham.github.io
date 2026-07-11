@@ -10,12 +10,12 @@ In the [Unified Modeling Language (UML)](https://en.wikipedia.org/wiki/Unified_M
 
 ## Code Review
 
-In ThingSpeak code there is a ruby file is named _config/routes.rb_, in
-this file ThinkSpeak provides mapping between HTTP URLs and HTTP Controllers
-that resident under _app/controllers/_ folder.
+In the ThingSpeak code there is a Ruby file named _config/routes.rb_. In
+this file ThingSpeak provides the mapping between HTTP URLs and HTTP controllers
+that reside under the _app/controllers/_ folder.
 
-Models are provided under _app/models_ folder and database migirations
-also provided under _app/admin_.
+Models are provided under the _app/models_ folder, and database migrations
+are provided under _app/admin_.
 
 ## Tables
 

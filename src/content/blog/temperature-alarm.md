@@ -4,13 +4,13 @@ date: "2016-09-05"
 tags: [IoT, Hardware]
 ---
 
-We want to design a system that creates alarm on high or low environment
-temperature. We use N channel and P channel MOSFET transistors as switches.
-Basic design schema as follow:
+We want to design a system that raises an alarm on high or low ambient
+temperature. We use N-channel and P-channel MOSFET transistors as switches.
+The basic design schematic is as follows:
 
 ![circuit](/posts/circuit.jpg)
 
-When gate voltage of transistors changed one led turned on and another turned off.
+When the gate voltage of the transistors changes, one LED turns on and the other turns off.
 
 ![sim-1](/posts/sim-1.jpg)
 ![sim-2](/posts/sim-2.jpg)
