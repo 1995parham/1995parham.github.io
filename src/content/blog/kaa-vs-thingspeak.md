@@ -8,9 +8,9 @@ When our university started to build an IoT platform, we did some research and
 decided to use Kaa as our middleware/platform.
 In this article we want to compare Kaa and ThingSpeak.
 
-### Introduction
+## Introduction
 
-#### [Kaa](https://www.kaaproject.org/)
+### [Kaa](https://www.kaaproject.org/)
 
 Kaa is a multi-purpose middleware platform for building complete end-to-end IoT
 solutions. Kaa has a 3-layer architecture as shown below:
@@ -31,7 +31,7 @@ connect your log collector to Kaa with a simple REST URL callback.
 Kaa runs in a distributed manner, and you can build your Kaa-based
 environment on two or more servers for load distribution.
 
-#### [ThingSpeak](http://thingspeak.com/)
+### [ThingSpeak](http://thingspeak.com/)
 
 ThingSpeak provides **real-time data collection and storage**.
 You can easily create a channel for your data on this platform and send your
@@ -46,14 +46,14 @@ ThingSpeak provides a 2-layer architecture for your IoT platform. In this
 architecture ThingSpeak just collects and stores your data, and you can do some
 MATLAB-based analysis on it.
 
-### Comparison
+## Comparison
 
 |  Platform  | Notification | Events | Logging | Layers |
 | :--------: | :----------: | :----: | :-----: | :----: |
 |    Kaa     |      ✔️      |   ✔️   |   ✔️    |   3    |
 | ThingSpeak |      ❌      |   ❌   |   ✔️    |   2    |
 
-### Conclusion
+## Conclusion
 
 Personally, I think Kaa can be used in a local environment when
 you have your own cloud and servers. With Kaa you can always keep your data in
