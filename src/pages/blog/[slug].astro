@@ -27,7 +27,7 @@ const formattedDate = post.data.date.toLocaleDateString("en-US", {
 >
 	<section id="blog" class="bgWhite ofsInBottom">
 		<div class="content single">
-			<Title title={post.data.title} />
+			<Title title={post.data.title} divider={false} />
 			<article class="post-prose">
 				<header class="post-header">
 					<time class="post-date" datetime={post.data.date.toISOString()}>
