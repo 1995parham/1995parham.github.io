@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import Title from "../../components/Title.astro";
 import Layout from "../../layouts/Layout.astro";
+import "../../styles/post.css";
 
 export async function getStaticPaths() {
 	const posts = await getCollection("blog");
@@ -13,6 +14,12 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+const formattedDate = post.data.date.toLocaleDateString("en-US", {
+	year: "numeric",
+	month: "long",
+	day: "numeric",
+});
 ---
 <Layout
 	title={`${post.data.title} - Parham Alvani`}
@@ -21,20 +28,26 @@ const { Content } = await render(post);
 	<section id="blog" class="bgWhite ofsInBottom">
 		<div class="content single">
 			<Title title={post.data.title} />
-			<div class="block-content">
-				<div class="block-content">
-					<div class="row">
-						<div class="block-posts clearfix">
-							<div class="block-post single clearfix">
-								<div class="col-md-12">
-									<hr />
-									<Content />
-								</div>
-							</div>
-						</div>
-					</div>
+			<article class="post-prose">
+				<header class="post-header">
+					<time class="post-date" datetime={post.data.date.toISOString()}>
+						<i class="fas fa-calendar-alt" />
+						{formattedDate}
+					</time>
+					{
+						post.data.tags.length > 0 && (
+							<ul class="post-tags">
+								{post.data.tags.map((tag) => (
+									<li>{tag}</li>
+								))}
+							</ul>
+						)
+					}
+				</header>
+				<div class="post-body">
+					<Content />
 				</div>
-			</div>
+			</article>
 		</div>
 	</section>
 </Layout>

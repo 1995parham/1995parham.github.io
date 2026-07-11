@@ -1,0 +1,222 @@
+/*
+ * Blog post typography — a reading-focused layer that sits on top of the
+ * site theme (Open Sans, #eb874f accent). Scoped to `.post-prose` so it only
+ * shapes rendered Markdown, never the rest of the page.
+ */
+
+.post-prose {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  font-family: "open_sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #444444;
+}
+
+/* ---- Post header: date + tags ---------------------------------------- */
+
+.post-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 36px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #efefef;
+}
+
+.post-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #eb874f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.post-date i {
+  font-size: 14px;
+}
+
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.post-tags li {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #888888;
+  background: #f5f5f5;
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  padding: 3px 10px;
+}
+
+/* ---- Headings -------------------------------------------------------- */
+
+.post-body h2 {
+  font-family: "open_sansbold", Arial, sans-serif;
+  font-size: 24px;
+  color: #333333;
+  margin: 44px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.post-body h3 {
+  font-family: "open_sanssemibold", Arial, sans-serif;
+  font-size: 19px;
+  color: #444444;
+  margin: 32px 0 12px;
+}
+
+.post-body h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #555555;
+  margin: 24px 0 10px;
+}
+
+.post-body h2 a,
+.post-body h3 a,
+.post-body h4 a {
+  border-bottom: none;
+}
+
+/* ---- Text & links ---------------------------------------------------- */
+
+.post-body p {
+  margin: 0 0 20px;
+}
+
+.post-body a {
+  color: #eb874f;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(235, 135, 79, 0.35);
+  transition: border-color 0.15s ease;
+}
+
+.post-body a:hover {
+  border-bottom-color: #eb874f;
+}
+
+/* ---- Lists ----------------------------------------------------------- */
+
+.post-body ul,
+.post-body ol {
+  margin: 0 0 20px;
+  padding-left: 24px;
+}
+
+.post-body li {
+  margin-bottom: 8px;
+}
+
+/* ---- Images ---------------------------------------------------------- */
+
+.post-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 28px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ---- Inline code ----------------------------------------------------- */
+
+.post-body :not(pre) > code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.88em;
+  background: #f5f5f5;
+  color: #d6336c;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* ---- Code blocks (Shiki, github-light) ------------------------------- */
+
+.post-body pre {
+  margin: 0 0 24px;
+  padding: 18px 20px;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  overflow-x: auto;
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+.post-body pre code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  background: none;
+  color: inherit;
+  padding: 0;
+}
+
+/* ---- Tables ---------------------------------------------------------- */
+
+.post-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 28px;
+  font-size: 14px;
+}
+
+.post-body th,
+.post-body td {
+  border: 1px solid #ececec;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.post-body thead th {
+  background: #fafafa;
+  font-weight: 700;
+  color: #333333;
+}
+
+.post-body tbody tr:nth-child(even) {
+  background: #fbfbfb;
+}
+
+/* ---- Blockquotes & rules -------------------------------------------- */
+
+.post-body blockquote {
+  margin: 0 0 24px;
+  padding: 4px 20px;
+  border-left: 3px solid #eb874f;
+  color: #666666;
+  font-style: italic;
+}
+
+.post-body hr {
+  border: none;
+  border-top: 1px solid #eeeeee;
+  margin: 32px 0;
+}
+
+/* ---- Small screens --------------------------------------------------- */
+
+@media (max-width: 767px) {
+  .post-prose {
+    font-size: 15px;
+  }
+
+  .post-body h2 {
+    font-size: 21px;
+  }
+
+  .post-body h3 {
+    font-size: 17px;
+  }
+}
