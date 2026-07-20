@@ -2,6 +2,9 @@ allowBuilds:
   esbuild: true
   sharp: true
 
+minimumReleaseAgeExclude:
+  - astro@7.1.3
+
 # sharp powers Astro's build-time image optimization (astro:assets);
 # esbuild is Vite's bundler used by Astro.
 onlyBuiltDependencies:
