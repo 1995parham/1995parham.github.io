@@ -14,3 +14,11 @@ onlyBuiltDependencies:
 # Keep postcss on a patched release for CVE-2026-41305 (pulled transitively).
 overrides:
   postcss: ">=8.5.10"
+
+# `astro check` (@astrojs/language-server) needs TypeScript's programmatic API,
+# which the native compiler in 7.x does not ship yet. Keep `pnpm update --latest`
+# from pulling typescript forward until upstream supports it:
+# https://github.com/withastro/roadmap/discussions/1321
+updateConfig:
+  ignoreDependencies:
+    - typescript
