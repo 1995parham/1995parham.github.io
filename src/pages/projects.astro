@@ -1,0 +1,92 @@
+---
+import Title from "../components/Title.astro";
+import Layout from "../layouts/Layout.astro";
+---
+<Layout
+	title="Projects - Parham Alvani | Senior Software & Platform Engineer"
+	description="Freelance and client projects by Parham Alvani: a RAG compliance agent on GCP, a device security agent in Go, and a farm appraisal platform on AWS."
+>
+	<section id="projects" class="bgWhite ofsInBottom">
+		<div class="experience">
+			<Title title="Projects" />
+
+			<div class="content d-grid gap-5">
+				{/* Compliance & Privacy Agent */}
+				<div class="text-body">
+					<h4>Compliance &amp; Privacy Agent</h4>
+					<h6 class="text-muted">Freelance &mdash; Upwork | Remote | 2026</h6>
+					<ul>
+						<li>
+							Built a RAG agent that guides teams through achieving compliance
+							certifications such as SOC 2, answering privacy and controls
+							questions against current regulatory text. Served on Google Cloud
+							Run.
+						</li>
+						<li>
+							Ingested regulations, standards, and articles from the web on a
+							daily schedule through Cloud Run jobs, so answers track requirements
+							as they change rather than a stale snapshot.
+						</li>
+						<li>
+							Embedded the corpus into a vector database for semantic search and
+							served the model through Vertex AI, keeping ingestion, retrieval,
+							and inference on a single platform.
+						</li>
+					</ul>
+				</div>
+
+				{/* Device Security Agent */}
+				<div class="text-body">
+					<h4>Device Security Agent</h4>
+					<h6 class="text-muted">Freelance &mdash; Swift AI | Remote | 2025</h6>
+					<ul>
+						<li>
+							Built the on-device agent in Go for a US security startup&apos;s
+							platform, monitoring managed devices across customer fleets and
+							applying control actions to them.
+						</li>
+						<li>
+							Implemented the device-to-backend channel over a message broker,
+							streaming telemetry upstream and executing commands pushed back down
+							to each device.
+						</li>
+						<li>
+							Packaged and deployed the supporting services with Docker and
+							Kubernetes.
+						</li>
+					</ul>
+				</div>
+
+				{/* Farm Appraisal Platform */}
+				<div class="text-body">
+					<h4>Farm Appraisal Platform</h4>
+					<h6 class="text-muted">Offerland | BC, Canada | 2024 - 2025</h6>
+					<ul>
+						<li>
+							Designed and developed a Django-based application to appraise farms;
+							platform launched across British Columbia, Alberta, and
+							Saskatchewan.
+						</li>
+						<li>
+							Integrated heterogeneous data sources &mdash; Canadian official sales
+							records, soil information, and satellite imagery &mdash; to predict
+							per-farm market prices.
+						</li>
+						<li>
+							Orchestrated data ingestion and cleaning pipelines with Airflow,
+							providing scheduled runs, retries, and lineage visibility.
+						</li>
+						<li>
+							Built an internal Django Admin console alongside the user panel so
+							product managers could review user queries, feedback, and underlying
+							data health.
+						</li>
+						<li>
+							Deployed on AWS, combining EC2 instances with Lambda functions.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
