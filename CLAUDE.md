@@ -23,6 +23,8 @@ Prettier (migrated in `6fe5ae1`).
   skills, and the CV download button.
 - `src/pages/experience.astro` — work history.
 - `src/pages/education.astro` — degrees.
+- `src/pages/projects.astro` — freelance and client projects; mirrors the resume's
+  Projects section (`src/shared/projects.typ`).
 - `src/pages/lecture.astro` — course links.
 - `src/pages/blog/` — blog index and `[slug].astro`.
 - `src/layouts/Layout.astro`, `src/components/` — shared shell and UI.
@@ -49,7 +51,7 @@ Three repos state the same information publicly and must agree:
 | Repo | What it states |
 |---|---|
 | `1995parham.pdf` | Full resume — authoritative |
-| `1995parham.github.io` (here) | `src/pages/index.astro`, `experience.astro`, `education.astro` |
+| `1995parham.github.io` (here) | `src/pages/index.astro`, `experience.astro`, `education.astro`, `projects.astro` |
 | `1995parham` | GitHub profile README "About Me" |
 
 Before editing any employer, title, date range, headline, summary, or location
