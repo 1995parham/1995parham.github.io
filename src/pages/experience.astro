@@ -4,13 +4,46 @@ import Layout from "../layouts/Layout.astro";
 ---
 <Layout
 	title="Work Experience - Parham Alvani | Senior Software Engineer"
-	description="Professional experience of Parham Alvani: Senior Software Engineer at AveeHealth, Senior Cloud Engineer at Snapp!, and Software Architect at Amirkabir University IoT Lab."
+	description="Professional experience of Parham Alvani: Senior Site Reliability Engineer at Nobitex, Senior Software Engineer at AveeHealth, Senior Cloud Engineer at Snapp!, and Software Architect at Amirkabir University IoT Lab."
 >
 	<section id="work-exp" class="bgWhite ofsInBottom">
 		<div class="experience">
 			<Title title="Work Experience" />
 
 			<div class="content d-grid gap-5">
+				{/* Nobitex */}
+				<div class="text-body">
+					<h4>Nobitex &mdash; Iran&apos;s largest cryptocurrency exchange, 10M+ users</h4>
+					<h6 class="text-muted">
+						Senior Site Reliability Engineer (part-time) | Remote, Iran | May 2025 -
+						Present
+					</h6>
+					<ul>
+						<li>
+							Operate the company-wide observability platform: Prometheus-format
+							metrics aggregated centrally into Grafana, with per-team dashboards
+							behind Keycloak single sign-on.
+						</li>
+						<li>
+							Maintain VictoriaMetrics alerting rules routed by severity and owner to
+							on-call paging, and wrote the runbook behind every paging alert.
+						</li>
+						<li>
+							Run GitOps with ArgoCD across a multi-cluster, multi-datacenter
+							Kubernetes estate, reconciling Helm charts from a single repository with
+							canary rollouts.
+						</li>
+						<li>
+							Migrated core services onto Kubernetes and onto the GitOps path, with
+							HashiCorp Vault for secrets management.
+						</li>
+						<li>
+							Built the centralized logging pipeline: Kafka buffering into Vector,
+							fanning out to Loki, OpenSearch and syslog.
+						</li>
+					</ul>
+				</div>
+
 				{/* AveeHealth */}
 				<div class="text-body">
 					<h4>AveeHealth &mdash; Canadian digital-health startup</h4>
