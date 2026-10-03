@@ -1,187 +1,150 @@
 ---
-import Title from "../components/Title.astro";
+import Entry from "../components/Entry.astro";
+import PageHeader from "../components/PageHeader.astro";
 import Layout from "../layouts/Layout.astro";
+
+// Mirrors the Experience section of 1995parham.pdf (src/shared/*.typ). This
+// page may omit jobs, but anything listed must match the resume.
+const companies = [
+	{
+		name: "AveeHealth",
+		period: "Jan 2025 - Present",
+		tagline: "Canadian digital-health startup",
+		location: "Remote, Canada",
+		roles: [
+			{
+				title: "Senior Software Engineer (part-time until Dec 2025)",
+				period: "Jan 2025 - Present",
+				bullets: [
+					"Spearheaded the development of a new doctors panel using Python and Vue, successfully migrating users from the old system without disruption.",
+					"Managed the end-to-end development lifecycle, from technical design to containerized deployment with Docker.",
+					"Ran the platform on AWS, operating managed EKS clusters and ECS for containerized workloads.",
+					"Architected and implemented Django database models, overcoming the project's most significant technical challenge to ensure data integrity and system functionality.",
+					"Built an AI-powered transcription pipeline using Deepgram, RAG, and Pydantic AI to transcribe doctor-patient sessions and generate structured SOAP notes.",
+				],
+			},
+		],
+	},
+	{
+		name: "Snapp!",
+		period: "Jan 2019 - Dec 2025",
+		tagline: "Iran's largest ride-hailing platform, 50M+ users",
+		location: "Tehran, Iran",
+		roles: [
+			{
+				title: "Senior Cloud Engineer",
+				period: "Oct 2020 - Dec 2025",
+				bullets: [
+					"Led the design and implementation of a company-wide cloud platform, progressing to lead engineer for platform architecture.",
+					"Engineered Kubernetes operators (CRDs) to automate ArgoCD authentication and authorization.",
+					"Led the design of a scalable microservice architecture for a high-volume delivery application, leveraging NATS to handle over 300k messages/sec.",
+					"Implemented KServe and Knative on Kubernetes to build ML pipelines, reducing resource consumption and boosting data gathering by 10%.",
+					"Deployed and managed Kafka on Kubernetes using the Strimzi operator; mentored teams on messaging best practices.",
+					"Implemented monitoring and alerting for real-time application observability using OpenTelemetry.",
+					"Deployed RabbitMQ and Redis on Kubernetes through their operators and custom resources.",
+					"Sharded the chat-message MongoDB cluster, cutting response time by 50%.",
+				],
+			},
+			{
+				title: "Software Engineer (Shared Services Team)",
+				period: "Jan 2019 - Oct 2020",
+				bullets: [
+					"Optimized critical legacy applications (PHP) by migrating them to modern Go microservices, increasing availability by 20%.",
+					"Developed a real-time stream processing service to dynamically adjust pricing and balance demand/supply, resulting in a 5% increase in accepted rides.",
+					"Developed and maintained backend services in Go for real-time order processing and delivery tracking.",
+				],
+			},
+		],
+	},
+	{
+		name: "IoT Working Group of Amirkabir University of Technology",
+		period: "Jan 2017 - Jan 2019",
+		location: "Tehran, Iran",
+		roles: [
+			{
+				title: "Software Architect",
+				period: "Jan 2017 - Jan 2019",
+				bullets: [
+					"Secured and managed a ~$30,000 university research grant to establish the IoT laboratory and launch pilot projects.",
+					"Engineered a custom Reliable Layer-2 Transport Protocol (Stop-and-Wait ARQ with Retry logic) on top of raw NRF radio modules for guaranteed packet delivery.",
+					'Achieved stable performance for 1,000 concurrent IoT devices during load testing of the "Nahal" platform.',
+					"Built a scalable backend connecting 5000+ LoRa nodes for agricultural monitoring, utilizing Sentinel-2 satellite imagery for crop insights.",
+				],
+			},
+		],
+	},
+	{
+		name: "Nahalco",
+		period: "Jul 2013 - Mar 2017",
+		location: "Tehran, Iran",
+		roles: [
+			{
+				title: "Software Engineer (part-time)",
+				period: "Jul 2013 - Mar 2017",
+				bullets: [
+					"Developed a GraphQL API for the IoT Platform, enabling users to filter crop data with different filters.",
+					"Provided a data-processing pipeline using Apache Spark to ingest stock information, deployed on a serverless-like architecture using Docker Swarm.",
+				],
+			},
+		],
+	},
+	{
+		name: "Avidnet",
+		period: "Jun 2014 - May 2016",
+		location: "Tehran, Iran",
+		roles: [
+			{
+				title: "Software Engineer (part-time)",
+				period: "Jun 2014 - May 2016",
+				bullets: [
+					"Achieved an in-application video call solution using WebRTC based on the Pion Framework (Go); one of the earliest adoptions of Pion in the region, handling 1,000 concurrent calls via distributed design.",
+					"Increased application installation rate by 5% through the addition of stable video calling features.",
+					"Configured bare-metal infrastructure, including HPE ProLiant DL380 Gen9 servers with VMware ESXi.",
+					"Deployed services using Docker Swarm across staging and production environments.",
+				],
+			},
+		],
+	},
+];
 ---
 <Layout
 	title="Work Experience - Parham Alvani | Senior Software Engineer"
 	description="Professional experience of Parham Alvani: Senior Software Engineer at AveeHealth, Senior Cloud Engineer at Snapp!, and Software Architect at Amirkabir University IoT Lab."
 >
-	<section id="work-exp" class="bgWhite ofsInBottom">
-		<div class="experience">
-			<Title title="Work Experience" />
+	<PageHeader
+		eyebrow="Work"
+		title="Experience"
+		lead="A decade of backend, cloud, and platform engineering, from university IoT labs to a ride-hailing platform serving tens of millions of users."
+	/>
 
-			<div class="content d-grid gap-5">
-
-				{/* AveeHealth */}
-				<div class="text-body">
-					<h4>AveeHealth &mdash; Canadian digital-health startup</h4>
-					<h6 class="text-muted">
-						Senior Software Engineer (part-time until Dec 2025) | Remote, Canada |
-						Jan 2025 - Present
-					</h6>
-					<ul>
-						<li>
-							Spearheaded the development of a new doctors panel using Python and
-							Vue, successfully migrating users from the old system without
-							disruption.
-						</li>
-						<li>
-							Managed the end-to-end development lifecycle, from technical design to
-							containerized deployment with Docker.
-						</li>
-						<li>
-							Ran the platform on AWS, operating managed EKS clusters and ECS for
-							containerized workloads.
-						</li>
-						<li>
-							Architected and implemented Django database models, overcoming the
-							project's most significant technical challenge to ensure data
-							integrity and system functionality.
-						</li>
-						<li>
-							Built an AI-powered transcription pipeline using Deepgram, RAG, and
-							Pydantic AI to transcribe doctor-patient sessions and generate
-							structured SOAP notes.
-						</li>
-					</ul>
-				</div>
-
-				{/* Snapp */}
-				<div class="text-body">
-					<h4>Snapp! &mdash; Iran&apos;s largest ride-hailing platform, 50M+ users</h4>
-					<h6 class="text-muted">
-						Senior Cloud Engineer | Tehran, Iran | Oct 2020 - Dec 2025
-					</h6>
-					<ul>
-						<li>
-							Led the design and implementation of a company-wide cloud platform,
-							progressing to lead engineer for platform architecture.
-						</li>
-						<li>
-							Engineered Kubernetes operators (CRDs) to automate ArgoCD
-							authentication and authorization.
-						</li>
-						<li>
-							Led the design of a scalable microservice architecture for a
-							high-volume delivery application, leveraging NATS to handle over
-							300k messages/sec.
-						</li>
-						<li>
-							Implemented KServe and Knative on Kubernetes to build ML pipelines,
-							reducing resource consumption and boosting data gathering by 10%.
-						</li>
-						<li>
-							Deployed and managed Kafka on Kubernetes using the Strimzi
-							operator; mentored teams on messaging best practices.
-						</li>
-						<li>
-							Implemented monitoring and alerting for real-time application
-							observability using OpenTelemetry.
-						</li>
-						<li>
-							Deployed RabbitMQ and Redis on Kubernetes through their operators
-							and custom resources.
-						</li>
-						<li>
-							Sharded the chat-message MongoDB cluster, cutting response time by
-							50%.
-						</li>
-					</ul>
-
-					<h6 class="text-muted">
-						Software Engineer (Shared Services Team) | Jan 2019 - Oct 2020
-					</h6>
-					<ul>
-						<li>
-							Optimized critical legacy applications (PHP) by migrating them to
-							modern Go microservices, increasing availability by 20%.
-						</li>
-						<li>
-							Developed a real-time stream processing service to dynamically
-							adjust pricing and balance demand/supply, resulting in a 5% increase
-							in accepted rides.
-						</li>
-						<li>
-							Developed and maintained backend services in Go for real-time order
-							processing and delivery tracking.
-						</li>
-					</ul>
-				</div>
-
-				{/* IoT Working Group / AIOTRC */}
-				<div class="text-body">
-					<h4>IoT Working Group of Amirkabir University of Technology</h4>
-					<h6 class="text-muted">
-						Software Architect | Tehran, Iran | Jan 2017 - Jan 2019
-					</h6>
-					<ul>
-						<li>
-							Secured and managed a ~$30,000 university research grant to
-							establish the IoT laboratory and launch pilot projects.
-						</li>
-						<li>
-							Engineered a custom Reliable Layer-2 Transport Protocol
-							(Stop-and-Wait ARQ with Retry logic) on top of raw NRF radio modules
-							for guaranteed packet delivery.
-						</li>
-						<li>
-							Achieved stable performance for 1,000 concurrent IoT devices during
-							load testing of the "Nahal" platform.
-						</li>
-						<li>
-							Built a scalable backend connecting 5000+ LoRa nodes for
-							agricultural monitoring, utilizing Sentinel-2 satellite imagery for
-							crop insights.
-						</li>
-					</ul>
-				</div>
-
-				{/* Nahalco */}
-				<div class="text-body">
-					<h4>Nahalco</h4>
-					<h6 class="text-muted">
-						Software Engineer (part-time) | Tehran, Iran | Jul 2013 - Mar 2017
-					</h6>
-					<ul>
-						<li>
-							Developed a GraphQL API for the IoT Platform, enabling users to filter
-							crop data with different filters.
-						</li>
-						<li>
-							Provided a data-processing pipeline using Apache Spark to ingest stock
-							information, deployed on a serverless-like architecture using Docker
-							Swarm.
-						</li>
-					</ul>
-				</div>
-
-				{/* Avidnet */}
-				<div class="text-body">
-					<h4>Avidnet</h4>
-					<h6 class="text-muted">
-						Software Engineer (part-time) | Tehran, Iran | Jun 2014 - May 2016
-					</h6>
-					<ul>
-						<li>
-							Achieved an in-application video call solution using WebRTC based on
-							the Pion Framework (Go); one of the earliest adoptions of Pion in the
-							region, handling 1,000 concurrent calls via distributed design.
-						</li>
-						<li>
-							Increased application installation rate by 5% through the addition of
-							stable video calling features.
-						</li>
-						<li>
-							Configured bare-metal infrastructure, including HPE ProLiant DL380
-							Gen9 servers with VMware ESXi.
-						</li>
-						<li>
-							Deployed services using Docker Swarm across staging and production
-							environments.
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
+	<div class="timeline">
+		{
+			companies.map((company) => (
+				<Entry
+					title={company.name}
+					subtitle={company.tagline}
+					meta={[
+						{ icon: "location", text: company.location },
+						{ icon: "calendar", text: company.period },
+					]}
+				>
+					{company.roles.map((role) => (
+						<div class="role">
+							<h3 class="role-title">{role.title}</h3>
+							{company.roles.length > 1 && (
+								<p class="entry-meta">
+									<span>{role.period}</span>
+								</p>
+							)}
+							<ul>
+								{role.bullets.map((b) => (
+									<li>{b}</li>
+								))}
+							</ul>
+						</div>
+					))}
+				</Entry>
+			))
+		}
+	</div>
 </Layout>
