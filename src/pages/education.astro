@@ -1,98 +1,74 @@
 ---
-import Divider from "../components/Divider.astro";
-import Title from "../components/Title.astro";
+import Entry, { type Meta } from "../components/Entry.astro";
+import PageHeader from "../components/PageHeader.astro";
 import Layout from "../layouts/Layout.astro";
+
+// Mirrors the Education section of 1995parham.pdf.
+const aut: Meta = {
+	icon: "graduation-cap",
+	text: "Amirkabir University of Technology, Tehran, Iran",
+	href: "https://aut.ac.ir/",
+};
+
+const degrees: { title: string; meta: Meta[] }[] = [
+	{
+		title: "Ph.D. in Computer Network",
+		meta: [
+			{ icon: "calendar", text: "2019 - 2024" },
+			{ icon: "star", text: "GPA 8.67/10 (17.34/20 national scale)" },
+			aut,
+		],
+	},
+	{
+		title: "M.Sc. in Computer Network",
+		meta: [
+			{ icon: "calendar", text: "2017 - 2019" },
+			{ icon: "star", text: "GPA 9.39/10 (18.77/20) — Sobresaliente" },
+			aut,
+		],
+	},
+	{
+		title: "B.Sc. Computer Engineering (Software Engineering)",
+		meta: [
+			{ icon: "calendar", text: "2013 - 2017" },
+			{ icon: "star", text: "GPA 9.47/10 (18.94/20) — Sobresaliente" },
+			aut,
+		],
+	},
+	{
+		title: "High School Diploma in Mathematics and Physics",
+		meta: [
+			{ icon: "calendar", text: "2009 - 2013" },
+			{
+				icon: "graduation-cap",
+				text: "Energy Atomic High School, Tehran, Iran",
+			},
+		],
+	},
+];
 ---
 <Layout
 	title="Education - Parham Alvani | Ph.D. in Computer Network"
 	description="Educational background of Parham Alvani: Ph.D. and M.Sc. in Computer Network, B.Sc. in Computer Software Engineering from Amirkabir University of Technology."
 >
-	<section id="education" class="bgWhite ofsInBottom">
-		<div class="expertise">
-			<Title title="Education" />
-			<div class="content">
-				<div class="block-content">
-					<div class="timeline education">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="exp-holder margTop">
-									<div class="exp">
-										<div class="hgroup">
-											<h4>Ph.D. in Computer Network</h4>
-											<h6><i class="fas fa-calendar" />2019 - 2024</h6>
-												<h6><i class="fas fa-star" />GPA: 8.67/10 (17.34/20 national scale)</h6>
-											<h6>
-												<i class="fas fa-thumbtack" />
-												<b class="bold">
-													<a class="gpacolor" href="https://aut.ac.ir/">
-														Amirkabir University of Technology
-													</a>
-												</b>, Tehran, Iran
-											</h6>
-										</div>
-										<br />
-									</div>
-									<div class="exp">
-										<div class="hgroup">
-											<h4>M.Sc. in Computer Network</h4>
-											<h6><i class="fas fa-calendar" />2017 - 2019</h6>
-												<h6><i class="fas fa-star" />GPA: 9.39/10 (18.77/20) &mdash; Sobresaliente</h6>
-											<h6>
-												<i class="fas fa-thumbtack" />
-												<b class="bold">
-													<a class="gpacolor" href="https://aut.ac.ir/">
-														Amirkabir University of Technology
-													</a>
-												</b>, Tehran, Iran
-											</h6>
-										</div>
-										<br />
-									</div>
-									<div class="exp">
-										<div class="hgroup">
-											<h4>B.Sc. Computer Engineering (Software Engineering)</h4>
-											<h6><i class="fas fa-calendar" />2013 - 2017</h6>
-												<h6><i class="fas fa-star" />GPA: 9.47/10 (18.94/20) &mdash; Sobresaliente</h6>
-											<h6>
-												<i class="fas fa-thumbtack" />
-												<b class="bold">
-													<a class="gpacolor" href="https://aut.ac.ir/">
-														Amirkabir University of Technology
-													</a>
-												</b>, Tehran, Iran
-											</h6>
-										</div>
-										<br />
-									</div>
-									<div class="exp">
-										<div class="hgroup">
-											<h4>High School Diploma in Mathematics and Physics</h4>
-											<h6><i class="fas fa-calendar" />2009 - 2013</h6>
-											<h6>
-												<i class="fas fa-thumbtack" />
-												<b class="gpacolor">Energy Atomic High School</b>, Tehran,
-												Iran
-											</h6>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row margTop">
-					<div class="col-md-12">
-						<p>
-							Reports and Assignments are available at{" "}
-							<a href="https://github.com/9231058">this</a> Github organization.
-						</p>
-					</div>
-				</div>
-			</div>
+	<PageHeader
+		eyebrow="Education"
+		title="Degrees"
+		lead="Eleven years at Amirkabir University of Technology, from a software engineering bachelor's to a Ph.D. in computer networks."
+	/>
 
-			<div class="button margTop ofsInTop tCenter">
-				<Divider />
-			</div>
-		</div>
-	</section>
+	<div class="timeline">
+		{
+			degrees.map((d) => (
+				<Entry title={d.title} meta={d.meta}>
+					<Fragment />
+				</Entry>
+			))
+		}
+	</div>
+
+	<p class="prose" style="margin-top: 2.5rem; color: var(--text-muted);">
+		Reports and assignments from these years are available in{" "}
+		<a href="https://github.com/9231058">this GitHub organization</a>.
+	</p>
 </Layout>

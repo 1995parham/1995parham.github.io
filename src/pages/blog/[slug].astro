@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
-import Title from "../../components/Title.astro";
+import Icon from "../../components/Icon.astro";
+import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
 import "../../styles/post.css";
 
@@ -25,29 +26,27 @@ const formattedDate = post.data.date.toLocaleDateString("en-US", {
 	title={`${post.data.title} - Parham Alvani`}
 	description={`${post.data.title} — a technical article by Parham Alvani.`}
 >
-	<section id="blog" class="bgWhite ofsInBottom">
-		<div class="content single">
-			<Title title={post.data.title} divider={false} />
-			<article class="post-prose">
-				<header class="post-header">
-					<time class="post-date" datetime={post.data.date.toISOString()}>
-						<i class="fas fa-calendar-alt" />
-						{formattedDate}
-					</time>
-					{
-						post.data.tags.length > 0 && (
-							<ul class="post-tags">
-								{post.data.tags.map((tag) => (
-									<li>{tag}</li>
-								))}
-							</ul>
-						)
-					}
-				</header>
-				<div class="post-body">
-					<Content />
-				</div>
-			</article>
+	<article class="post-prose">
+		<PageHeader eyebrow="Blog" title={post.data.title}>
+			<p class="card-meta" style="margin-top: 0.75rem;">
+				<Icon name="calendar" />
+				<time datetime={post.data.date.toISOString()}>{formattedDate}</time>
+			</p>
+			{
+				post.data.tags.length > 0 && (
+					<ul class="tags" style="margin-top: 0.75rem;">
+						{post.data.tags.map((tag) => (
+							<li>{tag}</li>
+						))}
+					</ul>
+				)
+			}
+		</PageHeader>
+		<div class="post-body">
+			<Content />
 		</div>
-	</section>
+		<footer class="post-footer">
+			<a class="btn" href="/blog"><Icon name="arrow-left" /> All posts</a>
+		</footer>
+	</article>
 </Layout>

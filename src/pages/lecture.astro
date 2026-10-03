@@ -1,59 +1,48 @@
 ---
-import Title from "../components/Title.astro";
+import Icon from "../components/Icon.astro";
+import PageHeader from "../components/PageHeader.astro";
 import Layout from "../layouts/Layout.astro";
+
+const courses = [
+	{
+		title: "Internet Engineering",
+		href: "https://1995parham-teaching.github.io/ie-lecture/",
+		description:
+			"Protocols, web architecture, and the systems behind the Internet.",
+	},
+	{
+		title: "Python 201",
+		href: "https://1995parham-teaching.github.io/Python201/",
+		description: "Intermediate Python for people who already know the basics.",
+	},
+	{
+		title: "Introduction to Programming",
+		href: "https://github.com/1995parham-teaching/c-lecture/",
+		description: "First steps in programming, taught in C.",
+	},
+];
 ---
 <Layout
 	title="Lectures - Parham Alvani | Teaching & Courses"
 	description="Teaching materials and courses by Parham Alvani: Internet Engineering, Python 201, and Introduction to Programming."
 >
-	<section id="lecture" class="bgWhite ofsInBottom">
-		<div class="expertise">
-			<Title title="Lectures" />
-			<div class="content">
-				<div class="block-content">
-					<div class="timeline book">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="exp-holder margTop">
-									<div class="exp">
-										<div class="hgroup">
-											<h4>Internet Engineering</h4>
-											<h6>
-												<i class="fas fa-external-link-alt" />
-												<a href="https://1995parham-teaching.github.io/ie-lecture/">
-													Course Homepage
-												</a>
-											</h6>
-										</div>
-									</div>
-									<div class="exp">
-										<div class="hgroup">
-											<h4>Python 201</h4>
-											<h6>
-												<i class="fas fa-external-link-alt" />
-												<a href="https://1995parham-teaching.github.io/Python201/">
-													Course Homepage
-												</a>
-											</h6>
-										</div>
-									</div>
-									<div class="exp">
-										<div class="hgroup">
-											<h4>Introduction to Programming</h4>
-											<h6>
-												<i class="fas fa-external-link-alt" />
-												<a href="https://github.com/1995parham-teaching/c-lecture/">
-													Course Homepage
-												</a>
-											</h6>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<PageHeader
+		eyebrow="Teaching"
+		title="Lectures"
+		lead="Courses I have taught, with slides, notes, and assignments published openly."
+	/>
+
+	<div class="card-grid">
+		{
+			courses.map((c) => (
+				<a class="card" href={c.href} target="_blank" rel="noopener">
+					<h2>{c.title}</h2>
+					<p class="card-meta">{c.description}</p>
+					<span class="card-link">
+						Course homepage <Icon name="external" />
+					</span>
+				</a>
+			))
+		}
+	</div>
 </Layout>
