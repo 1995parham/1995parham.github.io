@@ -1,0 +1,23 @@
+---
+import { type IconName, icons } from "./icons";
+
+interface Props {
+	name: IconName;
+	class?: string;
+	/** Accessible name. Omit for purely decorative icons next to text. */
+	label?: string;
+}
+
+const { name, class: className, label } = Astro.props;
+
+const classes = ["icon", `icon-${name}`, className].filter(Boolean).join(" ");
+const a11y = label ? `role="img" aria-label="${label}"` : 'aria-hidden="true"';
+
+// Font Awesome's files carry a licence comment and no sizing; strip the
+// comment and hand the <svg> our class and ARIA attributes. Sizing is `1em`
+// via `.icon` in global.css so icons scale with the surrounding text.
+const svg = icons[name]
+	.replace(/<!--[\s\S]*?-->/g, "")
+	.replace("<svg ", `<svg class="${classes}" ${a11y} focusable="false" `);
+---
+<Fragment set:html={svg} />

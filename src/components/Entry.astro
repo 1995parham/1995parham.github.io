@@ -1,0 +1,44 @@
+---
+/**
+ * One item on a timeline: a job, a project, a degree. The header carries the
+ * title, an optional subtitle, and a row of short metadata (dates, place,
+ * client); the slot holds the body, usually a bulleted list or `.role` blocks.
+ */
+import Icon from "./Icon.astro";
+import type { IconName } from "./icons";
+
+export interface Meta {
+	text: string;
+	icon?: IconName;
+	href?: string;
+}
+
+interface Props {
+	title: string;
+	subtitle?: string;
+	meta?: Meta[];
+}
+
+const { title, subtitle, meta = [] } = Astro.props;
+---
+<article class="entry">
+	<header>
+		<h2 class="entry-title">{title}</h2>
+		{subtitle && <p class="entry-subtitle">{subtitle}</p>}
+		{
+			meta.length > 0 && (
+				<p class="entry-meta">
+					{meta.map((m) => (
+						<span>
+							{m.icon && <Icon name={m.icon} />}
+							{m.href ? <a href={m.href}>{m.text}</a> : m.text}
+						</span>
+					))}
+				</p>
+			)
+		}
+	</header>
+	<div class="entry-body">
+		<slot />
+	</div>
+</article>
