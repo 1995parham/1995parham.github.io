@@ -28,6 +28,13 @@ Prettier (migrated in `6fe5ae1`).
 - `src/pages/lecture.astro` — course links.
 - `src/pages/blog/` — blog index and `[slug].astro`.
 - `src/layouts/Layout.astro`, `src/components/` — shared shell and UI.
+- `src/styles/global.css` — the only stylesheet (plus `post.css` for Markdown).
+  No CSS framework. Colours are tokens on `:root` using `light-dark()`; the
+  theme toggle pins `data-theme` on `<html>`, otherwise the OS preference wins.
+- Icons are inline SVG via `src/components/Icon.astro`, which reads paths from
+  the `@fortawesome/fontawesome-free` package at build time; add new names to
+  `src/components/icons.ts`. No icon webfont or CSS ships to the browser.
+- Inter is self-hosted through Astro's `fonts` config (`astro.config.mjs`).
 
 ## The CV download link
 
