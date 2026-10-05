@@ -25,7 +25,11 @@ Prettier (migrated in `6fe5ae1`).
 - `src/pages/education.astro` — degrees.
 - `src/pages/projects.astro` — freelance and client projects; mirrors the resume's
   Projects section (`src/shared/projects.typ`).
-- `src/pages/lecture.astro` — course links.
+- The course list is no longer here: the nav "Teaching" item and a
+  `/lecture` redirect in `astro.config.mjs` both point at
+  `https://teaching.1995parham.me` (repo
+  `1995parham-teaching/1995parham-teaching.github.io`, same toolchain and
+  `global.css` as this site). Edit courses there, not here.
 - `src/pages/blog/` — blog index and `[slug].astro`.
 - `src/layouts/Layout.astro`, `src/components/` — shared shell and UI.
 - `src/styles/global.css` — the only stylesheet (plus `post.css` for Markdown).

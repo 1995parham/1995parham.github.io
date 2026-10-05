@@ -6,6 +6,10 @@ import { defineConfig, fontProviders } from "astro/config";
 export default defineConfig({
 	site: "https://1995parham.github.io",
 	integrations: [sitemap()],
+	// The course list moved to its own site; keep the old URL working.
+	redirects: {
+		"/lecture": "https://teaching.1995parham.me",
+	},
 	// Inter is fetched at build time and self-hosted from /_astro, so the
 	// page never calls out to Google Fonts. Rendered via <Font /> in Layout.
 	fonts: [
