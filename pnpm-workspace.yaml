@@ -14,6 +14,10 @@ onlyBuiltDependencies:
 # Keep postcss on a patched release for CVE-2026-41305 (pulled transitively).
 overrides:
   postcss: ">=8.5.10"
+  # @napi-rs/wasm-runtime's peer range admits @emnapi/runtime 2.0 betas, and
+  # `pnpm update` picks one for @astrojs/check, which then crashes `astro check`
+  # (`this.bridge.deleteEnv is not a function`). Stay on 1.x until 2.0 is final.
+  "@emnapi/runtime": "^1.11.3"
 
 # `astro check` (@astrojs/language-server) needs TypeScript's programmatic API,
 # which the native compiler in 7.x does not ship yet. Keep `pnpm update --latest`
