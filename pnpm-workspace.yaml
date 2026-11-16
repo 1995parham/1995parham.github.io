@@ -18,6 +18,9 @@ overrides:
   # `pnpm update` picks one for @astrojs/check, which then crashes `astro check`
   # (`this.bridge.deleteEnv is not a function`). Stay on 1.x until 2.0 is final.
   "@emnapi/runtime": "^1.11.3"
+  # rolldown's optional WASI binding pins @emnapi/core to 2.0.0-beta.2; it is
+  # never installed on the x64/arm64 hosts we build on, so drop it.
+  "@rolldown/binding-wasm32-wasi": "-"
 
 # `astro check` (@astrojs/language-server) needs TypeScript's programmatic API,
 # which the native compiler in 7.x does not ship yet. Keep `pnpm update --latest`
