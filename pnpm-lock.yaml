@@ -175,8 +175,8 @@ importers:
         specifier: ^4.0.19
         version: 4.0.19
       '@astrojs/sitemap':
-        specifier: ^3.7.5
-        version: 3.7.5
+        specifier: ^3.7.6
+        version: 3.7.6
       '@fortawesome/fontawesome-free':
         specifier: ^7.3.1
         version: 7.3.1
@@ -308,8 +308,8 @@ packages:
   '@astrojs/runtime@0.1.1':
     resolution: {integrity: sha512-2Tr9IJ4aQBPDFzlSLq139eWS9OZnuhL0yU2al8cCpnTE/RszygSyGIP8piBmEio1zDUaItb/+YxxsrmldUCBmg==}
 
-  '@astrojs/sitemap@3.7.5':
-    resolution: {integrity: sha512-rxSbFcxdcOoVRR02q0aFxyZ6chwXZpUOHMg8e+3iWPo7xYV4hlYBU4ztFd1Xl/pWtr6pe+TVCFKJfyPe0sp8iA==}
+  '@astrojs/sitemap@3.7.6':
+    resolution: {integrity: sha512-QEKD3ubC0iJxpNzC4KvcKdxSP97U5SjuQ16+VkmUwx1TT+Hq7TIV8QGm/d2pvkN6+3GqGXLRzm7j6lZxHETm3A==}
 
   '@astrojs/telemetry@3.4.2':
     resolution: {integrity: sha512-2JOMRUxJrBSfiVDfeKLv1wBmvSIx1Y6u2YEO8awZ9qSq3u/rNAiUyFdOYi8dHv91kHrmYEQX7pRDw0J4xyj3UA==}
@@ -2003,7 +2003,7 @@ snapshots:
       '@oslojs/encoding': 1.1.0
       clsx: 2.1.1
 
-  '@astrojs/sitemap@3.7.5':
+  '@astrojs/sitemap@3.7.6':
     dependencies:
       sitemap: 10.0.0
       zod: 4.6.7
